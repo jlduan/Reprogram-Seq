@@ -50,38 +50,35 @@ for (i in seq_len(num_replicates)) {
                 1,
                 sample))
 
-
     prcomp_irlba_out <-
         prcomp_irlba(t(data_use),
                      n = n_use,
                      center = FALSE,
                      scale. = FALSE)
 
-
     if (FALSE) {
         saveRDS(data_use,
                 file = file.path(data_directory, "permutations",
                                  paste0("prcomp_irlba_input_",
-                                 "proportion",
-                                 proportion_of_transcripts,
-                                 "_n",
-                                 n_use,
-                                 "_replicate",
-                                 i,
-                                 ".rds"))
+                                        "proportion",
+                                        proportion_of_transcripts,
+                                        "_n",
+                                        n_use,
+                                        "_replicate",
+                                        i,
+                                        ".rds")))
     }
-
 
     saveRDS(prcomp_irlba_out,
             file = file.path(data_directory, "permutations",
                              paste0("prcomp_irlba_out_",
-                             "proportion",
-                             proportion_of_transcripts,
-                             "_n",
-                             n_use,
-                             "_replicate",
-                             i,
-                             ".rds"))
+                                    "proportion",
+                                    proportion_of_transcripts,
+                                    "_n",
+                                    n_use,
+                                    "_replicate",
+                                    i,
+                                    ".rds")))
 }
 
 
@@ -185,7 +182,7 @@ data.frame(orig = pc_var_explained,
          y = "Variance explained",
          color = NULL) +
     # theme(axis.text.x = element_text(angle = 90, hjust = 0)) +
-    geom_hline(yintercept = pc_var_explained[which(!
-        pc_var_explained >= colMeans(pc_var_explained_perm))[1] - 1],
-               linetype = "dashed",
-               color = "steelblue")
+    geom_hline(yintercept = pc_var_explained[
+        which(! pc_var_explained >= colMeans(pc_var_explained_perm))[1] - 1],
+        linetype = "dashed",
+        color = "steelblue")
