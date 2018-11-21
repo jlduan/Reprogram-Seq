@@ -18,13 +18,14 @@ expr_readcount_norm_log_corrected_scaled <-
 object.size(expr_readcount_norm_log_corrected_scaled)
 
 
+# inspect
 pc_genes_var <- apply(expr_readcount_norm_log_corrected_scaled, 1, var)
 genes_use <-
     rownames(expr_readcount_norm_log_corrected_scaled)[pc_genes_var > 0]
 length(genes_use)
 
 
-# compute the first few principal components based on permuated matrices -------
+# compute the first a few principal components based on permuated matrices -----
 
 
 proportion_of_transcripts <- 0.1
@@ -59,28 +60,28 @@ for (i in seq_len(num_replicates)) {
 
     if (FALSE) {
         saveRDS(data_use,
-                file = paste0(file.path(data_directory, "permutations"),
-                              "prcomp_irlba_input_",
-                              "proportion",
-                              proportion_of_transcripts,
-                              "_n",
-                              n_use,
-                              "_replicate",
-                              i,
-                              ".rds"))
+                file = file.path(data_directory, "permutations",
+                                 paste0("prcomp_irlba_input_",
+                                 "proportion",
+                                 proportion_of_transcripts,
+                                 "_n",
+                                 n_use,
+                                 "_replicate",
+                                 i,
+                                 ".rds"))
     }
 
 
     saveRDS(prcomp_irlba_out,
-            file = paste0(file.path(data_directory, "permutations"),
-                          "prcomp_irlba_out_",
-                          "proportion",
-                          proportion_of_transcripts,
-                          "_n",
-                          n_use,
-                          "_replicate",
-                          i,
-                          ".rds"))
+            file = file.path(data_directory, "permutations",
+                             paste0("prcomp_irlba_out_",
+                             "proportion",
+                             proportion_of_transcripts,
+                             "_n",
+                             n_use,
+                             "_replicate",
+                             i,
+                             ".rds"))
 }
 
 
