@@ -1,14 +1,15 @@
 # Reprogram-Seq
-  
+
+Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturbation and computational analysis to predict, evaluate, and optimize TF combinations that reprogram a cell type of interest. 
+ 
 ---
-
-
-## Reprogram-Seq Workflow
+<br/><br/>
+## Reprogram-Seq workflow
+<br/><br/>
 ![](data/misc/workflow.png)
+<br/><br/>
 
-
-
-## File structure
+## File organization
 ```
 .
 ├── README.md
@@ -39,7 +40,6 @@
 │   │   └── tsne_out_coords.rds
 │   └── misc
 │       ├── genes.tsv
-│       ├── utilities
 │       └── workflow.png
 ├── notebooks
 │   ├── jupyter_notebooks
@@ -56,13 +56,23 @@
 
 ```
 
-
+<br/><br/>
 ##  Notebooks
 
-### Jupyter notebooks
+### Jupyter notebooks (development)
+[Convertion of R objects to python objects]
+(https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/conversion.ipynb)
+
 ...
+
 
 ###  HTML documents created from R Markdown
 [Unbiased Reprogramming (4.3 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdowns/unbiased_reprogramming.html)  
 [Rational Epicardial Reprogramming (2.9 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdowns/rational_epicardial_reprogramming.html)  
-[Global Reprogramming of Transcription (5.0 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdowns/global_reprogramming_of_transcription.html)  
+[Global Reprogramming of Transcription (5.0 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdowns/global_reprogramming_of_transcription.html)
+<br/><br/>
+
+## How to cite
+Rational reprogramming of cellular states by combinatorial perturbation  
+Jialei Duan, Boxun Li, Minoti Bhakta, Shiqi Xie, Pei Zhou, Nikhil V. Munshi, Gary C. Hon  
+doi: <https://doi.org/10.1101/468249>
