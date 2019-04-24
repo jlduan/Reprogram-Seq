@@ -53,15 +53,13 @@ Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturba
 └── pipelines
     ├── 10x.sh
     └── drop-seq.sh
-
 ```
 
 <br/><br/>
 ##  Notebooks
 
 ### Jupyter notebooks (development)
-[Convertion of R objects to python objects]
-(https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/conversion.ipynb)
+[Convertion of R objects to python objects](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/conversion.ipynb)
 
 ...
 
