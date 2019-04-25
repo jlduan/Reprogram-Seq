@@ -44,7 +44,9 @@ Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturba
 ├── notebooks
 │   ├── jupyter_notebooks
 │   │   ├── conversion.ipynb
-│   │   └── embedding.ipynb
+│   │   ├── embedding.ipynb
+│   │   ├── embedding_fitsne.ipynb
+│   │   └── embedding_umap.ipynb
 │   └── rmarkdowns
 │       ├── README.md
 │       ├── global_reprogramming_of_transcription.html
@@ -61,8 +63,8 @@ Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturba
 ### Jupyter notebooks (in development)
 [Convertion of R objects to Python objects](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/conversion.ipynb)  
 [Exploration of recent advances in single cell visualization](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/embedding.ipynb)  
-&nbsp; &nbsp; &nbsp; &nbsp; [UMAP](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/embedding_umap.ipynb)  
-&nbsp; &nbsp; &nbsp; &nbsp; [Fl-tSNE](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/embedding_fitsne.ipynb)  
+&nbsp; &nbsp; &nbsp; &nbsp; [UMAP](https://nbviewer.jupyter.org/urls/dl.dropbox.com/s/jbv9dvivhi69lgd/embedding_umap.ipynb)  
+&nbsp; &nbsp; &nbsp; &nbsp; [Fl-tSNE](https://nbviewer.jupyter.org/urls/dl.dropbox.com/s/zpdq3pg2gtrkve5/embedding_fitsne.ipynb)  
 
 ...
 
