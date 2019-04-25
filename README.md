@@ -1,13 +1,13 @@
 # Reprogram-Seq
 
-Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturbation and computational analysis to predict, evaluate, and optimize TF combinations that reprogram a cell type of interest. 
- 
+Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturbation and computational analysis to predict, evaluate, and optimize TF combinations that reprogram a cell type of interest.  
+
 ---
-<br/><br/>
+&nbsp;
 ## Reprogram-Seq workflow
-<br/><br/>
+&nbsp;
 ![](data/misc/workflow.png)
-<br/><br/>
+&nbsp;
 
 ## File organization
 ```
@@ -55,11 +55,14 @@ Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturba
     └── drop-seq.sh
 ```
 
-<br/><br/>
+&nbsp;
 ##  Notebooks
 
 ### Jupyter notebooks (in development)
-[Convertion of R objects to Python objects](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/conversion.ipynb)
+[Convertion of R objects to Python objects](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/conversion.ipynb)  
+[Exploration of recent advances in single cell visualization](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/embedding.ipynb)  
+&nbsp; &nbsp; &nbsp; &nbsp; [UMAP](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/embedding_umap.ipynb)  
+&nbsp; &nbsp; &nbsp; &nbsp; [Fl-tSNE](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/embedding_fitsne.ipynb)  
 
 ...
 
@@ -68,7 +71,7 @@ Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturba
 [Unbiased Reprogramming (4.3 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdowns/unbiased_reprogramming.html)  
 [Rational Epicardial Reprogramming (2.9 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdowns/rational_epicardial_reprogramming.html)  
 [Global Reprogramming of Transcription (5.0 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdowns/global_reprogramming_of_transcription.html)
-<br/><br/>
+&nbsp;
 
 ## How to cite
 Rational reprogramming of cellular states by combinatorial perturbation  
