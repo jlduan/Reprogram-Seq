@@ -63,16 +63,16 @@ Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturba
 ### Jupyter notebooks (in development)
 [Convertion of R objects to Python objects](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/conversion.ipynb)  
 [Exploration of recent advances in single cell visualization](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/embedding.ipynb)  
-&nbsp; &nbsp; &nbsp; &nbsp; [UMAP](https://nbviewer.jupyter.org/urls/dl.dropbox.com/s/jbv9dvivhi69lgd/embedding_umap.ipynb)  
-&nbsp; &nbsp; &nbsp; &nbsp; [Fl-tSNE](https://nbviewer.jupyter.org/urls/dl.dropbox.com/s/zpdq3pg2gtrkve5/embedding_fitsne.ipynb)  
+&nbsp; &nbsp; &nbsp; &nbsp; [UMAP](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/embedding_umap.ipynb)  
+&nbsp; &nbsp; &nbsp; &nbsp; [Fl-tSNE](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/embedding_fitsne.ipynb)  
 
 ...
 
 
 ###  HTML documents created from R Markdown (recreate figures)
-[Unbiased Reprogramming (4.3 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdowns/unbiased_reprogramming.html)  
-[Rational Epicardial Reprogramming (2.9 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdowns/rational_epicardial_reprogramming.html)  
-[Global Reprogramming of Transcription (5.0 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdowns/global_reprogramming_of_transcription.html)
+[Unbiased reprogramming (4.3 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdowns/unbiased_reprogramming.html)  
+[Rational epicardial reprogramming (2.9 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdowns/rational_epicardial_reprogramming.html)  
+[Global reprogramming of transcription (5.0 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdowns/global_reprogramming_of_transcription.html)
 &nbsp;
 
 ## How to cite
