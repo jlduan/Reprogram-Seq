@@ -1,11 +1,12 @@
 # Reprogram-Seq
 
-Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturbation and computational analysis to predict, evaluate, and optimize TF combinations that reprogram a cell type of interest.  
+Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturbation and computational analysis to predict, evaluate, and optimize TF combinations that reprogram a cell type of interest.
 
 ---
 &nbsp;
 ## Reprogram-Seq workflow
 &nbsp;
+
 ![](data/misc/workflow.png)
 &nbsp;
 
@@ -43,11 +44,8 @@ Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturba
 │       └── workflow.png
 ├── notebooks
 │   ├── jupyter_notebooks
-│   │   ├── clustering.ipynb
-│   │   ├── conversion.ipynb
-│   │   ├── embedding.ipynb
-│   │   ├── embedding_fitsne.ipynb
-│   │   └── embedding_umap.ipynb
+│   │   ├── cluster_scanpy.ipynb
+│   │   └── cluster_seurat.html
 │   └── rmarkdown_notebooks
 │       ├── README.md
 │       ├── global_reprogramming_of_transcription.html
@@ -59,26 +57,20 @@ Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturba
 ```
 
 &nbsp;
-##  Notebooks
+## Notebooks
+
+### HTML documents created from R Markdown (to recreate figures)<br/>
+[Unbiased reprogramming (4.3 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdown_notebooks/unbiased_reprogramming.html)<br/>
+[Rational epicardial reprogramming (2.9 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdown_notebooks/rational_epicardial_reprogramming.html)<br/>
+[Global reprogramming of transcription (5.0 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdown_notebooks/global_reprogramming_of_transcription.html)<br/>
 
 
-###  HTML documents created from R Markdown (to recreate figures)
-[Unbiased reprogramming (4.3 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdown_notebooks/unbiased_reprogramming.html)  
-[Rational epicardial reprogramming (2.9 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdown_notebooks/rational_epicardial_reprogramming.html)  
-[Global reprogramming of transcription (5.0 Mb)](http://htmlpreview.github.com/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdown_notebooks/global_reprogramming_of_transcription.html)
-&nbsp;
-
-
-### Jupyter notebooks (experimenting)
-[Conversion of R objects to Python objects](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/conversion.ipynb)  
-[Clustering](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/clustering.ipynb)  
-[Exploration of recent advances in single cell visualization](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/embedding.ipynb)  
-&nbsp; &nbsp; &nbsp; &nbsp; [UMAP](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/embedding_umap.ipynb)  
-&nbsp; &nbsp; &nbsp; &nbsp; [Fl-tSNE](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/embedding_fitsne.ipynb)  
+### Jupyter & R notebooks (experimenting)<br/>
+[Clustering (Scanpy)](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/cluster_scanpy.ipynb)<br/>
+[Clustering (Seurat)](https://htmlpreview.github.io/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/cluster_seurat.html)<br/>
 ...
+&nbsp;
+## How to cite<br/>
 
-
-## How to cite
-Jialei Duan, Boxun Li, Minoti Bhakta, Shiqi Xie, Pei Zhou, Nikhil V. Munshi, Gary C. Hon (2019)  
-Rational Reprogramming of Cellular States by Combinatorial Perturbation. Cell Rep. 27, 3486–3499.e6.  
-doi: <http://dx.doi.org/10.1016/j.celrep.2019.05.079>
+Jialei Duan, Boxun Li, Minoti Bhakta, Shiqi Xie, Pei Zhou, Nikhil V. Munshi, Gary C. Hon (2019). **Rational Reprogramming of Cellular States by Combinatorial Perturbation.** Cell Rep. 27, 3486–3499.e6.<br/>
+DOI: <http://dx.doi.org/10.1016/j.celrep.2019.05.079><br/>
