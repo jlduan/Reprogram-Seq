@@ -4,13 +4,11 @@ Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturba
 
 ***
 
-<br>
+## Workflow
 
-## Reprogram-Seq workflow
-
-![](data/misc/workflow.png)
-
-<br>
+<p align='center'>
+    <img src='https://ars.els-cdn.com/content/image/1-s2.0-S2211124719307089-fx1_lrg.jpg' alt='' width='500'/>
+</p>
 
 ## Code
 
@@ -25,9 +23,9 @@ Experimenting:
 - [Clustering (SCANPY)](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/cluster_scanpy.ipynb)
 - [Clustering (Seurat)](https://htmlpreview.github.io/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/cluster_seurat.html)
 
-<br>
-
 ## Citation
 
 Jialei Duan, Boxun Li, Minoti Bhakta, Shiqi Xie, Pei Zhou, Nikhil V. Munshi, Gary C. Hon (2019). **Rational Reprogramming of Cellular States by Combinatorial Perturbation.** _Cell Rep._ 27, 3486–3499.e6.<br/>
 DOI: <http://dx.doi.org/10.1016/j.celrep.2019.05.079><br/>
+
+<br>
