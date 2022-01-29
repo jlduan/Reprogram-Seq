@@ -14,18 +14,13 @@ Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturba
 
 To reproduce figures:
 
-- [Unbiased reprogramming](http://htmlpreview.github.io/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdown_notebooks/unbiased_reprogramming.html)
-- [Rational epicardial reprogramming](http://htmlpreview.github.io/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdown_notebooks/rational_epicardial_reprogramming.html)
-- [Global reprogramming of transcription](http://htmlpreview.github.io/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/rmarkdown_notebooks/global_reprogramming_of_transcription.html)
-
-Experimenting:
-
-- [Clustering (SCANPY)](https://nbviewer.jupyter.org/github/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/cluster_scanpy.ipynb)
-- [Clustering (Seurat)](https://htmlpreview.github.io/?https://github.com/jlduan/Reprogram-Seq/blob/master/notebooks/jupyter_notebooks/cluster_seurat.html)
+- [Unbiased Reprogramming](https://jlduan.github.io/Reprogram-Seq/docs/unbiased_reprogramming.html)
+- [Rational Epicardial Reprogramming](https://jlduan.github.io/Reprogram-Seq/docs/rational_epicardial_reprogramming.html)
+- [Global Reprogramming of Transcription](https://jlduan.github.io/Reprogram-Seq/docs/global_reprogramming_of_transcription.html)
 
 ## Citation
 
-Jialei Duan, Boxun Li, Minoti Bhakta, Shiqi Xie, Pei Zhou, Nikhil V. Munshi, Gary C. Hon (2019). **Rational Reprogramming of Cellular States by Combinatorial Perturbation.** _Cell Rep._ 27, 3486–3499.e6.<br/>
+Jialei Duan#, Boxun Li#, Minoti Bhakta#, Shiqi Xie, Pei Zhou, Nikhil V. Munshi*, Gary C. Hon* (2019). **Rational Reprogramming of Cellular States by Combinatorial Perturbation.** _Cell Rep._ 27, 3486–3499.e6.<br/>
 DOI: <http://dx.doi.org/10.1016/j.celrep.2019.05.079><br/>
 
 <br>
