@@ -2,7 +2,7 @@
 
 Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturbation and computational analysis to predict, evaluate, and optimize TF combinations that reprogram a cell type of interest.
 
-***
+<br>
 
 ## Workflow
 
@@ -12,15 +12,13 @@ Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturba
 
 ## Code
 
-To reproduce figures:
+To reproduce results:
 
-- [Unbiased Reprogramming](https://jlduan.github.io/Reprogram-Seq/docs/unbiased_reprogramming.html)
-- [Rational Epicardial Reprogramming](https://jlduan.github.io/Reprogram-Seq/docs/rational_epicardial_reprogramming.html)
-- [Global Reprogramming of Transcription](https://jlduan.github.io/Reprogram-Seq/docs/global_reprogramming_of_transcription.html)
+- <https://jlduan.github.io/Reprogram-Seq>
 
 ## Citation
 
-Jialei Duan#, Boxun Li#, Minoti Bhakta#, Shiqi Xie, Pei Zhou, Nikhil V. Munshi*, Gary C. Hon* (2019). **Rational Reprogramming of Cellular States by Combinatorial Perturbation.** _Cell Rep._ 27, 3486–3499.e6.<br/>
+Jialei Duan#, Boxun Li#, Minoti Bhakta#, Shiqi Xie, Pei Zhou, Nikhil V. Munshi*, Gary C. Hon* (2019). **Rational Reprogramming of Cellular States by Combinatorial Perturbation.** *Cell Rep.* 27, 3486–3499.e6.<br/>
 DOI: <http://dx.doi.org/10.1016/j.celrep.2019.05.079><br/>
 
 <br>
