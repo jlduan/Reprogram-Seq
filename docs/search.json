@@ -88,7 +88,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "from datetime import datetime\ndatetime.today().strftime(\"%Y-%m-%d %H:%M:%S\")\n\n'2022-09-24 13:53:39'"
+    "text": "from datetime import datetime\ndatetime.today().strftime(\"%Y-%m-%d %H:%M:%S\")\n\n'2022-09-24 16:09:08'"
   },
   {
     "objectID": "unbiased_reprogramming.html#preparation",
