@@ -1,5 +1,7 @@
 # Reprogram-Seq
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7109590.svg)](https://doi.org/10.5281/zenodo.7109590)
+
 Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturbation and computational analysis to predict, evaluate, and optimize TF combinations that reprogram a cell type of interest.
 
 <br>
