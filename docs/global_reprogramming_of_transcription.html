@@ -280,7 +280,7 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Sat Sep 24, 2022 02:48:38-05:00</p>
+      <p class="date">Sat Sep 24, 2022 13:53:24-05:00</p>
     </div>
   </div>
   
@@ -309,7 +309,7 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
 <div class="cell">
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.time</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "2022-09-24 02:44:55 CDT"</code></pre>
+<pre><code>[1] "2022-09-24 13:49:38 CDT"</code></pre>
 </div>
 </div>
 <div class="cell">
@@ -347,9 +347,12 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
 </div>
 </section><section id="symbols" class="level3"><h3 class="anchored" data-anchor-id="symbols">Symbols</h3>
 <div class="cell">
+
+</div>
+<div class="cell">
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">PROJECT_DIR</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span></span>
 <span>    <span class="st">"/Users/jialei/Dropbox/Data/Projects/UTSW/Cellular_reprogramming"</span>,</span>
-<span>    <span class="st">"Cardiac_reprogramming/Data_submission/Github"</span></span>
+<span>    <span class="st">"Cardiac_reprogramming/Notebooks"</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
@@ -665,7 +668,7 @@ ideoms with `aes()`</code></pre>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-28-1.png" style="width:90.0%;height:90.0%" class="figure-img"></p>
+<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-29-1.png" style="width:90.0%;height:90.0%" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -719,15 +722,18 @@ ideoms with `aes()`</code></pre>
 <span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/tab_header.html">tab_header</a></span><span class="op">(</span></span>
 <span>        title <span class="op">=</span> <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/md.html">md</a></span><span class="op">(</span><span class="st">"**Monocle**; Cellular state"</span><span class="op">)</span></span>
+<span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/tab_options.html">tab_options</a></span><span class="op">(</span></span>
+<span>        table.width <span class="op">=</span> <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/pct.html">pct</a></span><span class="op">(</span><span class="fl">80</span><span class="op">)</span></span>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="hitsafavgd" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="nleqymjtqa" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#hitsafavgd) .gt_table {
+:where(#nleqymjtqa) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -737,7 +743,7 @@ ideoms with `aes()`</code></pre>
   font-weight: normal;
   font-style: normal;
   background-color: #FFFFFF;
-  width: auto;
+  width: 80%;
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #A8A8A8;
@@ -752,7 +758,7 @@ ideoms with `aes()`</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#hitsafavgd) .gt_heading {
+:where(#nleqymjtqa) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -764,7 +770,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#hitsafavgd) .gt_title {
+:where(#nleqymjtqa) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -776,7 +782,7 @@ ideoms with `aes()`</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#hitsafavgd) .gt_subtitle {
+:where(#nleqymjtqa) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -788,13 +794,13 @@ ideoms with `aes()`</code></pre>
   border-top-width: 0;
 }
 
-:where(#hitsafavgd) .gt_bottom_border {
+:where(#nleqymjtqa) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#hitsafavgd) .gt_col_headings {
+:where(#nleqymjtqa) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -809,7 +815,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#hitsafavgd) .gt_col_heading {
+:where(#nleqymjtqa) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -829,7 +835,7 @@ ideoms with `aes()`</code></pre>
   overflow-x: hidden;
 }
 
-:where(#hitsafavgd) .gt_column_spanner_outer {
+:where(#nleqymjtqa) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -841,15 +847,15 @@ ideoms with `aes()`</code></pre>
   padding-right: 4px;
 }
 
-:where(#hitsafavgd) .gt_column_spanner_outer:first-child {
+:where(#nleqymjtqa) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#hitsafavgd) .gt_column_spanner_outer:last-child {
+:where(#nleqymjtqa) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#hitsafavgd) .gt_column_spanner {
+:where(#nleqymjtqa) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -861,7 +867,7 @@ ideoms with `aes()`</code></pre>
   width: 100%;
 }
 
-:where(#hitsafavgd) .gt_group_heading {
+:where(#nleqymjtqa) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -887,7 +893,7 @@ ideoms with `aes()`</code></pre>
   text-align: left;
 }
 
-:where(#hitsafavgd) .gt_empty_group_heading {
+:where(#nleqymjtqa) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -902,15 +908,15 @@ ideoms with `aes()`</code></pre>
   vertical-align: middle;
 }
 
-:where(#hitsafavgd) .gt_from_md > :first-child {
+:where(#nleqymjtqa) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#hitsafavgd) .gt_from_md > :last-child {
+:where(#nleqymjtqa) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#hitsafavgd) .gt_row {
+:where(#nleqymjtqa) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -929,7 +935,7 @@ ideoms with `aes()`</code></pre>
   overflow-x: hidden;
 }
 
-:where(#hitsafavgd) .gt_stub {
+:where(#nleqymjtqa) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -942,7 +948,7 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#hitsafavgd) .gt_stub_row_group {
+:where(#nleqymjtqa) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -956,11 +962,11 @@ ideoms with `aes()`</code></pre>
   vertical-align: top;
 }
 
-:where(#hitsafavgd) .gt_row_group_first td {
+:where(#nleqymjtqa) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#hitsafavgd) .gt_summary_row {
+:where(#nleqymjtqa) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -970,16 +976,16 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#hitsafavgd) .gt_first_summary_row {
+:where(#nleqymjtqa) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#hitsafavgd) .gt_first_summary_row.thick {
+:where(#nleqymjtqa) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#hitsafavgd) .gt_last_summary_row {
+:where(#nleqymjtqa) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -989,7 +995,7 @@ ideoms with `aes()`</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#hitsafavgd) .gt_grand_summary_row {
+:where(#nleqymjtqa) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -999,7 +1005,7 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#hitsafavgd) .gt_first_grand_summary_row {
+:where(#nleqymjtqa) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1009,11 +1015,11 @@ ideoms with `aes()`</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#hitsafavgd) .gt_striped {
+:where(#nleqymjtqa) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#hitsafavgd) .gt_table_body {
+:where(#nleqymjtqa) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1022,7 +1028,7 @@ ideoms with `aes()`</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#hitsafavgd) .gt_footnotes {
+:where(#nleqymjtqa) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1036,7 +1042,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#hitsafavgd) .gt_footnote {
+:where(#nleqymjtqa) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1045,7 +1051,7 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#hitsafavgd) .gt_sourcenotes {
+:where(#nleqymjtqa) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1059,7 +1065,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#hitsafavgd) .gt_sourcenote {
+:where(#nleqymjtqa) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1067,64 +1073,64 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#hitsafavgd) .gt_left {
+:where(#nleqymjtqa) .gt_left {
   text-align: left;
 }
 
-:where(#hitsafavgd) .gt_center {
+:where(#nleqymjtqa) .gt_center {
   text-align: center;
 }
 
-:where(#hitsafavgd) .gt_right {
+:where(#nleqymjtqa) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#hitsafavgd) .gt_font_normal {
+:where(#nleqymjtqa) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#hitsafavgd) .gt_font_bold {
+:where(#nleqymjtqa) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#hitsafavgd) .gt_font_italic {
+:where(#nleqymjtqa) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#hitsafavgd) .gt_super {
+:where(#nleqymjtqa) .gt_super {
   font-size: 65%;
 }
 
-:where(#hitsafavgd) .gt_footnote_marks {
+:where(#nleqymjtqa) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#hitsafavgd) .gt_asterisk {
+:where(#nleqymjtqa) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#hitsafavgd) .gt_indent_1 {
+:where(#nleqymjtqa) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#hitsafavgd) .gt_indent_2 {
+:where(#nleqymjtqa) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#hitsafavgd) .gt_indent_3 {
+:where(#nleqymjtqa) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#hitsafavgd) .gt_indent_4 {
+:where(#nleqymjtqa) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#hitsafavgd) .gt_indent_5 {
+:where(#nleqymjtqa) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1253,7 +1259,7 @@ ideoms with `aes()`</code></pre>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display column-page">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-30-1.png" style="width:81.5%;height:81.5%" class="figure-img"></p>
+<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-31-1.png" style="width:81.5%;height:81.5%" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1319,12 +1325,12 @@ ideoms with `aes()`</code></pre>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="xclimqvewl" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="vkinrnkdsu" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#xclimqvewl) .gt_table {
+:where(#vkinrnkdsu) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1349,7 +1355,7 @@ ideoms with `aes()`</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#xclimqvewl) .gt_heading {
+:where(#vkinrnkdsu) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1361,7 +1367,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#xclimqvewl) .gt_title {
+:where(#vkinrnkdsu) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1373,7 +1379,7 @@ ideoms with `aes()`</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#xclimqvewl) .gt_subtitle {
+:where(#vkinrnkdsu) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1385,13 +1391,13 @@ ideoms with `aes()`</code></pre>
   border-top-width: 0;
 }
 
-:where(#xclimqvewl) .gt_bottom_border {
+:where(#vkinrnkdsu) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#xclimqvewl) .gt_col_headings {
+:where(#vkinrnkdsu) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1406,7 +1412,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#xclimqvewl) .gt_col_heading {
+:where(#vkinrnkdsu) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1426,7 +1432,7 @@ ideoms with `aes()`</code></pre>
   overflow-x: hidden;
 }
 
-:where(#xclimqvewl) .gt_column_spanner_outer {
+:where(#vkinrnkdsu) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1438,15 +1444,15 @@ ideoms with `aes()`</code></pre>
   padding-right: 4px;
 }
 
-:where(#xclimqvewl) .gt_column_spanner_outer:first-child {
+:where(#vkinrnkdsu) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#xclimqvewl) .gt_column_spanner_outer:last-child {
+:where(#vkinrnkdsu) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#xclimqvewl) .gt_column_spanner {
+:where(#vkinrnkdsu) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1458,7 +1464,7 @@ ideoms with `aes()`</code></pre>
   width: 100%;
 }
 
-:where(#xclimqvewl) .gt_group_heading {
+:where(#vkinrnkdsu) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1484,7 +1490,7 @@ ideoms with `aes()`</code></pre>
   text-align: left;
 }
 
-:where(#xclimqvewl) .gt_empty_group_heading {
+:where(#vkinrnkdsu) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1499,15 +1505,15 @@ ideoms with `aes()`</code></pre>
   vertical-align: middle;
 }
 
-:where(#xclimqvewl) .gt_from_md > :first-child {
+:where(#vkinrnkdsu) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#xclimqvewl) .gt_from_md > :last-child {
+:where(#vkinrnkdsu) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#xclimqvewl) .gt_row {
+:where(#vkinrnkdsu) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1526,7 +1532,7 @@ ideoms with `aes()`</code></pre>
   overflow-x: hidden;
 }
 
-:where(#xclimqvewl) .gt_stub {
+:where(#vkinrnkdsu) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1539,7 +1545,7 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#xclimqvewl) .gt_stub_row_group {
+:where(#vkinrnkdsu) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1553,11 +1559,11 @@ ideoms with `aes()`</code></pre>
   vertical-align: top;
 }
 
-:where(#xclimqvewl) .gt_row_group_first td {
+:where(#vkinrnkdsu) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#xclimqvewl) .gt_summary_row {
+:where(#vkinrnkdsu) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1567,16 +1573,16 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#xclimqvewl) .gt_first_summary_row {
+:where(#vkinrnkdsu) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#xclimqvewl) .gt_first_summary_row.thick {
+:where(#vkinrnkdsu) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#xclimqvewl) .gt_last_summary_row {
+:where(#vkinrnkdsu) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1586,7 +1592,7 @@ ideoms with `aes()`</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#xclimqvewl) .gt_grand_summary_row {
+:where(#vkinrnkdsu) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1596,7 +1602,7 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#xclimqvewl) .gt_first_grand_summary_row {
+:where(#vkinrnkdsu) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1606,11 +1612,11 @@ ideoms with `aes()`</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#xclimqvewl) .gt_striped {
+:where(#vkinrnkdsu) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#xclimqvewl) .gt_table_body {
+:where(#vkinrnkdsu) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1619,7 +1625,7 @@ ideoms with `aes()`</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#xclimqvewl) .gt_footnotes {
+:where(#vkinrnkdsu) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1633,7 +1639,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#xclimqvewl) .gt_footnote {
+:where(#vkinrnkdsu) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1642,7 +1648,7 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#xclimqvewl) .gt_sourcenotes {
+:where(#vkinrnkdsu) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1656,7 +1662,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#xclimqvewl) .gt_sourcenote {
+:where(#vkinrnkdsu) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1664,64 +1670,64 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#xclimqvewl) .gt_left {
+:where(#vkinrnkdsu) .gt_left {
   text-align: left;
 }
 
-:where(#xclimqvewl) .gt_center {
+:where(#vkinrnkdsu) .gt_center {
   text-align: center;
 }
 
-:where(#xclimqvewl) .gt_right {
+:where(#vkinrnkdsu) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#xclimqvewl) .gt_font_normal {
+:where(#vkinrnkdsu) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#xclimqvewl) .gt_font_bold {
+:where(#vkinrnkdsu) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#xclimqvewl) .gt_font_italic {
+:where(#vkinrnkdsu) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#xclimqvewl) .gt_super {
+:where(#vkinrnkdsu) .gt_super {
   font-size: 65%;
 }
 
-:where(#xclimqvewl) .gt_footnote_marks {
+:where(#vkinrnkdsu) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#xclimqvewl) .gt_asterisk {
+:where(#vkinrnkdsu) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#xclimqvewl) .gt_indent_1 {
+:where(#vkinrnkdsu) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#xclimqvewl) .gt_indent_2 {
+:where(#vkinrnkdsu) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#xclimqvewl) .gt_indent_3 {
+:where(#vkinrnkdsu) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#xclimqvewl) .gt_indent_4 {
+:where(#vkinrnkdsu) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#xclimqvewl) .gt_indent_5 {
+:where(#vkinrnkdsu) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1831,7 +1837,7 @@ ideoms with `aes()`</code></pre>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-32-1.png" style="width:90.0%;height:90.0%" class="figure-img"></p>
+<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-33-1.png" style="width:45.0%;height:45.0%" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1846,7 +1852,7 @@ ideoms with `aes()`</code></pre>
 <span><span class="fu">scales</span><span class="fu">::</span><span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html">show_col</a></span><span class="op">(</span><span class="va">color_palette</span>, borders <span class="op">=</span> <span class="cn">NA</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-33-1.png" style="width:40.0%;height:40.0%" class="figure-img"></p>
+<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-34-1.png" style="width:40.0%;height:40.0%" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1873,7 +1879,7 @@ ideoms with `aes()`</code></pre>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-34-1.png" style="width:60.0%;height:60.0%" class="figure-img"></p>
+<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-35-1.png" style="width:100.0%;height:100.0%" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -1955,7 +1961,7 @@ ideoms with `aes()`</code></pre>
 <span>    <span class="op">}</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-35-1.png" style="width:90.0%;height:90.0%" class="figure-img"></p>
+<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-36-1.png" style="width:90.0%;height:90.0%" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2007,7 +2013,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 </div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-36-1.png" style="width:90.0%;height:90.0%" class="figure-img"></p>
+<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-37-1.png" style="width:90.0%;height:90.0%" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2151,7 +2157,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display column-page">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-39-1.png" style="width:82.5%;height:82.5%" class="figure-img"></p>
+<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-40-1.png" style="width:81.5%;height:81.5%" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2351,7 +2357,10 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span>    <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_x_continuous</a></span><span class="op">(</span></span>
 <span>        name <span class="op">=</span> <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span></span>
 <span>            <span class="st">"Scaled pseudotime (state "</span>,</span>
-<span>            <span class="st">"{paste(LETTERS[as.integer(monocle_states_selected)], collapse = \"\")})"</span></span>
+<span>            <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span><span class="va">LETTERS</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/integer.html">as.integer</a></span><span class="op">(</span><span class="va">monocle_states_selected</span><span class="op">)</span><span class="op">]</span>,</span>
+<span>                collapse <span class="op">=</span> <span class="st">""</span></span>
+<span>            <span class="op">)</span>,</span>
+<span>            <span class="st">")"</span></span>
 <span>        <span class="op">)</span>,</span>
 <span>        breaks <span class="op">=</span> <span class="va">x_breaks</span></span>
 <span>    <span class="op">)</span> <span class="op">+</span></span>
@@ -2391,7 +2400,9 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <div class="sourceCode" id="cb52"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">g</span> <span class="op">&lt;-</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot_gtable.html">ggplot_gtable</a></span><span class="op">(</span><span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot_build.html">ggplot_build</a></span><span class="op">(</span><span class="va">p_kmeans</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">stript</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/which.html">which</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/grep.html">grepl</a></span><span class="op">(</span><span class="st">"strip-t"</span>, <span class="va">g</span><span class="op">$</span><span class="va">layout</span><span class="op">$</span><span class="va">name</span><span class="op">)</span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">colors_strip_background_fill</span> <span class="op">&lt;-</span> <span class="fu">ggthemes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ggthemes/man/tableau_color_pal.html">tableau_color_pal</a></span><span class="op">(</span><span class="st">"Tableau 10"</span><span class="op">)</span><span class="op">(</span>n <span class="op">=</span> <span class="va">NUM_CENTERS</span><span class="op">)</span></span>
+<span><span class="va">colors_strip_background_fill</span> <span class="op">&lt;-</span> <span class="fu">ggthemes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ggthemes/man/tableau_color_pal.html">tableau_color_pal</a></span><span class="op">(</span></span>
+<span>    <span class="st">"Tableau 10"</span></span>
+<span><span class="op">)</span><span class="op">(</span>n <span class="op">=</span> <span class="va">NUM_CENTERS</span><span class="op">)</span></span>
 <span><span class="va">colors_strip_background_fill</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
 <span>    <span class="va">colors_strip_background_fill</span><span class="op">[</span><span class="fl">4</span><span class="op">:</span><span class="fl">6</span><span class="op">]</span>,</span>
 <span>    <span class="va">colors_strip_background_fill</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">]</span></span>
@@ -2400,13 +2411,14 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span><span class="va">k</span> <span class="op">&lt;-</span> <span class="fl">1</span></span>
 <span><span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="va">stript</span><span class="op">)</span> <span class="op">{</span></span>
 <span>    <span class="va">j</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/which.html">which</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/grep.html">grepl</a></span><span class="op">(</span><span class="st">"rect"</span>, <span class="va">g</span><span class="op">$</span><span class="va">grobs</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">grobs</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">childrenOrder</span><span class="op">)</span><span class="op">)</span></span>
-<span>    <span class="va">g</span><span class="op">$</span><span class="va">grobs</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">grobs</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">children</span><span class="op">[[</span><span class="va">j</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">gp</span><span class="op">$</span><span class="va">fill</span> <span class="op">&lt;-</span> <span class="va">colors_strip_background_fill</span><span class="op">[</span><span class="va">k</span><span class="op">]</span></span>
+<span>    <span class="va">g</span><span class="op">$</span><span class="va">grobs</span><span class="op">[[</span><span class="va">i</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">grobs</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">children</span><span class="op">[[</span><span class="va">j</span><span class="op">]</span><span class="op">]</span><span class="op">$</span><span class="va">gp</span><span class="op">$</span><span class="va">fill</span> <span class="op">&lt;-</span></span>
+<span>        <span class="va">colors_strip_background_fill</span><span class="op">[</span><span class="va">k</span><span class="op">]</span></span>
 <span>    <span class="va">k</span> <span class="op">&lt;-</span> <span class="va">k</span> <span class="op">+</span> <span class="fl">1</span></span>
 <span><span class="op">}</span></span>
 <span><span class="fu">grid</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/grid/grid.draw.html">grid.draw</a></span><span class="op">(</span><span class="va">g</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-51-1.png" style="width:60.0%;height:60.0%" class="figure-img"></p>
+<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-52-1.png" style="width:60.0%;height:60.0%" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -2559,7 +2571,8 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span></span>
 <span><span class="co"># create heatmap</span></span>
 <span><span class="va">ht_reprogrammed</span> <span class="op">&lt;-</span> <span class="fu">ComplexHeatmap</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ComplexHeatmap/man/Heatmap.html">Heatmap</a></span><span class="op">(</span></span>
-<span>    matrix <span class="op">=</span> <span class="va">matrix_heatmap</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/colnames.html">colnames</a></span><span class="op">(</span><span class="va">matrix_heatmap_reprogrammed</span><span class="op">)</span><span class="op">]</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>    matrix <span class="op">=</span> <span class="va">matrix_heatmap</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/colnames.html">colnames</a></span><span class="op">(</span><span class="va">matrix_heatmap_reprogrammed</span><span class="op">)</span><span class="op">]</span> <span class="op">|&gt;</span></span>
+<span>        <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="op">)</span>,</span>
 <span>    rect_gp <span class="op">=</span> <span class="fu">grid</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/grid/gpar.html">gpar</a></span><span class="op">(</span>col <span class="op">=</span> <span class="cn">NA</span>, lwd <span class="op">=</span> <span class="fl">0</span><span class="op">)</span>,</span>
 <span>    col <span class="op">=</span> <span class="va">col_fun</span>,</span>
 <span>    <span class="co">#</span></span>
@@ -2784,7 +2797,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/heatmap-1.png" style="width:85.0%;height:85.0%" class="figure-img"></p>
+<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/heatmap-1.png" style="width:95.0%;height:95.0%" class="figure-img"></p>
 <p></p><figcaption class="figure-caption">Heatmap of the six gene-expression signatures. Columns indicate cells ordered by pseudotime (with primary epicardial cells at the far right); rows indicate genes. For visualization purposes, groups of 20 cells are binned.</figcaption><p></p>
 </figure>
 </div>
@@ -2900,7 +2913,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
  profvis          0.3.7         2020-11-02 [1] CRAN (R 4.2.0)
  promises         1.2.0.1       2021-02-11 [1] CRAN (R 4.2.0)
  ps               1.7.1         2022-06-18 [1] CRAN (R 4.2.0)
- purrr          * 0.9000.0.9000 2022-09-23 [1] Github (tidyverse/purrr@7b5578c)
+ purrr          * 0.9000.0.9000 2022-09-24 [1] Github (tidyverse/purrr@4ab13f5)
  qlcMatrix        0.9.7         2018-04-20 [1] CRAN (R 4.2.0)
  R.cache          0.16.0        2022-07-21 [1] CRAN (R 4.2.1)
  R.methodsS3      1.8.2         2022-06-13 [1] CRAN (R 4.2.0)
@@ -2916,8 +2929,8 @@ ENSMUSG00000042985_Upk3b </code></pre>
  remotes          2.4.2         2022-09-12 [1] Github (r-lib/remotes@bc0949d)
  reshape2         1.4.4         2020-04-09 [1] CRAN (R 4.2.0)
  rjson            0.2.21        2022-01-09 [1] CRAN (R 4.2.0)
- rlang            1.0.5.9000    2022-09-23 [1] Github (r-lib/rlang@a72c03c)
- rmarkdown        2.16.1        2022-08-25 [1] Github (rstudio/rmarkdown@b8a9879)
+ rlang            1.0.6         2022-09-24 [1] Github (r-lib/rlang@66454bd)
+ rmarkdown        2.16.1        2022-09-24 [1] Github (rstudio/rmarkdown@9577707)
  Rtsne            0.16          2022-09-12 [1] Github (jkrijthe/Rtsne@55aad4a)
  Rttf2pt1         1.3.10        2022-02-07 [1] CRAN (R 4.2.0)
  S4Vectors        0.34.0        2022-04-26 [1] Bioconductor
@@ -2933,7 +2946,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
  styler         * 1.7.0.9002    2022-09-21 [1] Github (r-lib/styler@1f4437b)
  systemfonts      1.0.4         2022-02-11 [1] CRAN (R 4.2.0)
  textshaping      0.3.6         2021-10-13 [1] CRAN (R 4.2.0)
- tibble         * 3.1.8.9001    2022-09-23 [1] Github (tidyverse/tibble@eb132e7)
+ tibble         * 3.1.8.9002    2022-09-24 [1] Github (tidyverse/tibble@e9db4f4)
  tidyr          * 1.2.1.9000    2022-09-09 [1] Github (tidyverse/tidyr@653def2)
  tidyselect       1.1.2.9000    2022-09-21 [1] Github (r-lib/tidyselect@edd0a3b)
  tidyverse      * 1.3.2.9000    2022-09-12 [1] Github (tidyverse/tidyverse@3be8283)
@@ -3261,7 +3274,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       <div class="nav-footer-center">
         <ul class="footer-items list-unstyled">
 <li class="nav-item">
-    <a class="nav-link" href="https://github.com/jlduan/Reprogram-Seq/blob/main/LICENSE"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> License</a>
+    <a class="nav-link" href="https://github.com/jlduan/Reprogram-Seq/blob/master/LICENSE"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> License</a>
   </li>  
     <li class="nav-item">
     <a class="nav-link" href="./about.html"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> About</a>
