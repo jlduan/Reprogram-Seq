@@ -280,7 +280,7 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Sat Sep 24, 2022 01:03:52-05:00</p>
+      <p class="date">Sat Sep 24, 2022 02:48:38-05:00</p>
     </div>
   </div>
   
@@ -289,7 +289,7 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
     <div class="quarto-title-meta-heading">Doi</div>
     <div class="quarto-title-meta-contents">
       <p class="doi">
-        <a href="https://doi.org/10.1016/j.celrep.2019.05.079">10.1016/j.celrep.2019.05.079</a>
+        <a href="https://doi.org/10.5281/zenodo.7109590">10.5281/zenodo.7109590</a>
       </p>
     </div>
   </div>
@@ -309,7 +309,7 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
 <div class="cell">
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.time</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "2022-09-24 01:00:07 CDT"</code></pre>
+<pre><code>[1] "2022-09-24 02:44:55 CDT"</code></pre>
 </div>
 </div>
 <div class="cell">
@@ -331,8 +331,7 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://Matrix.R-forge.R-project.org/">Matrix</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://patchwork.data-imaginist.com">patchwork</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/wch/extrafont">extrafont</a></span><span class="op">)</span></span>
-<span><span class="co"># library(monocle)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/wch/extrafont">extrafont</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 
@@ -421,31 +420,74 @@ ENSMUSG00000109048 ENSMUSG00000025902
 <span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">matrix_readcount_use</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">5</span><span class="op">]</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>                           BL5_AAACCTGCACTACAGT BL5_AAACCTGCAGTACACT
-ENSMUSG00000051951_Xkr4                       0                    0
-ENSMUSG00000089699_Gm1992                     0                    0
-ENSMUSG00000102343_Gm37381                    0                    0
-ENSMUSG00000025900_Rp1                        0                    0
-ENSMUSG00000109048_Rp1                        0                    0
-                           BL5_AAACCTGGTTCACGGC BL5_AAACCTGGTTGCTCCT
-ENSMUSG00000051951_Xkr4                       0                    0
-ENSMUSG00000089699_Gm1992                     0                    0
-ENSMUSG00000102343_Gm37381                    0                    0
-ENSMUSG00000025900_Rp1                        0                    0
-ENSMUSG00000109048_Rp1                        0                    0
-                           BL5_AAACCTGTCCAACCAA
-ENSMUSG00000051951_Xkr4                       0
-ENSMUSG00000089699_Gm1992                     0
-ENSMUSG00000102343_Gm37381                    0
-ENSMUSG00000025900_Rp1                        0
-ENSMUSG00000109048_Rp1                        0</code></pre>
+<span>    <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>    <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">BL5_AAACCTGCACTACAGT</th>
+<th style="text-align: right;">BL5_AAACCTGCAGTACACT</th>
+<th style="text-align: right;">BL5_AAACCTGGTTCACGGC</th>
+<th style="text-align: right;">BL5_AAACCTGGTTGCTCCT</th>
+<th style="text-align: right;">BL5_AAACCTGTCCAACCAA</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ENSMUSG00000051951_Xkr4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ENSMUSG00000089699_Gm1992</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ENSMUSG00000102343_Gm37381</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ENSMUSG00000025900_Rp1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ENSMUSG00000109048_Rp1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </section><section id="celldataset" class="level3"><h3 class="anchored" data-anchor-id="celldataset">CellDataSet</h3>
 <div class="cell">
-<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">monocle2_result</span> <span class="op">&lt;-</span> <span class="fu">extract_monocle2_result</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">monocle2_result</span> <span class="op">&lt;-</span> <span class="fu">extract_monocle2_result</span><span class="op">(</span></span>
 <span>    cell_dataset <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/readRDS.html">readRDS</a></span><span class="op">(</span></span>
 <span>        file <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span></span>
 <span>            <span class="va">PROJECT_DIR</span>, <span class="st">"data/10x/epicardial_3f_d7"</span>,</span>
@@ -455,7 +497,7 @@ ENSMUSG00000109048_Rp1                        0</code></pre>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">monocle2_result</span><span class="op">$</span><span class="va">data</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">monocle2_result</span><span class="op">$</span><span class="va">data</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 22693    11</code></pre>
 </div>
@@ -463,7 +505,7 @@ ENSMUSG00000109048_Rp1                        0</code></pre>
 <p><br></p>
 <p>Check memory usage.</p>
 <div class="cell">
-<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">purrr</span><span class="fu">::</span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html">walk</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">purrr</span><span class="fu">::</span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html">walk</a></span><span class="op">(</span></span>
 <span>    <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">matrix_readcount_use</span>, <span class="va">monocle2_result</span><span class="op">)</span>, \<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
 <span>        <span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/object.size.html">object.size</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>, units <span class="op">=</span> <span class="st">"auto"</span>, standard <span class="op">=</span> <span class="st">"SI"</span><span class="op">)</span></span>
 <span>    <span class="op">}</span></span>
@@ -474,12 +516,12 @@ ENSMUSG00000109048_Rp1                        0</code></pre>
 </div>
 </div>
 <p><br></p>
-</section></section><section id="trajectory" class="level2"><h2 class="anchored" data-anchor-id="trajectory">Trajectory</h2>
+</section></section><section id="trajectory" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="trajectory">Trajectory</h2>
 <div class="cell">
 
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x_column</span> <span class="op">&lt;-</span> <span class="st">"x_monocle"</span></span>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x_column</span> <span class="op">&lt;-</span> <span class="st">"x_monocle"</span></span>
 <span><span class="va">y_column</span> <span class="op">&lt;-</span> <span class="st">"y_monocle"</span></span>
 <span></span>
 <span><span class="va">GEOM_POINT_SIZE</span> <span class="op">&lt;-</span> <span class="fl">0.5</span></span>
@@ -487,7 +529,7 @@ ENSMUSG00000109048_Rp1                        0</code></pre>
 <span><span class="va">RASTERISED</span> <span class="op">&lt;-</span> <span class="cn">FALSE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">embedding</span> <span class="op">&lt;-</span> <span class="va">monocle2_result</span><span class="op">$</span><span class="va">data</span> <span class="op">|&gt;</span></span>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">embedding</span> <span class="op">&lt;-</span> <span class="va">monocle2_result</span><span class="op">$</span><span class="va">data</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
 <span>        group <span class="op">=</span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/case_when.html">case_when</a></span><span class="op">(</span></span>
 <span>            <span class="va">category</span> <span class="op"><a href="https://rdrr.io/r/base/match.html">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"BL18"</span><span class="op">)</span> <span class="op">~</span> <span class="st">"10F, D14"</span>,</span>
@@ -507,7 +549,7 @@ ENSMUSG00000109048_Rp1                        0</code></pre>
 <span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/rename.html">rename</a></span><span class="op">(</span>cell <span class="op">=</span> <span class="va">sample_name</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p_embedding_pseudotime</span> <span class="op">&lt;-</span> <span class="fu">plot_embedding</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p_embedding_pseudotime</span> <span class="op">&lt;-</span> <span class="fu">plot_embedding</span><span class="op">(</span></span>
 <span>    data <span class="op">=</span> <span class="va">embedding</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">x_column</span>, <span class="va">y_column</span><span class="op">)</span><span class="op">]</span>,</span>
 <span>    color <span class="op">=</span> <span class="va">embedding</span><span class="op">$</span><span class="va">pseudotime</span>,</span>
 <span>    label <span class="op">=</span> <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"{EMBEDDING_TITLE_PREFIX}; Pseudotime"</span><span class="op">)</span>,</span>
@@ -535,19 +577,13 @@ ENSMUSG00000109048_Rp1                        0</code></pre>
 <span>    na.rm <span class="op">=</span> <span class="cn">TRUE</span>,</span>
 <span>    color <span class="op">=</span> <span class="st">"#2196F3"</span>,</span>
 <span>    linetype <span class="op">=</span> <span class="st">"solid"</span>,</span>
-<span>    size <span class="op">=</span> <span class="fl">.25</span></span>
+<span>    linewidth <span class="op">=</span> <span class="fl">.25</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: `aes_string()` was deprecated in ggplot2 3.0.0. Please use tidy evaluation
 ideoms with `aes()`</code></pre>
 </div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0. Please use
-`linewidth` instead.
-ℹ The deprecated feature was likely used in the ggplot2 package.
-  Please report the issue at &lt;https://github.com/tidyverse/ggplot2/issues&gt;.</code></pre>
-</div>
-<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">layers</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">layers</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>    <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span></span>
 <span>        data <span class="op">=</span> <span class="va">color_labels</span>,</span>
 <span>        <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span><span class="op">)</span>,</span>
@@ -573,7 +609,7 @@ ideoms with `aes()`</code></pre>
 <span>    <span class="va">layers</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p_embedding_UMI</span> <span class="op">&lt;-</span> <span class="fu">plot_embedding</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p_embedding_UMI</span> <span class="op">&lt;-</span> <span class="fu">plot_embedding</span><span class="op">(</span></span>
 <span>    data <span class="op">=</span> <span class="va">embedding</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">x_column</span>, <span class="va">y_column</span><span class="op">)</span><span class="op">]</span>,</span>
 <span>    color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log10</a></span><span class="op">(</span><span class="fu">Matrix</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Matrix/man/colSums.html">colSums</a></span><span class="op">(</span><span class="va">matrix_readcount_use</span><span class="op">[</span>, <span class="va">embedding</span><span class="op">$</span><span class="va">cell</span><span class="op">]</span><span class="op">)</span><span class="op">)</span>,</span>
 <span>    label <span class="op">=</span> <span class="fu">glue</span><span class="fu">::</span><span class="fu"><a href="https://glue.tidyverse.org/reference/glue.html">glue</a></span><span class="op">(</span><span class="st">"{EMBEDDING_TITLE_PREFIX}; UMI"</span><span class="op">)</span>,</span>
@@ -584,7 +620,7 @@ ideoms with `aes()`</code></pre>
 <span>    <span class="va">geom_segment_layer</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p_embedding_backbone</span> <span class="op">&lt;-</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p_embedding_backbone</span> <span class="op">&lt;-</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html">facet_wrap</a></span><span class="op">(</span><span class="cn">NA</span><span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="va">geom_segment_layer</span> <span class="op">+</span></span>
 <span>    <span class="fu">theme_customized_embedding</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
@@ -597,7 +633,7 @@ ideoms with `aes()`</code></pre>
 <span>    <span class="va">layers</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p_embedding_MT</span> <span class="op">&lt;-</span> <span class="fu">plot_embedding</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p_embedding_MT</span> <span class="op">&lt;-</span> <span class="fu">plot_embedding</span><span class="op">(</span></span>
 <span>    data <span class="op">=</span> <span class="va">embedding</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">x_column</span>, <span class="va">y_column</span><span class="op">)</span><span class="op">]</span>,</span>
 <span>    color <span class="op">=</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/Matrix/man/colSums.html">colSums</a></span><span class="op">(</span><span class="va">matrix_readcount_use</span><span class="op">[</span></span>
 <span>        <span class="fu">stringr</span><span class="fu">::</span><span class="fu"><a href="https://stringr.tidyverse.org/reference/str_detect.html">str_detect</a></span><span class="op">(</span></span>
@@ -616,7 +652,7 @@ ideoms with `aes()`</code></pre>
 <span>    <span class="va">geom_segment_layer</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>    <span class="va">p_embedding_backbone</span>,</span>
 <span>    <span class="va">p_embedding_pseudotime</span>,</span>
 <span>    <span class="va">p_embedding_UMI</span>,</span>
@@ -634,9 +670,9 @@ ideoms with `aes()`</code></pre>
 </div>
 </div>
 </div>
-<section id="cellular-state" class="level3"><h3 class="anchored" data-anchor-id="cellular-state">Cellular state</h3>
+<section id="cellular-state" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="cellular-state">Cellular state</h3>
 <div class="cell">
-<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">embedding</span> <span class="op">|&gt;</span></span>
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">embedding</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
 <span>        num_umis <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/Matrix/man/colSums.html">colSums</a></span><span class="op">(</span><span class="va">matrix_readcount_use</span><span class="op">[</span>, <span class="va">cell</span><span class="op">]</span><span class="op">)</span>,</span>
 <span>        num_features <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/Matrix/man/colSums.html">colSums</a></span><span class="op">(</span><span class="va">matrix_readcount_use</span><span class="op">[</span>, <span class="va">cell</span><span class="op">]</span> <span class="op">&gt;</span> <span class="fl">0</span><span class="op">)</span>,</span>
@@ -686,12 +722,12 @@ ideoms with `aes()`</code></pre>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="qtvccvnoyz" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="hitsafavgd" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#qtvccvnoyz) .gt_table {
+:where(#hitsafavgd) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -716,7 +752,7 @@ ideoms with `aes()`</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#qtvccvnoyz) .gt_heading {
+:where(#hitsafavgd) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -728,7 +764,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#qtvccvnoyz) .gt_title {
+:where(#hitsafavgd) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -740,7 +776,7 @@ ideoms with `aes()`</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#qtvccvnoyz) .gt_subtitle {
+:where(#hitsafavgd) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -752,13 +788,13 @@ ideoms with `aes()`</code></pre>
   border-top-width: 0;
 }
 
-:where(#qtvccvnoyz) .gt_bottom_border {
+:where(#hitsafavgd) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#qtvccvnoyz) .gt_col_headings {
+:where(#hitsafavgd) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -773,7 +809,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#qtvccvnoyz) .gt_col_heading {
+:where(#hitsafavgd) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -793,7 +829,7 @@ ideoms with `aes()`</code></pre>
   overflow-x: hidden;
 }
 
-:where(#qtvccvnoyz) .gt_column_spanner_outer {
+:where(#hitsafavgd) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -805,15 +841,15 @@ ideoms with `aes()`</code></pre>
   padding-right: 4px;
 }
 
-:where(#qtvccvnoyz) .gt_column_spanner_outer:first-child {
+:where(#hitsafavgd) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#qtvccvnoyz) .gt_column_spanner_outer:last-child {
+:where(#hitsafavgd) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#qtvccvnoyz) .gt_column_spanner {
+:where(#hitsafavgd) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -825,7 +861,7 @@ ideoms with `aes()`</code></pre>
   width: 100%;
 }
 
-:where(#qtvccvnoyz) .gt_group_heading {
+:where(#hitsafavgd) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -851,7 +887,7 @@ ideoms with `aes()`</code></pre>
   text-align: left;
 }
 
-:where(#qtvccvnoyz) .gt_empty_group_heading {
+:where(#hitsafavgd) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -866,15 +902,15 @@ ideoms with `aes()`</code></pre>
   vertical-align: middle;
 }
 
-:where(#qtvccvnoyz) .gt_from_md > :first-child {
+:where(#hitsafavgd) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#qtvccvnoyz) .gt_from_md > :last-child {
+:where(#hitsafavgd) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#qtvccvnoyz) .gt_row {
+:where(#hitsafavgd) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -893,7 +929,7 @@ ideoms with `aes()`</code></pre>
   overflow-x: hidden;
 }
 
-:where(#qtvccvnoyz) .gt_stub {
+:where(#hitsafavgd) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -906,7 +942,7 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#qtvccvnoyz) .gt_stub_row_group {
+:where(#hitsafavgd) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -920,11 +956,11 @@ ideoms with `aes()`</code></pre>
   vertical-align: top;
 }
 
-:where(#qtvccvnoyz) .gt_row_group_first td {
+:where(#hitsafavgd) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#qtvccvnoyz) .gt_summary_row {
+:where(#hitsafavgd) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -934,16 +970,16 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#qtvccvnoyz) .gt_first_summary_row {
+:where(#hitsafavgd) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#qtvccvnoyz) .gt_first_summary_row.thick {
+:where(#hitsafavgd) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#qtvccvnoyz) .gt_last_summary_row {
+:where(#hitsafavgd) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -953,7 +989,7 @@ ideoms with `aes()`</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#qtvccvnoyz) .gt_grand_summary_row {
+:where(#hitsafavgd) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -963,7 +999,7 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#qtvccvnoyz) .gt_first_grand_summary_row {
+:where(#hitsafavgd) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -973,11 +1009,11 @@ ideoms with `aes()`</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#qtvccvnoyz) .gt_striped {
+:where(#hitsafavgd) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#qtvccvnoyz) .gt_table_body {
+:where(#hitsafavgd) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -986,7 +1022,7 @@ ideoms with `aes()`</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#qtvccvnoyz) .gt_footnotes {
+:where(#hitsafavgd) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1000,7 +1036,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#qtvccvnoyz) .gt_footnote {
+:where(#hitsafavgd) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1009,7 +1045,7 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#qtvccvnoyz) .gt_sourcenotes {
+:where(#hitsafavgd) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1023,7 +1059,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#qtvccvnoyz) .gt_sourcenote {
+:where(#hitsafavgd) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1031,64 +1067,64 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#qtvccvnoyz) .gt_left {
+:where(#hitsafavgd) .gt_left {
   text-align: left;
 }
 
-:where(#qtvccvnoyz) .gt_center {
+:where(#hitsafavgd) .gt_center {
   text-align: center;
 }
 
-:where(#qtvccvnoyz) .gt_right {
+:where(#hitsafavgd) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#qtvccvnoyz) .gt_font_normal {
+:where(#hitsafavgd) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#qtvccvnoyz) .gt_font_bold {
+:where(#hitsafavgd) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#qtvccvnoyz) .gt_font_italic {
+:where(#hitsafavgd) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#qtvccvnoyz) .gt_super {
+:where(#hitsafavgd) .gt_super {
   font-size: 65%;
 }
 
-:where(#qtvccvnoyz) .gt_footnote_marks {
+:where(#hitsafavgd) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#qtvccvnoyz) .gt_asterisk {
+:where(#hitsafavgd) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#qtvccvnoyz) .gt_indent_1 {
+:where(#hitsafavgd) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#qtvccvnoyz) .gt_indent_2 {
+:where(#hitsafavgd) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#qtvccvnoyz) .gt_indent_3 {
+:where(#hitsafavgd) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#qtvccvnoyz) .gt_indent_4 {
+:where(#hitsafavgd) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#qtvccvnoyz) .gt_indent_5 {
+:where(#hitsafavgd) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1194,8 +1230,8 @@ ideoms with `aes()`</code></pre>
 </div>
 </div>
 </div>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">purrr</span><span class="fu">::</span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html">map</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/levels.html">levels</a></span><span class="op">(</span><span class="va">embedding</span><span class="op">$</span><span class="va">state</span><span class="op">)</span>, \<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
+<div class="cell page-columns page-full" data-layout-align="center">
+<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">purrr</span><span class="fu">::</span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html">map</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/levels.html">levels</a></span><span class="op">(</span><span class="va">embedding</span><span class="op">$</span><span class="va">state</span><span class="op">)</span>, \<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
 <span>    <span class="fu">plot_embedding</span><span class="op">(</span></span>
 <span>        data <span class="op">=</span> <span class="va">embedding</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">x_column</span>, <span class="va">y_column</span><span class="op">)</span><span class="op">]</span>,</span>
 <span>        color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/integer.html">as.integer</a></span><span class="op">(</span><span class="va">embedding</span><span class="op">$</span><span class="va">state</span> <span class="op">==</span> <span class="va">x</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span><span class="op">(</span><span class="op">)</span>,</span>
@@ -1215,16 +1251,16 @@ ideoms with `aes()`</code></pre>
 <span>    <span class="fu">patchwork</span><span class="fu">::</span><span class="fu"><a href="https://patchwork.data-imaginist.com/reference/plot_annotation.html">plot_annotation</a></span><span class="op">(</span></span>
 <span>        theme <span class="op">=</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op">(</span>plot.margin <span class="op">=</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html">margin</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
+<div class="cell-output-display column-page">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-30-1.png" style="width:100.0%;height:100.0%" class="figure-img"></p>
+<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-30-1.png" style="width:81.5%;height:81.5%" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 </section><section id="group" class="level3"><h3 class="anchored" data-anchor-id="group">Group</h3>
 <div class="cell">
-<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">embedding</span> <span class="op">|&gt;</span></span>
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">embedding</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
 <span>        num_umis <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/Matrix/man/colSums.html">colSums</a></span><span class="op">(</span><span class="va">matrix_readcount_use</span><span class="op">[</span>, <span class="va">cell</span><span class="op">]</span><span class="op">)</span>,</span>
 <span>        num_features <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/Matrix/man/colSums.html">colSums</a></span><span class="op">(</span><span class="va">matrix_readcount_use</span><span class="op">[</span>, <span class="va">cell</span><span class="op">]</span> <span class="op">&gt;</span> <span class="fl">0</span><span class="op">)</span>,</span>
@@ -1283,12 +1319,12 @@ ideoms with `aes()`</code></pre>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="iauuoqopaw" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="xclimqvewl" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#iauuoqopaw) .gt_table {
+:where(#xclimqvewl) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1313,7 +1349,7 @@ ideoms with `aes()`</code></pre>
   border-left-color: #D3D3D3;
 }
 
-:where(#iauuoqopaw) .gt_heading {
+:where(#xclimqvewl) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1325,7 +1361,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#iauuoqopaw) .gt_title {
+:where(#xclimqvewl) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1337,7 +1373,7 @@ ideoms with `aes()`</code></pre>
   border-bottom-width: 0;
 }
 
-:where(#iauuoqopaw) .gt_subtitle {
+:where(#xclimqvewl) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1349,13 +1385,13 @@ ideoms with `aes()`</code></pre>
   border-top-width: 0;
 }
 
-:where(#iauuoqopaw) .gt_bottom_border {
+:where(#xclimqvewl) .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#iauuoqopaw) .gt_col_headings {
+:where(#xclimqvewl) .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1370,7 +1406,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#iauuoqopaw) .gt_col_heading {
+:where(#xclimqvewl) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1390,7 +1426,7 @@ ideoms with `aes()`</code></pre>
   overflow-x: hidden;
 }
 
-:where(#iauuoqopaw) .gt_column_spanner_outer {
+:where(#xclimqvewl) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1402,15 +1438,15 @@ ideoms with `aes()`</code></pre>
   padding-right: 4px;
 }
 
-:where(#iauuoqopaw) .gt_column_spanner_outer:first-child {
+:where(#xclimqvewl) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#iauuoqopaw) .gt_column_spanner_outer:last-child {
+:where(#xclimqvewl) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#iauuoqopaw) .gt_column_spanner {
+:where(#xclimqvewl) .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1422,7 +1458,7 @@ ideoms with `aes()`</code></pre>
   width: 100%;
 }
 
-:where(#iauuoqopaw) .gt_group_heading {
+:where(#xclimqvewl) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1448,7 +1484,7 @@ ideoms with `aes()`</code></pre>
   text-align: left;
 }
 
-:where(#iauuoqopaw) .gt_empty_group_heading {
+:where(#xclimqvewl) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1463,15 +1499,15 @@ ideoms with `aes()`</code></pre>
   vertical-align: middle;
 }
 
-:where(#iauuoqopaw) .gt_from_md > :first-child {
+:where(#xclimqvewl) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#iauuoqopaw) .gt_from_md > :last-child {
+:where(#xclimqvewl) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#iauuoqopaw) .gt_row {
+:where(#xclimqvewl) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1490,7 +1526,7 @@ ideoms with `aes()`</code></pre>
   overflow-x: hidden;
 }
 
-:where(#iauuoqopaw) .gt_stub {
+:where(#xclimqvewl) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1503,7 +1539,7 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#iauuoqopaw) .gt_stub_row_group {
+:where(#xclimqvewl) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1517,11 +1553,11 @@ ideoms with `aes()`</code></pre>
   vertical-align: top;
 }
 
-:where(#iauuoqopaw) .gt_row_group_first td {
+:where(#xclimqvewl) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#iauuoqopaw) .gt_summary_row {
+:where(#xclimqvewl) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1531,16 +1567,16 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#iauuoqopaw) .gt_first_summary_row {
+:where(#xclimqvewl) .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#iauuoqopaw) .gt_first_summary_row.thick {
+:where(#xclimqvewl) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#iauuoqopaw) .gt_last_summary_row {
+:where(#xclimqvewl) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1550,7 +1586,7 @@ ideoms with `aes()`</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#iauuoqopaw) .gt_grand_summary_row {
+:where(#xclimqvewl) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1560,7 +1596,7 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#iauuoqopaw) .gt_first_grand_summary_row {
+:where(#xclimqvewl) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1570,11 +1606,11 @@ ideoms with `aes()`</code></pre>
   border-top-color: #D3D3D3;
 }
 
-:where(#iauuoqopaw) .gt_striped {
+:where(#xclimqvewl) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#iauuoqopaw) .gt_table_body {
+:where(#xclimqvewl) .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1583,7 +1619,7 @@ ideoms with `aes()`</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-:where(#iauuoqopaw) .gt_footnotes {
+:where(#xclimqvewl) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1597,7 +1633,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#iauuoqopaw) .gt_footnote {
+:where(#xclimqvewl) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -1606,7 +1642,7 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#iauuoqopaw) .gt_sourcenotes {
+:where(#xclimqvewl) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1620,7 +1656,7 @@ ideoms with `aes()`</code></pre>
   border-right-color: #D3D3D3;
 }
 
-:where(#iauuoqopaw) .gt_sourcenote {
+:where(#xclimqvewl) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1628,64 +1664,64 @@ ideoms with `aes()`</code></pre>
   padding-right: 5px;
 }
 
-:where(#iauuoqopaw) .gt_left {
+:where(#xclimqvewl) .gt_left {
   text-align: left;
 }
 
-:where(#iauuoqopaw) .gt_center {
+:where(#xclimqvewl) .gt_center {
   text-align: center;
 }
 
-:where(#iauuoqopaw) .gt_right {
+:where(#xclimqvewl) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#iauuoqopaw) .gt_font_normal {
+:where(#xclimqvewl) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#iauuoqopaw) .gt_font_bold {
+:where(#xclimqvewl) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#iauuoqopaw) .gt_font_italic {
+:where(#xclimqvewl) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#iauuoqopaw) .gt_super {
+:where(#xclimqvewl) .gt_super {
   font-size: 65%;
 }
 
-:where(#iauuoqopaw) .gt_footnote_marks {
+:where(#xclimqvewl) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#iauuoqopaw) .gt_asterisk {
+:where(#xclimqvewl) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#iauuoqopaw) .gt_indent_1 {
+:where(#xclimqvewl) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#iauuoqopaw) .gt_indent_2 {
+:where(#xclimqvewl) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#iauuoqopaw) .gt_indent_3 {
+:where(#xclimqvewl) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#iauuoqopaw) .gt_indent_4 {
+:where(#xclimqvewl) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#iauuoqopaw) .gt_indent_5 {
+:where(#xclimqvewl) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1764,7 +1800,7 @@ ideoms with `aes()`</code></pre>
 </div>
 </div>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>    <span class="fu">plot_embedding</span><span class="op">(</span></span>
 <span>        data <span class="op">=</span> <span class="va">embedding</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">x_column</span>, <span class="va">y_column</span><span class="op">)</span><span class="op">]</span>,</span>
 <span>        color <span class="op">=</span> <span class="va">embedding</span><span class="op">$</span><span class="va">group</span>,</span>
@@ -1802,7 +1838,7 @@ ideoms with `aes()`</code></pre>
 </div>
 </section><section id="composition" class="level3"><h3 class="anchored" data-anchor-id="composition">Composition</h3>
 <div class="cell" data-layout-align="center" data-fig.format="svg">
-<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">color_palette</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/setNames.html">setNames</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">color_palette</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/setNames.html">setNames</a></span><span class="op">(</span></span>
 <span>    object <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"#e37b3e"</span>, <span class="st">"#44b29c"</span>, <span class="st">"#de5a49"</span>, <span class="st">"#f7a8a5"</span>, <span class="st">"#f0ca4e"</span><span class="op">)</span>,</span>
 <span>    nm <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Primary"</span>, <span class="st">"3F, D7"</span>, <span class="st">"10F, D14"</span>, <span class="st">"10F, D7"</span>, <span class="st">"Uninfected"</span><span class="op">)</span></span>
 <span><span class="op">)</span></span>
@@ -1816,7 +1852,7 @@ ideoms with `aes()`</code></pre>
 </div>
 </div>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode" id="cb38"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">calc_group_composition</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">calc_group_composition</span><span class="op">(</span></span>
 <span>    data <span class="op">=</span> <span class="va">embedding</span>,</span>
 <span>    x <span class="op">=</span> <span class="st">"state"</span>,</span>
 <span>    group <span class="op">=</span> <span class="st">"group"</span></span>
@@ -1843,7 +1879,7 @@ ideoms with `aes()`</code></pre>
 </div>
 </div>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode" id="cb39"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">calc_group_composition</span><span class="op">(</span></span>
+<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">calc_group_composition</span><span class="op">(</span></span>
 <span>    data <span class="op">=</span> <span class="va">embedding</span>,</span>
 <span>    x <span class="op">=</span> <span class="st">"state"</span>,</span>
 <span>    group <span class="op">=</span> <span class="st">"group"</span></span>
@@ -1926,7 +1962,7 @@ ideoms with `aes()`</code></pre>
 </div>
 </section></section><section id="expression" class="level2"><h2 class="anchored" data-anchor-id="expression">Expression</h2>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode" id="cb40"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">FEATURES_SELECTED</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb38"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">FEATURES_SELECTED</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
 <span>    <span class="st">"ENSMUSG00000016458_Wt1"</span>,</span>
 <span>    <span class="st">"ENSMUSG00000025105_Bnc1"</span>,</span>
 <span>    <span class="st">"ENSMUSG00000036098_Myrf"</span>,</span>
@@ -1978,7 +2014,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 </div>
 </section><section id="enrichment-of-exogenous-factors" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="enrichment-of-exogenous-factors">Enrichment of exogenous factors</h2>
 <div class="cell">
-<div class="sourceCode" id="cb42"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">features_selected_10</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb40"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">features_selected_10</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
 <span>    <span class="st">"ENSMUSG00000026628_Atf3"</span>,</span>
 <span>    <span class="st">"ENSMUSG00000016458_Wt1"</span>,</span>
 <span>    <span class="st">"ENSMUSG00000025105_Bnc1"</span>,</span>
@@ -1992,7 +2028,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">states_selected</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/levels.html">levels</a></span><span class="op">(</span><span class="va">embedding</span><span class="op">$</span><span class="va">state</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">states_selected</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/levels.html">levels</a></span><span class="op">(</span><span class="va">embedding</span><span class="op">$</span><span class="va">state</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">enriched_factors</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/do.call.html">do.call</a></span><span class="op">(</span></span>
 <span>    <span class="va">rbind.data.frame</span>,</span>
@@ -2039,9 +2075,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 </div>
 </div>
 <div class="cell page-columns page-full" data-layout-align="center">
-<div class="sourceCode" id="cb45"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">`%+replace%`</span> <span class="op">&lt;-</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="va">`%+replace%`</span></span>
-<span></span>
-<span><span class="va">enriched_factors</span> <span class="op">&lt;-</span> <span class="va">enriched_factors</span> <span class="op">|&gt;</span></span>
+<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">enriched_factors</span> <span class="op">&lt;-</span> <span class="va">enriched_factors</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
 <span>        pval_adj_log <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html">ifelse</a></span><span class="op">(</span><span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html">log10</a></span><span class="op">(</span><span class="va">pval_adj</span><span class="op">)</span> <span class="op">==</span> <span class="cn">Inf</span>, <span class="fl">400</span>, <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html">log10</a></span><span class="op">(</span><span class="va">pval_adj</span><span class="op">)</span><span class="op">)</span></span>
 <span>    <span class="op">)</span></span>
@@ -2115,16 +2149,16 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span>        segment.color <span class="op">=</span> <span class="st">"grey35"</span>,</span>
 <span>        color <span class="op">=</span> <span class="st">"black"</span></span>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display column-body-outset">
+<div class="cell-output-display column-page">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-39-1.png" style="width:100.0%;height:100.0%" class="figure-img"></p>
+<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-39-1.png" style="width:82.5%;height:82.5%" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 </section><section id="exploring-gene-regulatory-network" class="level2"><h2 class="anchored" data-anchor-id="exploring-gene-regulatory-network">Exploring gene regulatory network</h2>
 <div class="cell">
-<div class="sourceCode" id="cb46"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">make_groups</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span>, <span class="va">number_of_members</span><span class="op">)</span> <span class="op">{</span></span>
+<div class="sourceCode" id="cb44"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">make_groups</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span>, <span class="va">number_of_members</span><span class="op">)</span> <span class="op">{</span></span>
 <span>    <span class="va">y</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq_along</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span>
 <span>    <span class="va">chunks</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/split.html">split</a></span><span class="op">(</span><span class="va">x</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html">ceiling</a></span><span class="op">(</span><span class="va">y</span> <span class="op">/</span> <span class="va">number_of_members</span><span class="op">)</span><span class="op">)</span></span>
 <span></span>
@@ -2139,7 +2173,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb47"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">monocle_states_selected</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb45"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">monocle_states_selected</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
 <span>    <span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">6</span>, <span class="fl">8</span></span>
 <span><span class="op">)</span></span>
 <span></span>
@@ -2170,7 +2204,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb49"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">features_selected_heatmap</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/readRDS.html">readRDS</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb47"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">features_selected_heatmap</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/readRDS.html">readRDS</a></span><span class="op">(</span></span>
 <span>    file <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span></span>
 <span>        <span class="va">PROJECT_DIR</span>,</span>
 <span>        <span class="st">"data/10x/epicardial_3f_d7/de_paired_primary_epicardial_uninfected.rds"</span></span>
@@ -2187,7 +2221,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb50"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">NUM_CELLS_TO_MERGE</span> <span class="op">&lt;-</span> <span class="fl">20</span></span>
+<div class="sourceCode" id="cb48"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">NUM_CELLS_TO_MERGE</span> <span class="op">&lt;-</span> <span class="fl">20</span></span>
 <span></span>
 <span><span class="va">matrix_heatmap_reprogrammed</span> <span class="op">&lt;-</span> <span class="fu">purrr</span><span class="fu">::</span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html">map</a></span><span class="op">(</span></span>
 <span>    <span class="fu">make_groups</span><span class="op">(</span><span class="va">cells_selected_reprogrammed</span>, <span class="va">NUM_CELLS_TO_MERGE</span><span class="op">)</span>, \<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
@@ -2204,7 +2238,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb51"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">matrix_heatmap_reference</span> <span class="op">&lt;-</span> <span class="fu">purrr</span><span class="fu">::</span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html">map</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb49"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">matrix_heatmap_reference</span> <span class="op">&lt;-</span> <span class="fu">purrr</span><span class="fu">::</span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html">map</a></span><span class="op">(</span></span>
 <span>    <span class="fu">make_groups</span><span class="op">(</span><span class="va">cells_selected_reference</span>, <span class="va">NUM_CELLS_TO_MERGE</span><span class="op">)</span>, \<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
 <span>        <span class="fu">Matrix</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Matrix/man/colSums.html">rowSums</a></span><span class="op">(</span><span class="va">matrix_readcount_use</span><span class="op">[</span>, <span class="va">x</span><span class="op">]</span><span class="op">)</span></span>
 <span>    <span class="op">}</span></span>
@@ -2227,7 +2261,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 </div>
 <section id="expression-signature" class="level3"><h3 class="anchored" data-anchor-id="expression-signature">Expression signature</h3>
 <div class="cell">
-<div class="sourceCode" id="cb52"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">matrix_kmeans</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log10</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb50"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">matrix_kmeans</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log10</a></span><span class="op">(</span></span>
 <span>    <span class="va">matrix_heatmap_reprogrammed</span><span class="op">[</span><span class="va">features_selected_heatmap</span>, <span class="op">]</span> <span class="op">+</span> <span class="fl">1</span></span>
 <span><span class="op">)</span></span>
 <span></span>
@@ -2256,7 +2290,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 
 </div>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode" id="cb53"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># customize numbers of features per group</span></span>
+<div class="sourceCode" id="cb51"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># customize numbers of features per group</span></span>
 <span><span class="va">num_features_per_group</span> <span class="op">&lt;-</span> <span class="va">kmeans_out</span><span class="op">$</span><span class="va">cluster</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/enframe.html">enframe</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
@@ -2354,7 +2388,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode" id="cb54"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">g</span> <span class="op">&lt;-</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot_gtable.html">ggplot_gtable</a></span><span class="op">(</span><span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot_build.html">ggplot_build</a></span><span class="op">(</span><span class="va">p_kmeans</span><span class="op">)</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb52"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">g</span> <span class="op">&lt;-</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot_gtable.html">ggplot_gtable</a></span><span class="op">(</span><span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot_build.html">ggplot_build</a></span><span class="op">(</span><span class="va">p_kmeans</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">stript</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/which.html">which</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/grep.html">grepl</a></span><span class="op">(</span><span class="st">"strip-t"</span>, <span class="va">g</span><span class="op">$</span><span class="va">layout</span><span class="op">$</span><span class="va">name</span><span class="op">)</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">colors_strip_background_fill</span> <span class="op">&lt;-</span> <span class="fu">ggthemes</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ggthemes/man/tableau_color_pal.html">tableau_color_pal</a></span><span class="op">(</span><span class="st">"Tableau 10"</span><span class="op">)</span><span class="op">(</span>n <span class="op">=</span> <span class="va">NUM_CENTERS</span><span class="op">)</span></span>
@@ -2385,7 +2419,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 </div>
 </section><section id="heatmap" class="level3"><h3 class="anchored" data-anchor-id="heatmap">Heatmap</h3>
 <div class="cell">
-<div class="sourceCode" id="cb55"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">feature_clusters</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">6</span>, <span class="fl">1</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">2</span>, <span class="fl">4</span><span class="op">)</span></span>
+<div class="sourceCode" id="cb53"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">feature_clusters</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">6</span>, <span class="fl">1</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">2</span>, <span class="fl">4</span><span class="op">)</span></span>
 <span><span class="va">features_selected_heatmap</span> <span class="op">&lt;-</span> <span class="fu">purrr</span><span class="fu">::</span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html">map</a></span><span class="op">(</span><span class="va">feature_clusters</span>, \<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
 <span>    <span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">kmeans_out</span><span class="op">$</span><span class="va">cluster</span><span class="op">)</span><span class="op">[</span><span class="va">kmeans_out</span><span class="op">$</span><span class="va">cluster</span> <span class="op">==</span> <span class="va">x</span><span class="op">]</span></span>
 <span><span class="op">}</span><span class="op">)</span> <span class="op">|&gt;</span></span>
@@ -2411,7 +2445,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span><span class="va">matrix_heatmap</span><span class="op">[</span><span class="va">matrix_heatmap</span> <span class="op">&gt;</span> <span class="va">heatmap_limits</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="va">heatmap_limits</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb56"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># get metacell states</span></span>
+<div class="sourceCode" id="cb54"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># get metacell states</span></span>
 <span><span class="va">metacell_annotation_reprogrammed</span> <span class="op">&lt;-</span> <span class="fu">purrr</span><span class="fu">::</span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html">map_int</a></span><span class="op">(</span></span>
 <span>    <span class="fu">make_groups</span><span class="op">(</span><span class="va">cells_selected_reprogrammed</span>, <span class="va">NUM_CELLS_TO_MERGE</span><span class="op">)</span>, \<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
 <span>        <span class="va">x</span> <span class="op">|&gt;</span></span>
@@ -2446,7 +2480,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb57"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># create heatmap column annotation</span></span>
+<div class="sourceCode" id="cb55"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># create heatmap column annotation</span></span>
 <span><span class="va">ha_column_reprogrammed</span> <span class="op">&lt;-</span> <span class="fu">ComplexHeatmap</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ComplexHeatmap/man/HeatmapAnnotation.html">HeatmapAnnotation</a></span><span class="op">(</span></span>
 <span>    <span class="co">#</span></span>
 <span>    state <span class="op">=</span> <span class="fu">ComplexHeatmap</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ComplexHeatmap/man/anno_simple.html">anno_simple</a></span><span class="op">(</span></span>
@@ -2508,7 +2542,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb58"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># map color</span></span>
+<div class="sourceCode" id="cb56"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># map color</span></span>
 <span><span class="va">col_fun</span> <span class="op">&lt;-</span> <span class="fu">circlize</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/circlize/man/colorRamp2.html">colorRamp2</a></span><span class="op">(</span></span>
 <span>    <span class="fu"><a href="https://rdrr.io/r/stats/quantile.html">quantile</a></span><span class="op">(</span></span>
 <span>        <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
@@ -2572,7 +2606,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb59"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">metacell_annotation_reference</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb57"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">metacell_annotation_reference</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span></span>
 <span>    x <span class="op">=</span> <span class="st">"Target"</span>,</span>
 <span>    times <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/nrow.html">ncol</a></span><span class="op">(</span><span class="va">matrix_heatmap_reference</span><span class="op">)</span></span>
 <span><span class="op">)</span></span>
@@ -2604,7 +2638,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb60"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">features_selected_to_mark_right</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb58"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">features_selected_to_mark_right</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
 <span>    <span class="va">features_selected_10</span>,</span>
 <span>    <span class="st">"ENSMUSG00000015627_Gata5"</span>,</span>
 <span>    <span class="st">"ENSMUSG00000031517_Gpm6a"</span></span>
@@ -2639,7 +2673,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb61"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">ht_reference</span> <span class="op">&lt;-</span> <span class="fu">ComplexHeatmap</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ComplexHeatmap/man/Heatmap.html">Heatmap</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb59"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">ht_reference</span> <span class="op">&lt;-</span> <span class="fu">ComplexHeatmap</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ComplexHeatmap/man/Heatmap.html">Heatmap</a></span><span class="op">(</span></span>
 <span>    matrix <span class="op">=</span> <span class="va">matrix_heatmap</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/colnames.html">colnames</a></span><span class="op">(</span><span class="va">matrix_heatmap_reference</span><span class="op">)</span><span class="op">]</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="op">)</span>,</span>
 <span>    rect_gp <span class="op">=</span> <span class="fu">grid</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/grid/gpar.html">gpar</a></span><span class="op">(</span>col <span class="op">=</span> <span class="cn">NA</span>, lwd <span class="op">=</span> <span class="fl">0</span><span class="op">)</span>,</span>
 <span>    col <span class="op">=</span> <span class="va">col_fun</span>,</span>
@@ -2689,7 +2723,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 
 </div>
 <div class="cell">
-<div class="sourceCode" id="cb62"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># legend</span></span>
+<div class="sourceCode" id="cb60"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># legend</span></span>
 <span><span class="va">lgd_colorbar</span> <span class="op">&lt;-</span> <span class="fu">ComplexHeatmap</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ComplexHeatmap/man/Legend.html">Legend</a></span><span class="op">(</span></span>
 <span>    col_fun <span class="op">=</span> <span class="va">col_fun</span>,</span>
 <span>    title <span class="op">=</span> <span class="st">"Expr"</span>,</span>
@@ -2742,7 +2776,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode" id="cb63"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ComplexHeatmap</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ComplexHeatmap/man/draw-dispatch.html">draw</a></span><span class="op">(</span></span>
+<div class="sourceCode" id="cb61"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ComplexHeatmap</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/ComplexHeatmap/man/draw-dispatch.html">draw</a></span><span class="op">(</span></span>
 <span>    <span class="va">ht_reprogrammed</span> <span class="op">+</span> <span class="va">ht_reference</span>,</span>
 <span>    heatmap_legend_list <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="va">pd</span><span class="op">)</span>,</span>
 <span>    <span class="co">#</span></span>
@@ -2762,7 +2796,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <p><br></p>
 </section></section><section id="r-session-info" class="level2"><h2 class="anchored" data-anchor-id="r-session-info">R session info</h2>
 <div class="cell">
-<div class="sourceCode" id="cb64"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://r-lib.github.io/sessioninfo/reference/session_info.html">session_info</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb62"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://r-lib.github.io/sessioninfo/reference/session_info.html">session_info</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>─ Session info ───────────────────────────────────────────────────────────────
  setting  value
@@ -2823,6 +2857,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
  gridExtra        2.3           2017-09-09 [1] CRAN (R 4.2.0)
  gt               0.7.0.9000    2022-09-23 [1] Github (rstudio/gt@4030fb7)
  gtable           0.3.1.9000    2022-09-01 [1] Github (r-lib/gtable@c1a7a81)
+ highr            0.9           2021-04-16 [1] CRAN (R 4.2.0)
  hms              1.1.2         2022-08-19 [1] CRAN (R 4.2.1)
  HSMMSingleCell   1.16.0        2022-04-28 [1] Bioconductor
  htmltools        0.5.3         2022-07-18 [1] CRAN (R 4.2.1)
