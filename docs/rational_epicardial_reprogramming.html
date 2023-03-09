@@ -15,9 +15,10 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -44,43 +45,13 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
-    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -130,12 +101,12 @@ gtag('js', new Date());
 gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
 </script><link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Reprogram-Seq - Rational Epicardial Reprogramming with 10 Transcription Factors by Reprogram-Seq">
-<meta property="og:description" content="Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturbation and computational analysis to predict, evaluate, and optimize TF combinations that reprogram a cell type of…">
-<meta property="og:image" content="https://jlduan.github.io/Reprogram-Seq/docs/workflow.jpg">
+<meta property="og:description" content="Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturbation and computational analysis to predict, evaluate, and optimize TF combinations that reprogram a cell type of interest.">
+<meta property="og:image" content="https://jlduan.github.io/Reprogram-Seq/workflow.jpg">
 <meta property="og:site-name" content="Reprogram-Seq">
 <meta name="twitter:title" content="Rational Reprogramming of Cellular States by Combinatorial Perturbation">
-<meta name="twitter:description" content="Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturbation and computational analysis to predict, evaluate, and optimize TF combinations that reprogram a cell type of…">
-<meta name="twitter:image" content="https://jlduan.github.io/Reprogram-Seq/docs/workflow.jpg">
+<meta name="twitter:description" content="Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturbation and computational analysis to predict, evaluate, and optimize TF combinations that reprogram a cell type of interest.">
+<meta name="twitter:image" content="https://jlduan.github.io/Reprogram-Seq/workflow.jpg">
 <meta name="twitter:creator" content="@jlduan">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="citation_title" content="Rational Reprogramming of Cellular States by Combinatorial Perturbation">
@@ -148,11 +119,11 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
 <meta name="citation_author" content="Minoti Bhakta">
 <meta name="citation_author" content="Shiqi Xie">
 <meta name="citation_author" content="Pei Zhou">
-<meta name="citation_author" content="Nikhil V. Munshi">
-<meta name="citation_author" content="Gary C. Hon">
-<meta name="citation_publication_date" content="2022-09-24">
-<meta name="citation_cover_date" content="2022-09-24">
-<meta name="citation_year" content="2022">
+<meta name="citation_author" content="Nikhil V.Munshi">
+<meta name="citation_author" content="Gary C.Hon">
+<meta name="citation_publication_date" content="2023-03-08">
+<meta name="citation_cover_date" content="2023-03-08">
+<meta name="citation_year" content="2023">
 <meta name="citation_online_date" content="2019-06-18">
 <meta name="citation_fulltext_html_url" content="https://doi.org/10.1016/j.celrep.2019.05.079">
 <meta name="citation_issue" content="12">
@@ -168,70 +139,69 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
 <body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Rational Epicardial Reprogramming with 10 Transcription Factors by Reprogram-Seq</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rational_epicardial_reprogramming.html">Rational Reprogramming</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
-      <a href="./" class="sidebar-logo-link">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
       <img src="./logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./"><strong>Reprogram-Seq</strong></a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/jlduan" title="Reprogram-Seq" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
-    <a href="" title="GitHub" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-github"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-<li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://github.com/jlduan/Reprogram-Seq">
-          Source Code
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://github.com/jlduan/Reprogram-Seq/issues">
-          Report a Bug
-          </a>
-        </li>
-    </ul>
-<a href="https://twitter.com/jlduan" title="Twitter" class="sidebar-tool px-1"><i class="bi bi-twitter"></i></a>
-  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <a href="https://github.com/jlduan" title="Reprogram-Seq" class="quarto-navigation-tool px-1" aria-label="Reprogram-Seq"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/jlduan/Reprogram-Seq" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://twitter.com/jlduan" title="Twitter" class="quarto-navigation-tool px-1" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./unbiased_reprogramming.html" class="sidebar-item-text sidebar-link">Unbiased Screen</a>
+  <a href="./unbiased_reprogramming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unbiased Screen</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rational_epicardial_reprogramming.html" class="sidebar-item-text sidebar-link active">Rational Reprogramming</a>
+  <a href="./rational_epicardial_reprogramming.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Rational Reprogramming</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./global_reprogramming_of_transcription.html" class="sidebar-item-text sidebar-link">Transcriptional Dynamics</a>
+  <a href="./global_reprogramming_of_transcription.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transcriptional Dynamics</span></a>
   </div>
 </li>
     </ul>
 </div>
-</nav><!-- margin-sidebar --><div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -270,24 +240,33 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title d-none d-lg-block">Rational Epicardial Reprogramming with 10 Transcription Factors by Reprogram-Seq</h1>
+<h1 class="title">Rational Epicardial Reprogramming with 10 Transcription Factors by Reprogram-Seq</h1>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://github.com/jlduan">Jialei Duan</a> <a href="https://orcid.org/0000-0003-4086-7461" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.utsouthwestern.edu/education/medical-school/departments/green-center">
+            Cecil H. and Ida Green Center for Reproductive Biology Sciences
+            </a>
+          </p>
+      </div>
+    </div>
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Jialei Duan <a href="https://orcid.org/0000-0003-4086-7461" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-          </div>
-  </div>
-    
+      
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Sat Sep 24, 2022 16:04:56-05:00</p>
+      <p class="date">Wed Mar 8, 2023 17:59:07-06:00</p>
     </div>
   </div>
   
@@ -311,12 +290,9 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
 
 </header><p><br></p>
 <div class="cell">
-
-</div>
-<div class="cell">
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.time</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "2022-09-24 16:03:36 CDT"</code></pre>
+<pre><code>[1] "2023-03-08 17:58:01 CST"</code></pre>
 </div>
 </div>
 <div class="cell">
@@ -326,13 +302,7 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
 </div>
 </div>
 <section id="preparation" class="level2"><h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
-<div class="cell">
-
-</div>
 <section id="functions" class="level3"><h3 class="anchored" data-anchor-id="functions">Functions</h3>
-<div class="cell">
-
-</div>
 <p>Load required packages.</p>
 <div class="cell">
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
@@ -346,13 +316,7 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
 <div class="cell">
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">`%+replace%`</span> <span class="op">&lt;-</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="va">`%+replace%`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell">
-
-</div>
 </section><section id="symbols" class="level3"><h3 class="anchored" data-anchor-id="symbols">Symbols</h3>
-<div class="cell">
-
-</div>
 <div class="cell">
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">PROJECT_DIR</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span></span>
 <span>    <span class="st">"/Users/jialei/Dropbox/Data/Projects/UTSW/Cellular_reprogramming"</span>,</span>
@@ -536,79 +500,73 @@ ENSMUSG00000109048 ENSMUSG00000025902
 <span>        num_umis <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/Matrix/man/colSums.html">colSums</a></span><span class="op">(</span><span class="va">matrix_readcount_use</span><span class="op">[</span>, <span class="va">cell</span><span class="op">]</span><span class="op">)</span>,</span>
 <span>        num_features <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/Matrix/man/colSums.html">colSums</a></span><span class="op">(</span><span class="va">matrix_readcount_use</span><span class="op">[</span>, <span class="va">cell</span><span class="op">]</span> <span class="op">&gt;</span> <span class="fl">0</span><span class="op">)</span>,</span>
 <span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/rename.html">rename</a></span><span class="op">(</span>batch <span class="op">=</span> <span class="va">batch.id</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">batch</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">cluster</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span></span>
 <span>        num_cells <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/context.html">n</a></span><span class="op">(</span><span class="op">)</span>,</span>
 <span>        median_umis <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/median.html">median</a></span><span class="op">(</span><span class="va">num_umis</span><span class="op">)</span>,</span>
 <span>        median_features <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/median.html">median</a></span><span class="op">(</span><span class="va">num_features</span><span class="op">)</span></span>
 <span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
-<span>        group <span class="op">=</span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/case_when.html">case_when</a></span><span class="op">(</span></span>
-<span>            <span class="va">batch</span> <span class="op"><a href="https://rdrr.io/r/base/match.html">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"BL5"</span>, <span class="st">"BL6"</span><span class="op">)</span> <span class="op">~</span> <span class="st">"Primary"</span>,</span>
-<span>            <span class="va">batch</span> <span class="op"><a href="https://rdrr.io/r/base/match.html">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"BL7"</span><span class="op">)</span> <span class="op">~</span> <span class="st">"Control"</span>,</span>
-<span>            <span class="cn">TRUE</span> <span class="op">~</span> <span class="st">"Reprogrammed"</span></span>
-<span>        <span class="op">)</span>,</span>
-<span>        group <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span><span class="op">(</span></span>
-<span>            <span class="va">group</span>,</span>
-<span>            levels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Primary"</span>, <span class="st">"Control"</span>, <span class="st">"Reprogrammed"</span><span class="op">)</span></span>
-<span>        <span class="op">)</span></span>
-<span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">group</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span></span>
-<span>        <span class="va">group</span>, <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://tidyselect.r-lib.org/reference/everything.html">everything</a></span><span class="op">(</span><span class="op">)</span></span>
-<span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/gt.html">gt</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/data_color.html">data_color</a></span><span class="op">(</span></span>
-<span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">group</span><span class="op">)</span>,</span>
-<span>        colors <span class="op">=</span> <span class="fu">scales</span><span class="fu">::</span><span class="fu"><a href="https://scales.r-lib.org/reference/col_numeric.html">col_factor</a></span><span class="op">(</span></span>
-<span>            palette <span class="op">=</span> <span class="fu">paletteer</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/paletteer/man/paletteer_d.html">paletteer_d</a></span><span class="op">(</span></span>
-<span>                n <span class="op">=</span> <span class="fl">3</span>, palette <span class="op">=</span> <span class="st">"colorblindr::OkabeIto"</span></span>
-<span>            <span class="op">)</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/character.html">as.character</a></span><span class="op">(</span><span class="op">)</span>,</span>
-<span>            domain <span class="op">=</span> <span class="cn">NULL</span></span>
-<span>        <span class="op">)</span></span>
-<span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/data_color.html">data_color</a></span><span class="op">(</span></span>
 <span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">median_umis</span><span class="op">)</span>,</span>
-<span>        colors <span class="op">=</span> <span class="fu">scales</span><span class="fu">::</span><span class="fu"><a href="https://scales.r-lib.org/reference/col_numeric.html">col_numeric</a></span><span class="op">(</span></span>
+<span>        fn <span class="op">=</span> <span class="fu">scales</span><span class="fu">::</span><span class="fu"><a href="https://scales.r-lib.org/reference/col_numeric.html">col_numeric</a></span><span class="op">(</span></span>
 <span>            palette <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
 <span>                <span class="st">"green"</span>, <span class="st">"orange"</span>, <span class="st">"red"</span></span>
 <span>            <span class="op">)</span>,</span>
 <span>            domain <span class="op">=</span> <span class="cn">NULL</span></span>
 <span>        <span class="op">)</span></span>
 <span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/summary_rows.html">summary_rows</a></span><span class="op">(</span></span>
-<span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">batch</span><span class="op">)</span>,</span>
+<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/fmt_number.html">fmt_number</a></span><span class="op">(</span></span>
+<span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">num_cells</span><span class="op">)</span>,</span>
+<span>        sep_mark <span class="op">=</span> <span class="st">","</span>,</span>
+<span>        decimals <span class="op">=</span> <span class="fl">0</span></span>
+<span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/fmt_number.html">fmt_number</a></span><span class="op">(</span></span>
+<span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">median_umis</span>, <span class="va">median_features</span><span class="op">)</span>,</span>
+<span>        sep_mark <span class="op">=</span> <span class="st">","</span>,</span>
+<span>        decimals <span class="op">=</span> <span class="fl">1</span></span>
+<span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/grand_summary_rows.html">grand_summary_rows</a></span><span class="op">(</span></span>
+<span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">cluster</span><span class="op">)</span>,</span>
 <span>        fns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>            Count <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/context.html">n</a></span><span class="op">(</span><span class="op">)</span></span>
 <span>        <span class="op">)</span>,</span>
-<span>        decimals <span class="op">=</span> <span class="fl">0</span></span>
+<span>        fmt <span class="op">=</span> <span class="op">~</span> <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/fmt_number.html">fmt_number</a></span><span class="op">(</span><span class="va">.</span>, decimals <span class="op">=</span> <span class="fl">0</span>, use_seps <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/summary_rows.html">summary_rows</a></span><span class="op">(</span></span>
-<span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">num_cells</span><span class="op">)</span>,</span>
-<span>        fns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
-<span>            Sum <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span></span>
-<span>        <span class="op">)</span>,</span>
-<span>        decimals <span class="op">=</span> <span class="fl">0</span></span>
-<span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/summary_rows.html">summary_rows</a></span><span class="op">(</span></span>
+<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/grand_summary_rows.html">grand_summary_rows</a></span><span class="op">(</span></span>
 <span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">median_umis</span><span class="op">:</span><span class="va">median_features</span><span class="op">)</span>,</span>
 <span>        fns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>            Mean <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span></span>
 <span>        <span class="op">)</span>,</span>
-<span>        decimals <span class="op">=</span> <span class="fl">2</span></span>
+<span>        fmt <span class="op">=</span> <span class="op">~</span> <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/fmt_number.html">fmt_number</a></span><span class="op">(</span><span class="va">.</span>, decimals <span class="op">=</span> <span class="fl">1</span>, use_seps <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/grand_summary_rows.html">grand_summary_rows</a></span><span class="op">(</span></span>
+<span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">num_cells</span><span class="op">)</span>,</span>
+<span>        fns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<span>            Sum <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span></span>
+<span>        <span class="op">)</span>,</span>
+<span>        fmt <span class="op">=</span> <span class="op">~</span> <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/fmt_number.html">fmt_number</a></span><span class="op">(</span><span class="va">.</span>, decimals <span class="op">=</span> <span class="fl">0</span>, use_seps <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/tab_header.html">tab_header</a></span><span class="op">(</span></span>
-<span>        title <span class="op">=</span> <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/md.html">md</a></span><span class="op">(</span><span class="st">"**10x Genomics**; Batch"</span><span class="op">)</span></span>
+<span>        title <span class="op">=</span> <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/md.html">md</a></span><span class="op">(</span><span class="st">"**10x Genomics**; Clustering"</span><span class="op">)</span></span>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="jpgizmewhl" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="kdnizuiqsz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#jpgizmewhl) .gt_table {
+#kdnizuiqsz thead, #kdnizuiqsz tbody, #kdnizuiqsz tfoot, #kdnizuiqsz tr, #kdnizuiqsz td, #kdnizuiqsz th {
+  border-style: none;
+}
+
+#kdnizuiqsz p {
+  margin: 0;
+  padding: 0;
+}
+
+#kdnizuiqsz .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -633,19 +591,12 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-left-color: #D3D3D3;
 }
 
-:where(#jpgizmewhl) .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
+#kdnizuiqsz .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
-:where(#jpgizmewhl) .gt_title {
+#kdnizuiqsz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -657,25 +608,37 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-bottom-width: 0;
 }
 
-:where(#jpgizmewhl) .gt_subtitle {
+#kdnizuiqsz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
-  padding-top: 0;
-  padding-bottom: 6px;
+  padding-top: 3px;
+  padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
 
-:where(#jpgizmewhl) .gt_bottom_border {
+#kdnizuiqsz .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kdnizuiqsz .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#jpgizmewhl) .gt_col_headings {
+#kdnizuiqsz .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -690,7 +653,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-right-color: #D3D3D3;
 }
 
-:where(#jpgizmewhl) .gt_col_heading {
+#kdnizuiqsz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -710,7 +673,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   overflow-x: hidden;
 }
 
-:where(#jpgizmewhl) .gt_column_spanner_outer {
+#kdnizuiqsz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -722,15 +685,15 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 4px;
 }
 
-:where(#jpgizmewhl) .gt_column_spanner_outer:first-child {
+#kdnizuiqsz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#jpgizmewhl) .gt_column_spanner_outer:last-child {
+#kdnizuiqsz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#jpgizmewhl) .gt_column_spanner {
+#kdnizuiqsz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -742,7 +705,11 @@ ENSMUSG00000109048 ENSMUSG00000025902
   width: 100%;
 }
 
-:where(#jpgizmewhl) .gt_group_heading {
+#kdnizuiqsz .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#kdnizuiqsz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -768,7 +735,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   text-align: left;
 }
 
-:where(#jpgizmewhl) .gt_empty_group_heading {
+#kdnizuiqsz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -783,15 +750,15 @@ ENSMUSG00000109048 ENSMUSG00000025902
   vertical-align: middle;
 }
 
-:where(#jpgizmewhl) .gt_from_md > :first-child {
+#kdnizuiqsz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#jpgizmewhl) .gt_from_md > :last-child {
+#kdnizuiqsz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#jpgizmewhl) .gt_row {
+#kdnizuiqsz .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -810,7 +777,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   overflow-x: hidden;
 }
 
-:where(#jpgizmewhl) .gt_stub {
+#kdnizuiqsz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -823,7 +790,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-:where(#jpgizmewhl) .gt_stub_row_group {
+#kdnizuiqsz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -837,11 +804,15 @@ ENSMUSG00000109048 ENSMUSG00000025902
   vertical-align: top;
 }
 
-:where(#jpgizmewhl) .gt_row_group_first td {
+#kdnizuiqsz .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#jpgizmewhl) .gt_summary_row {
+#kdnizuiqsz .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#kdnizuiqsz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -851,16 +822,16 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-:where(#jpgizmewhl) .gt_first_summary_row {
+#kdnizuiqsz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#jpgizmewhl) .gt_first_summary_row.thick {
+#kdnizuiqsz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#jpgizmewhl) .gt_last_summary_row {
+#kdnizuiqsz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -870,7 +841,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-bottom-color: #D3D3D3;
 }
 
-:where(#jpgizmewhl) .gt_grand_summary_row {
+#kdnizuiqsz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -880,7 +851,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-:where(#jpgizmewhl) .gt_first_grand_summary_row {
+#kdnizuiqsz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -890,11 +861,21 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-top-color: #D3D3D3;
 }
 
-:where(#jpgizmewhl) .gt_striped {
+#kdnizuiqsz .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kdnizuiqsz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#jpgizmewhl) .gt_table_body {
+#kdnizuiqsz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -903,7 +884,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-bottom-color: #D3D3D3;
 }
 
-:where(#jpgizmewhl) .gt_footnotes {
+#kdnizuiqsz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -917,30 +898,8 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-right-color: #D3D3D3;
 }
 
-:where(#jpgizmewhl) .gt_footnote {
+#kdnizuiqsz .gt_footnote {
   margin: 0px;
-  font-size: 90%;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-:where(#jpgizmewhl) .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-:where(#jpgizmewhl) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -948,136 +907,307 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-:where(#jpgizmewhl) .gt_left {
+#kdnizuiqsz .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kdnizuiqsz .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kdnizuiqsz .gt_left {
   text-align: left;
 }
 
-:where(#jpgizmewhl) .gt_center {
+#kdnizuiqsz .gt_center {
   text-align: center;
 }
 
-:where(#jpgizmewhl) .gt_right {
+#kdnizuiqsz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#jpgizmewhl) .gt_font_normal {
+#kdnizuiqsz .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#jpgizmewhl) .gt_font_bold {
+#kdnizuiqsz .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#jpgizmewhl) .gt_font_italic {
+#kdnizuiqsz .gt_font_italic {
   font-style: italic;
 }
 
-:where(#jpgizmewhl) .gt_super {
+#kdnizuiqsz .gt_super {
   font-size: 65%;
 }
 
-:where(#jpgizmewhl) .gt_footnote_marks {
+#kdnizuiqsz .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
+  position: initial;
 }
 
-:where(#jpgizmewhl) .gt_asterisk {
+#kdnizuiqsz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#jpgizmewhl) .gt_indent_1 {
+#kdnizuiqsz .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#jpgizmewhl) .gt_indent_2 {
+#kdnizuiqsz .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#jpgizmewhl) .gt_indent_3 {
+#kdnizuiqsz .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#jpgizmewhl) .gt_indent_4 {
+#kdnizuiqsz .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#jpgizmewhl) .gt_indent_5 {
+#kdnizuiqsz .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table">
-<thead class="gt_header"><tr>
-<td colspan="6" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">
-<strong>10x Genomics</strong>; Batch</td>
-    </tr></thead>
-<thead class="gt_col_headings"><tr>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_heading">
+<td colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">
+<strong>10x Genomics</strong>; Clustering</td>
+    </tr>
+<tr class="gt_col_headings">
 <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=""></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="group">group</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="batch">batch</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="cluster">cluster</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="num_cells">num_cells</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="median_umis">median_umis</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="median_features">median_features</th>
-    </tr></thead>
+    </tr>
+</thead>
 <tbody class="gt_table_body">
 <tr>
 <th id="stub_1_1" scope="row" class="gt_row gt_left gt_stub"></th>
-<td headers="stub_1_1 group" class="gt_row gt_center" style="background-color: #E69F00; color: #000000;">Primary</td>
-<td headers="stub_1_1 batch" class="gt_row gt_left">BL5</td>
-<td headers="stub_1_1 num_cells" class="gt_row gt_right">5888</td>
-<td headers="stub_1_1 median_umis" class="gt_row gt_right" style="background-color: #48FA00; color: #000000;">4831</td>
-<td headers="stub_1_1 median_features" class="gt_row gt_right">1673.5</td>
+<td headers="stub_1_1 cluster" class="gt_row gt_center">1</td>
+<td headers="stub_1_1 num_cells" class="gt_row gt_right">3,240</td>
+<td headers="stub_1_1 median_umis" class="gt_row gt_right" style="background-color: #FF0000; color: #FFFFFF;">15,464.0</td>
+<td headers="stub_1_1 median_features" class="gt_row gt_right">3,820.0</td>
 </tr>
 <tr>
 <th id="stub_1_2" scope="row" class="gt_row gt_left gt_stub"></th>
-<td headers="stub_1_2 group" class="gt_row gt_center" style="background-color: #E69F00; color: #000000;">Primary</td>
-<td headers="stub_1_2 batch" class="gt_row gt_left">BL6</td>
-<td headers="stub_1_2 num_cells" class="gt_row gt_right">6047</td>
-<td headers="stub_1_2 median_umis" class="gt_row gt_right" style="background-color: #00FF00; color: #000000;">4521</td>
-<td headers="stub_1_2 median_features" class="gt_row gt_right">1570.0</td>
+<td headers="stub_1_2 cluster" class="gt_row gt_center">2</td>
+<td headers="stub_1_2 num_cells" class="gt_row gt_right">2,259</td>
+<td headers="stub_1_2 median_umis" class="gt_row gt_right" style="background-color: #14FE00; color: #000000;">2,390.0</td>
+<td headers="stub_1_2 median_features" class="gt_row gt_right">997.0</td>
 </tr>
 <tr>
 <th id="stub_1_3" scope="row" class="gt_row gt_left gt_stub"></th>
-<td headers="stub_1_3 group" class="gt_row gt_center" style="background-color: #56B4E9; color: #000000;">Control</td>
-<td headers="stub_1_3 batch" class="gt_row gt_left">BL7</td>
-<td headers="stub_1_3 num_cells" class="gt_row gt_right">4914</td>
-<td headers="stub_1_3 median_umis" class="gt_row gt_right" style="background-color: #FF0000; color: #FFFFFF;">13713</td>
-<td headers="stub_1_3 median_features" class="gt_row gt_right">3571.0</td>
+<td headers="stub_1_3 cluster" class="gt_row gt_center">3</td>
+<td headers="stub_1_3 num_cells" class="gt_row gt_right">1,914</td>
+<td headers="stub_1_3 median_umis" class="gt_row gt_right" style="background-color: #FF6800; color: #FFFFFF;">12,506.5</td>
+<td headers="stub_1_3 median_features" class="gt_row gt_right">3,352.5</td>
 </tr>
 <tr>
 <th id="stub_1_4" scope="row" class="gt_row gt_left gt_stub"></th>
-<td headers="stub_1_4 group" class="gt_row gt_center" style="background-color: #009E73; color: #FFFFFF;">Reprogrammed</td>
-<td headers="stub_1_4 batch" class="gt_row gt_left">BL8</td>
-<td headers="stub_1_4 num_cells" class="gt_row gt_right">5291</td>
-<td headers="stub_1_4 median_umis" class="gt_row gt_right" style="background-color: #FF8500; color: #000000;">10534</td>
-<td headers="stub_1_4 median_features" class="gt_row gt_right">3043.0</td>
+<td headers="stub_1_4 cluster" class="gt_row gt_center">4</td>
+<td headers="stub_1_4 num_cells" class="gt_row gt_right">1,707</td>
+<td headers="stub_1_4 median_umis" class="gt_row gt_right" style="background-color: #FF3400; color: #FFFFFF;">14,631.0</td>
+<td headers="stub_1_4 median_features" class="gt_row gt_right">3,845.0</td>
+</tr>
+<tr>
+<th id="stub_1_5" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_5 cluster" class="gt_row gt_center">5</td>
+<td headers="stub_1_5 num_cells" class="gt_row gt_right">1,330</td>
+<td headers="stub_1_5 median_umis" class="gt_row gt_right" style="background-color: #BCD600; color: #000000;">5,696.5</td>
+<td headers="stub_1_5 median_features" class="gt_row gt_right">1,564.5</td>
+</tr>
+<tr>
+<th id="stub_1_6" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_6 cluster" class="gt_row gt_center">6</td>
+<td headers="stub_1_6 num_cells" class="gt_row gt_right">1,329</td>
+<td headers="stub_1_6 median_umis" class="gt_row gt_right" style="background-color: #AEDD00; color: #000000;">5,189.0</td>
+<td headers="stub_1_6 median_features" class="gt_row gt_right">1,451.0</td>
+</tr>
+<tr>
+<th id="stub_1_7" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_7 cluster" class="gt_row gt_center">7</td>
+<td headers="stub_1_7 num_cells" class="gt_row gt_right">1,222</td>
+<td headers="stub_1_7 median_umis" class="gt_row gt_right" style="background-color: #C4D200; color: #000000;">6,010.0</td>
+<td headers="stub_1_7 median_features" class="gt_row gt_right">2,147.0</td>
+</tr>
+<tr>
+<th id="stub_1_8" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_8 cluster" class="gt_row gt_center">8</td>
+<td headers="stub_1_8 num_cells" class="gt_row gt_right">1,213</td>
+<td headers="stub_1_8 median_umis" class="gt_row gt_right" style="background-color: #EBB700; color: #000000;">7,804.0</td>
+<td headers="stub_1_8 median_features" class="gt_row gt_right">2,151.0</td>
+</tr>
+<tr>
+<th id="stub_1_9" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_9 cluster" class="gt_row gt_center">9</td>
+<td headers="stub_1_9 num_cells" class="gt_row gt_right">1,093</td>
+<td headers="stub_1_9 median_umis" class="gt_row gt_right" style="background-color: #B4DA00; color: #000000;">5,399.0</td>
+<td headers="stub_1_9 median_features" class="gt_row gt_right">2,239.0</td>
+</tr>
+<tr>
+<th id="stub_1_10" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_10 cluster" class="gt_row gt_center">10</td>
+<td headers="stub_1_10 num_cells" class="gt_row gt_right">1,082</td>
+<td headers="stub_1_10 median_umis" class="gt_row gt_right" style="background-color: #FF8100; color: #000000;">11,149.5</td>
+<td headers="stub_1_10 median_features" class="gt_row gt_right">3,049.0</td>
+</tr>
+<tr>
+<th id="stub_1_11" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_11 cluster" class="gt_row gt_center">11</td>
+<td headers="stub_1_11 num_cells" class="gt_row gt_right">850</td>
+<td headers="stub_1_11 median_umis" class="gt_row gt_right" style="background-color: #E4BD00; color: #000000;">7,452.5</td>
+<td headers="stub_1_11 median_features" class="gt_row gt_right">2,738.0</td>
+</tr>
+<tr>
+<th id="stub_1_12" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_12 cluster" class="gt_row gt_center">12</td>
+<td headers="stub_1_12 num_cells" class="gt_row gt_right">848</td>
+<td headers="stub_1_12 median_umis" class="gt_row gt_right" style="background-color: #00FF00; color: #000000;">2,341.0</td>
+<td headers="stub_1_12 median_features" class="gt_row gt_right">773.0</td>
+</tr>
+<tr>
+<th id="stub_1_13" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_13 cluster" class="gt_row gt_center">13</td>
+<td headers="stub_1_13 num_cells" class="gt_row gt_right">638</td>
+<td headers="stub_1_13 median_umis" class="gt_row gt_right" style="background-color: #85ED00; color: #000000;">3,925.5</td>
+<td headers="stub_1_13 median_features" class="gt_row gt_right">985.0</td>
+</tr>
+<tr>
+<th id="stub_1_14" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_14 cluster" class="gt_row gt_center">14</td>
+<td headers="stub_1_14 num_cells" class="gt_row gt_right">578</td>
+<td headers="stub_1_14 median_umis" class="gt_row gt_right" style="background-color: #A7E000; color: #000000;">4,939.5</td>
+<td headers="stub_1_14 median_features" class="gt_row gt_right">2,170.5</td>
+</tr>
+<tr>
+<th id="stub_1_15" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_15 cluster" class="gt_row gt_center">15</td>
+<td headers="stub_1_15 num_cells" class="gt_row gt_right">508</td>
+<td headers="stub_1_15 median_umis" class="gt_row gt_right" style="background-color: #BFD400; color: #000000;">5,815.0</td>
+<td headers="stub_1_15 median_features" class="gt_row gt_right">1,808.0</td>
+</tr>
+<tr>
+<th id="stub_1_16" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_16 cluster" class="gt_row gt_center">16</td>
+<td headers="stub_1_16 num_cells" class="gt_row gt_right">404</td>
+<td headers="stub_1_16 median_umis" class="gt_row gt_right" style="background-color: #AADF00; color: #000000;">5,027.5</td>
+<td headers="stub_1_16 median_features" class="gt_row gt_right">1,714.0</td>
+</tr>
+<tr>
+<th id="stub_1_17" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_17 cluster" class="gt_row gt_center">17</td>
+<td headers="stub_1_17 num_cells" class="gt_row gt_right">393</td>
+<td headers="stub_1_17 median_umis" class="gt_row gt_right" style="background-color: #B0DC00; color: #000000;">5,241.0</td>
+<td headers="stub_1_17 median_features" class="gt_row gt_right">2,151.0</td>
+</tr>
+<tr>
+<th id="stub_1_18" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_18 cluster" class="gt_row gt_center">18</td>
+<td headers="stub_1_18 num_cells" class="gt_row gt_right">380</td>
+<td headers="stub_1_18 median_umis" class="gt_row gt_right" style="background-color: #EEB500; color: #000000;">7,976.5</td>
+<td headers="stub_1_18 median_features" class="gt_row gt_right">2,464.5</td>
+</tr>
+<tr>
+<th id="stub_1_19" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_19 cluster" class="gt_row gt_center">19</td>
+<td headers="stub_1_19 num_cells" class="gt_row gt_right">299</td>
+<td headers="stub_1_19 median_umis" class="gt_row gt_right" style="background-color: #D4C800; color: #000000;">6,724.0</td>
+<td headers="stub_1_19 median_features" class="gt_row gt_right">2,777.0</td>
+</tr>
+<tr>
+<th id="stub_1_20" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_20 cluster" class="gt_row gt_center">20</td>
+<td headers="stub_1_20 num_cells" class="gt_row gt_right">280</td>
+<td headers="stub_1_20 median_umis" class="gt_row gt_right" style="background-color: #B3DB00; color: #000000;">5,360.5</td>
+<td headers="stub_1_20 median_features" class="gt_row gt_right">1,906.5</td>
+</tr>
+<tr>
+<th id="stub_1_21" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_21 cluster" class="gt_row gt_center">21</td>
+<td headers="stub_1_21 num_cells" class="gt_row gt_right">148</td>
+<td headers="stub_1_21 median_umis" class="gt_row gt_right" style="background-color: #57F800; color: #000000;">2,981.5</td>
+<td headers="stub_1_21 median_features" class="gt_row gt_right">1,140.5</td>
+</tr>
+<tr>
+<th id="stub_1_22" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_22 cluster" class="gt_row gt_center">22</td>
+<td headers="stub_1_22 num_cells" class="gt_row gt_right">117</td>
+<td headers="stub_1_22 median_umis" class="gt_row gt_right" style="background-color: #B2DB00; color: #000000;">5,305.0</td>
+<td headers="stub_1_22 median_features" class="gt_row gt_right">1,954.0</td>
+</tr>
+<tr>
+<th id="stub_1_23" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_23 cluster" class="gt_row gt_center">23</td>
+<td headers="stub_1_23 num_cells" class="gt_row gt_right">95</td>
+<td headers="stub_1_23 median_umis" class="gt_row gt_right" style="background-color: #35FC00; color: #000000;">2,586.0</td>
+<td headers="stub_1_23 median_features" class="gt_row gt_right">1,370.0</td>
+</tr>
+<tr>
+<th id="stub_1_24" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_24 cluster" class="gt_row gt_center">24</td>
+<td headers="stub_1_24 num_cells" class="gt_row gt_right">92</td>
+<td headers="stub_1_24 median_umis" class="gt_row gt_right" style="background-color: #A8E000; color: #000000;">4,966.5</td>
+<td headers="stub_1_24 median_features" class="gt_row gt_right">280.0</td>
+</tr>
+<tr>
+<th id="stub_1_25" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_25 cluster" class="gt_row gt_center">25</td>
+<td headers="stub_1_25 num_cells" class="gt_row gt_right">64</td>
+<td headers="stub_1_25 median_umis" class="gt_row gt_right" style="background-color: #C9CF00; color: #000000;">6,244.5</td>
+<td headers="stub_1_25 median_features" class="gt_row gt_right">2,619.5</td>
+</tr>
+<tr>
+<th id="stub_1_26" scope="row" class="gt_row gt_left gt_stub"></th>
+<td headers="stub_1_26 cluster" class="gt_row gt_center">26</td>
+<td headers="stub_1_26 num_cells" class="gt_row gt_right">57</td>
+<td headers="stub_1_26 median_umis" class="gt_row gt_right" style="background-color: #A6E100; color: #000000;">4,898.0</td>
+<td headers="stub_1_26 median_features" class="gt_row gt_right">251.0</td>
 </tr>
 <tr>
 <th id="grand_summary_stub_1" scope="row" class="gt_row gt_left gt_stub gt_grand_summary_row gt_first_grand_summary_row">Count</th>
-<td headers="grand_summary_stub_1 group" class="gt_row gt_center gt_grand_summary_row gt_first_grand_summary_row">—</td>
-<td headers="grand_summary_stub_1 batch" class="gt_row gt_left gt_grand_summary_row gt_first_grand_summary_row">4</td>
+<td headers="grand_summary_stub_1 cluster" class="gt_row gt_center gt_grand_summary_row gt_first_grand_summary_row">26</td>
 <td headers="grand_summary_stub_1 num_cells" class="gt_row gt_right gt_grand_summary_row gt_first_grand_summary_row">—</td>
 <td headers="grand_summary_stub_1 median_umis" class="gt_row gt_right gt_grand_summary_row gt_first_grand_summary_row">—</td>
 <td headers="grand_summary_stub_1 median_features" class="gt_row gt_right gt_grand_summary_row gt_first_grand_summary_row">—</td>
 </tr>
 <tr>
-<th id="grand_summary_stub_2" scope="row" class="gt_row gt_left gt_stub gt_grand_summary_row">Sum</th>
-<td headers="grand_summary_stub_2 group" class="gt_row gt_center gt_grand_summary_row">—</td>
-<td headers="grand_summary_stub_2 batch" class="gt_row gt_left gt_grand_summary_row">—</td>
-<td headers="grand_summary_stub_2 num_cells" class="gt_row gt_right gt_grand_summary_row">22,140</td>
-<td headers="grand_summary_stub_2 median_umis" class="gt_row gt_right gt_grand_summary_row">—</td>
-<td headers="grand_summary_stub_2 median_features" class="gt_row gt_right gt_grand_summary_row">—</td>
+<th id="grand_summary_stub_2" scope="row" class="gt_row gt_left gt_stub gt_grand_summary_row">Mean</th>
+<td headers="grand_summary_stub_2 cluster" class="gt_row gt_center gt_grand_summary_row">—</td>
+<td headers="grand_summary_stub_2 num_cells" class="gt_row gt_right gt_grand_summary_row">—</td>
+<td headers="grand_summary_stub_2 median_umis" class="gt_row gt_right gt_grand_summary_row">6,462.5</td>
+<td headers="grand_summary_stub_2 median_features" class="gt_row gt_right gt_grand_summary_row">1,989.2</td>
 </tr>
 <tr>
-<th id="grand_summary_stub_3" scope="row" class="gt_row gt_left gt_stub gt_grand_summary_row gt_last_summary_row">Mean</th>
-<td headers="grand_summary_stub_3 group" class="gt_row gt_center gt_grand_summary_row gt_last_summary_row">—</td>
-<td headers="grand_summary_stub_3 batch" class="gt_row gt_left gt_grand_summary_row gt_last_summary_row">—</td>
-<td headers="grand_summary_stub_3 num_cells" class="gt_row gt_right gt_grand_summary_row gt_last_summary_row">—</td>
-<td headers="grand_summary_stub_3 median_umis" class="gt_row gt_right gt_grand_summary_row gt_last_summary_row">8,399.75</td>
-<td headers="grand_summary_stub_3 median_features" class="gt_row gt_right gt_grand_summary_row gt_last_summary_row">2,464.38</td>
+<th id="grand_summary_stub_3" scope="row" class="gt_row gt_left gt_stub gt_grand_summary_row gt_last_summary_row">Sum</th>
+<td headers="grand_summary_stub_3 cluster" class="gt_row gt_center gt_grand_summary_row gt_last_summary_row">—</td>
+<td headers="grand_summary_stub_3 num_cells" class="gt_row gt_right gt_grand_summary_row gt_last_summary_row">22,140</td>
+<td headers="grand_summary_stub_3 median_umis" class="gt_row gt_right gt_grand_summary_row gt_last_summary_row">—</td>
+<td headers="grand_summary_stub_3 median_features" class="gt_row gt_right gt_grand_summary_row gt_last_summary_row">—</td>
 </tr>
 </tbody>
 </table>
@@ -1165,12 +1295,6 @@ ENSMUSG00000109048 ENSMUSG00000025902
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-
-</div>
-<div class="cell">
-
-</div>
-<div class="cell">
 <div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">embedding</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
 <span>        num_umis <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/Matrix/man/colSums.html">colSums</a></span><span class="op">(</span><span class="va">matrix_readcount_use</span><span class="op">[</span>, <span class="va">cell</span><span class="op">]</span><span class="op">)</span>,</span>
@@ -1185,38 +1309,64 @@ ENSMUSG00000109048 ENSMUSG00000025902
 <span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/gt.html">gt</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/data_color.html">data_color</a></span><span class="op">(</span></span>
 <span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">median_umis</span><span class="op">)</span>,</span>
-<span>        colors <span class="op">=</span> <span class="fu">scales</span><span class="fu">::</span><span class="fu"><a href="https://scales.r-lib.org/reference/col_numeric.html">col_numeric</a></span><span class="op">(</span></span>
+<span>        fn <span class="op">=</span> <span class="fu">scales</span><span class="fu">::</span><span class="fu"><a href="https://scales.r-lib.org/reference/col_numeric.html">col_numeric</a></span><span class="op">(</span></span>
 <span>            palette <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span></span>
 <span>                <span class="st">"green"</span>, <span class="st">"orange"</span>, <span class="st">"red"</span></span>
 <span>            <span class="op">)</span>,</span>
 <span>            domain <span class="op">=</span> <span class="cn">NULL</span></span>
 <span>        <span class="op">)</span></span>
 <span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/summary_rows.html">summary_rows</a></span><span class="op">(</span></span>
+<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/fmt_number.html">fmt_number</a></span><span class="op">(</span></span>
+<span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">num_cells</span><span class="op">)</span>,</span>
+<span>        sep_mark <span class="op">=</span> <span class="st">","</span>,</span>
+<span>        decimals <span class="op">=</span> <span class="fl">0</span></span>
+<span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/fmt_number.html">fmt_number</a></span><span class="op">(</span></span>
+<span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">median_umis</span>, <span class="va">median_features</span><span class="op">)</span>,</span>
+<span>        sep_mark <span class="op">=</span> <span class="st">","</span>,</span>
+<span>        decimals <span class="op">=</span> <span class="fl">1</span></span>
+<span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/grand_summary_rows.html">grand_summary_rows</a></span><span class="op">(</span></span>
 <span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">cluster</span><span class="op">)</span>,</span>
 <span>        fns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>            Count <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/context.html">n</a></span><span class="op">(</span><span class="op">)</span></span>
 <span>        <span class="op">)</span>,</span>
-<span>        decimals <span class="op">=</span> <span class="fl">0</span></span>
+<span>        fmt <span class="op">=</span> <span class="op">~</span> <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/fmt_number.html">fmt_number</a></span><span class="op">(</span><span class="va">.</span>, decimals <span class="op">=</span> <span class="fl">0</span>, use_seps <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/summary_rows.html">summary_rows</a></span><span class="op">(</span></span>
+<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/grand_summary_rows.html">grand_summary_rows</a></span><span class="op">(</span></span>
+<span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">median_umis</span><span class="op">:</span><span class="va">median_features</span><span class="op">)</span>,</span>
+<span>        fns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
+<span>            Mean <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span></span>
+<span>        <span class="op">)</span>,</span>
+<span>        fmt <span class="op">=</span> <span class="op">~</span> <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/fmt_number.html">fmt_number</a></span><span class="op">(</span><span class="va">.</span>, decimals <span class="op">=</span> <span class="fl">1</span>, use_seps <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/grand_summary_rows.html">grand_summary_rows</a></span><span class="op">(</span></span>
 <span>        columns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">num_cells</span><span class="op">)</span>,</span>
 <span>        fns <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
 <span>            Sum <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span></span>
 <span>        <span class="op">)</span>,</span>
-<span>        decimals <span class="op">=</span> <span class="fl">0</span></span>
+<span>        fmt <span class="op">=</span> <span class="op">~</span> <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/fmt_number.html">fmt_number</a></span><span class="op">(</span><span class="va">.</span>, decimals <span class="op">=</span> <span class="fl">0</span>, use_seps <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span>    <span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/tab_header.html">tab_header</a></span><span class="op">(</span></span>
 <span>        title <span class="op">=</span> <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/md.html">md</a></span><span class="op">(</span><span class="st">"**10x Genomics**; Clustering"</span><span class="op">)</span></span>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
-<div id="zhlouvxpim" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="pkvophcede" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#zhlouvxpim) .gt_table {
+#pkvophcede thead, #pkvophcede tbody, #pkvophcede tfoot, #pkvophcede tr, #pkvophcede td, #pkvophcede th {
+  border-style: none;
+}
+
+#pkvophcede p {
+  margin: 0;
+  padding: 0;
+}
+
+#pkvophcede .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1241,19 +1391,12 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-left-color: #D3D3D3;
 }
 
-:where(#zhlouvxpim) .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
+#pkvophcede .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
-:where(#zhlouvxpim) .gt_title {
+#pkvophcede .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1265,25 +1408,37 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-bottom-width: 0;
 }
 
-:where(#zhlouvxpim) .gt_subtitle {
+#pkvophcede .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
-  padding-top: 0;
-  padding-bottom: 6px;
+  padding-top: 3px;
+  padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
 
-:where(#zhlouvxpim) .gt_bottom_border {
+#pkvophcede .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#pkvophcede .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#zhlouvxpim) .gt_col_headings {
+#pkvophcede .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1298,7 +1453,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-right-color: #D3D3D3;
 }
 
-:where(#zhlouvxpim) .gt_col_heading {
+#pkvophcede .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1318,7 +1473,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   overflow-x: hidden;
 }
 
-:where(#zhlouvxpim) .gt_column_spanner_outer {
+#pkvophcede .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1330,15 +1485,15 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 4px;
 }
 
-:where(#zhlouvxpim) .gt_column_spanner_outer:first-child {
+#pkvophcede .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#zhlouvxpim) .gt_column_spanner_outer:last-child {
+#pkvophcede .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#zhlouvxpim) .gt_column_spanner {
+#pkvophcede .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1350,7 +1505,11 @@ ENSMUSG00000109048 ENSMUSG00000025902
   width: 100%;
 }
 
-:where(#zhlouvxpim) .gt_group_heading {
+#pkvophcede .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#pkvophcede .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1376,7 +1535,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   text-align: left;
 }
 
-:where(#zhlouvxpim) .gt_empty_group_heading {
+#pkvophcede .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1391,15 +1550,15 @@ ENSMUSG00000109048 ENSMUSG00000025902
   vertical-align: middle;
 }
 
-:where(#zhlouvxpim) .gt_from_md > :first-child {
+#pkvophcede .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#zhlouvxpim) .gt_from_md > :last-child {
+#pkvophcede .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#zhlouvxpim) .gt_row {
+#pkvophcede .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1418,7 +1577,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   overflow-x: hidden;
 }
 
-:where(#zhlouvxpim) .gt_stub {
+#pkvophcede .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1431,7 +1590,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-:where(#zhlouvxpim) .gt_stub_row_group {
+#pkvophcede .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1445,11 +1604,15 @@ ENSMUSG00000109048 ENSMUSG00000025902
   vertical-align: top;
 }
 
-:where(#zhlouvxpim) .gt_row_group_first td {
+#pkvophcede .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#zhlouvxpim) .gt_summary_row {
+#pkvophcede .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#pkvophcede .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1459,16 +1622,16 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-:where(#zhlouvxpim) .gt_first_summary_row {
+#pkvophcede .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-:where(#zhlouvxpim) .gt_first_summary_row.thick {
+#pkvophcede .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#zhlouvxpim) .gt_last_summary_row {
+#pkvophcede .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1478,7 +1641,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-bottom-color: #D3D3D3;
 }
 
-:where(#zhlouvxpim) .gt_grand_summary_row {
+#pkvophcede .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1488,7 +1651,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-:where(#zhlouvxpim) .gt_first_grand_summary_row {
+#pkvophcede .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1498,11 +1661,21 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-top-color: #D3D3D3;
 }
 
-:where(#zhlouvxpim) .gt_striped {
+#pkvophcede .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#pkvophcede .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#zhlouvxpim) .gt_table_body {
+#pkvophcede .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1511,7 +1684,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-bottom-color: #D3D3D3;
 }
 
-:where(#zhlouvxpim) .gt_footnotes {
+#pkvophcede .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1525,30 +1698,8 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-right-color: #D3D3D3;
 }
 
-:where(#zhlouvxpim) .gt_footnote {
+#pkvophcede .gt_footnote {
   margin: 0px;
-  font-size: 90%;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-:where(#zhlouvxpim) .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-:where(#zhlouvxpim) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1556,260 +1707,285 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-:where(#zhlouvxpim) .gt_left {
+#pkvophcede .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#pkvophcede .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pkvophcede .gt_left {
   text-align: left;
 }
 
-:where(#zhlouvxpim) .gt_center {
+#pkvophcede .gt_center {
   text-align: center;
 }
 
-:where(#zhlouvxpim) .gt_right {
+#pkvophcede .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#zhlouvxpim) .gt_font_normal {
+#pkvophcede .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#zhlouvxpim) .gt_font_bold {
+#pkvophcede .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#zhlouvxpim) .gt_font_italic {
+#pkvophcede .gt_font_italic {
   font-style: italic;
 }
 
-:where(#zhlouvxpim) .gt_super {
+#pkvophcede .gt_super {
   font-size: 65%;
 }
 
-:where(#zhlouvxpim) .gt_footnote_marks {
+#pkvophcede .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
+  position: initial;
 }
 
-:where(#zhlouvxpim) .gt_asterisk {
+#pkvophcede .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#zhlouvxpim) .gt_indent_1 {
+#pkvophcede .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#zhlouvxpim) .gt_indent_2 {
+#pkvophcede .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#zhlouvxpim) .gt_indent_3 {
+#pkvophcede .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#zhlouvxpim) .gt_indent_4 {
+#pkvophcede .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#zhlouvxpim) .gt_indent_5 {
+#pkvophcede .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table">
-<thead class="gt_header"><tr>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_heading">
 <td colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">
 <strong>10x Genomics</strong>; Clustering</td>
-    </tr></thead>
-<thead class="gt_col_headings"><tr>
+    </tr>
+<tr class="gt_col_headings">
 <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=""></th>
       <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="cluster">cluster</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="num_cells">num_cells</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="median_umis">median_umis</th>
       <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="median_features">median_features</th>
-    </tr></thead>
+    </tr>
+</thead>
 <tbody class="gt_table_body">
 <tr>
 <th id="stub_1_1" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_1 cluster" class="gt_row gt_center">1</td>
-<td headers="stub_1_1 num_cells" class="gt_row gt_right">3240</td>
-<td headers="stub_1_1 median_umis" class="gt_row gt_right" style="background-color: #FF0000; color: #FFFFFF;">15464.0</td>
-<td headers="stub_1_1 median_features" class="gt_row gt_right">3820.0</td>
+<td headers="stub_1_1 num_cells" class="gt_row gt_right">3,240</td>
+<td headers="stub_1_1 median_umis" class="gt_row gt_right" style="background-color: #FF0000; color: #FFFFFF;">15,464.0</td>
+<td headers="stub_1_1 median_features" class="gt_row gt_right">3,820.0</td>
 </tr>
 <tr>
 <th id="stub_1_2" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_2 cluster" class="gt_row gt_center">2</td>
-<td headers="stub_1_2 num_cells" class="gt_row gt_right">2259</td>
-<td headers="stub_1_2 median_umis" class="gt_row gt_right" style="background-color: #14FE00; color: #000000;">2390.0</td>
+<td headers="stub_1_2 num_cells" class="gt_row gt_right">2,259</td>
+<td headers="stub_1_2 median_umis" class="gt_row gt_right" style="background-color: #14FE00; color: #000000;">2,390.0</td>
 <td headers="stub_1_2 median_features" class="gt_row gt_right">997.0</td>
 </tr>
 <tr>
 <th id="stub_1_3" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_3 cluster" class="gt_row gt_center">3</td>
-<td headers="stub_1_3 num_cells" class="gt_row gt_right">1914</td>
-<td headers="stub_1_3 median_umis" class="gt_row gt_right" style="background-color: #FF6800; color: #FFFFFF;">12506.5</td>
-<td headers="stub_1_3 median_features" class="gt_row gt_right">3352.5</td>
+<td headers="stub_1_3 num_cells" class="gt_row gt_right">1,914</td>
+<td headers="stub_1_3 median_umis" class="gt_row gt_right" style="background-color: #FF6800; color: #FFFFFF;">12,506.5</td>
+<td headers="stub_1_3 median_features" class="gt_row gt_right">3,352.5</td>
 </tr>
 <tr>
 <th id="stub_1_4" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_4 cluster" class="gt_row gt_center">4</td>
-<td headers="stub_1_4 num_cells" class="gt_row gt_right">1707</td>
-<td headers="stub_1_4 median_umis" class="gt_row gt_right" style="background-color: #FF3400; color: #FFFFFF;">14631.0</td>
-<td headers="stub_1_4 median_features" class="gt_row gt_right">3845.0</td>
+<td headers="stub_1_4 num_cells" class="gt_row gt_right">1,707</td>
+<td headers="stub_1_4 median_umis" class="gt_row gt_right" style="background-color: #FF3400; color: #FFFFFF;">14,631.0</td>
+<td headers="stub_1_4 median_features" class="gt_row gt_right">3,845.0</td>
 </tr>
 <tr>
 <th id="stub_1_5" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_5 cluster" class="gt_row gt_center">5</td>
-<td headers="stub_1_5 num_cells" class="gt_row gt_right">1330</td>
-<td headers="stub_1_5 median_umis" class="gt_row gt_right" style="background-color: #BCD600; color: #000000;">5696.5</td>
-<td headers="stub_1_5 median_features" class="gt_row gt_right">1564.5</td>
+<td headers="stub_1_5 num_cells" class="gt_row gt_right">1,330</td>
+<td headers="stub_1_5 median_umis" class="gt_row gt_right" style="background-color: #BCD600; color: #000000;">5,696.5</td>
+<td headers="stub_1_5 median_features" class="gt_row gt_right">1,564.5</td>
 </tr>
 <tr>
 <th id="stub_1_6" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_6 cluster" class="gt_row gt_center">6</td>
-<td headers="stub_1_6 num_cells" class="gt_row gt_right">1329</td>
-<td headers="stub_1_6 median_umis" class="gt_row gt_right" style="background-color: #AEDD00; color: #000000;">5189.0</td>
-<td headers="stub_1_6 median_features" class="gt_row gt_right">1451.0</td>
+<td headers="stub_1_6 num_cells" class="gt_row gt_right">1,329</td>
+<td headers="stub_1_6 median_umis" class="gt_row gt_right" style="background-color: #AEDD00; color: #000000;">5,189.0</td>
+<td headers="stub_1_6 median_features" class="gt_row gt_right">1,451.0</td>
 </tr>
 <tr>
 <th id="stub_1_7" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_7 cluster" class="gt_row gt_center">7</td>
-<td headers="stub_1_7 num_cells" class="gt_row gt_right">1222</td>
-<td headers="stub_1_7 median_umis" class="gt_row gt_right" style="background-color: #C4D200; color: #000000;">6010.0</td>
-<td headers="stub_1_7 median_features" class="gt_row gt_right">2147.0</td>
+<td headers="stub_1_7 num_cells" class="gt_row gt_right">1,222</td>
+<td headers="stub_1_7 median_umis" class="gt_row gt_right" style="background-color: #C4D200; color: #000000;">6,010.0</td>
+<td headers="stub_1_7 median_features" class="gt_row gt_right">2,147.0</td>
 </tr>
 <tr>
 <th id="stub_1_8" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_8 cluster" class="gt_row gt_center">8</td>
-<td headers="stub_1_8 num_cells" class="gt_row gt_right">1213</td>
-<td headers="stub_1_8 median_umis" class="gt_row gt_right" style="background-color: #EBB700; color: #000000;">7804.0</td>
-<td headers="stub_1_8 median_features" class="gt_row gt_right">2151.0</td>
+<td headers="stub_1_8 num_cells" class="gt_row gt_right">1,213</td>
+<td headers="stub_1_8 median_umis" class="gt_row gt_right" style="background-color: #EBB700; color: #000000;">7,804.0</td>
+<td headers="stub_1_8 median_features" class="gt_row gt_right">2,151.0</td>
 </tr>
 <tr>
 <th id="stub_1_9" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_9 cluster" class="gt_row gt_center">9</td>
-<td headers="stub_1_9 num_cells" class="gt_row gt_right">1093</td>
-<td headers="stub_1_9 median_umis" class="gt_row gt_right" style="background-color: #B4DA00; color: #000000;">5399.0</td>
-<td headers="stub_1_9 median_features" class="gt_row gt_right">2239.0</td>
+<td headers="stub_1_9 num_cells" class="gt_row gt_right">1,093</td>
+<td headers="stub_1_9 median_umis" class="gt_row gt_right" style="background-color: #B4DA00; color: #000000;">5,399.0</td>
+<td headers="stub_1_9 median_features" class="gt_row gt_right">2,239.0</td>
 </tr>
 <tr>
 <th id="stub_1_10" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_10 cluster" class="gt_row gt_center">10</td>
-<td headers="stub_1_10 num_cells" class="gt_row gt_right">1082</td>
-<td headers="stub_1_10 median_umis" class="gt_row gt_right" style="background-color: #FF8100; color: #000000;">11149.5</td>
-<td headers="stub_1_10 median_features" class="gt_row gt_right">3049.0</td>
+<td headers="stub_1_10 num_cells" class="gt_row gt_right">1,082</td>
+<td headers="stub_1_10 median_umis" class="gt_row gt_right" style="background-color: #FF8100; color: #000000;">11,149.5</td>
+<td headers="stub_1_10 median_features" class="gt_row gt_right">3,049.0</td>
 </tr>
 <tr>
 <th id="stub_1_11" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_11 cluster" class="gt_row gt_center">11</td>
 <td headers="stub_1_11 num_cells" class="gt_row gt_right">850</td>
-<td headers="stub_1_11 median_umis" class="gt_row gt_right" style="background-color: #E4BD00; color: #000000;">7452.5</td>
-<td headers="stub_1_11 median_features" class="gt_row gt_right">2738.0</td>
+<td headers="stub_1_11 median_umis" class="gt_row gt_right" style="background-color: #E4BD00; color: #000000;">7,452.5</td>
+<td headers="stub_1_11 median_features" class="gt_row gt_right">2,738.0</td>
 </tr>
 <tr>
 <th id="stub_1_12" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_12 cluster" class="gt_row gt_center">12</td>
 <td headers="stub_1_12 num_cells" class="gt_row gt_right">848</td>
-<td headers="stub_1_12 median_umis" class="gt_row gt_right" style="background-color: #00FF00; color: #000000;">2341.0</td>
+<td headers="stub_1_12 median_umis" class="gt_row gt_right" style="background-color: #00FF00; color: #000000;">2,341.0</td>
 <td headers="stub_1_12 median_features" class="gt_row gt_right">773.0</td>
 </tr>
 <tr>
 <th id="stub_1_13" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_13 cluster" class="gt_row gt_center">13</td>
 <td headers="stub_1_13 num_cells" class="gt_row gt_right">638</td>
-<td headers="stub_1_13 median_umis" class="gt_row gt_right" style="background-color: #85ED00; color: #000000;">3925.5</td>
+<td headers="stub_1_13 median_umis" class="gt_row gt_right" style="background-color: #85ED00; color: #000000;">3,925.5</td>
 <td headers="stub_1_13 median_features" class="gt_row gt_right">985.0</td>
 </tr>
 <tr>
 <th id="stub_1_14" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_14 cluster" class="gt_row gt_center">14</td>
 <td headers="stub_1_14 num_cells" class="gt_row gt_right">578</td>
-<td headers="stub_1_14 median_umis" class="gt_row gt_right" style="background-color: #A7E000; color: #000000;">4939.5</td>
-<td headers="stub_1_14 median_features" class="gt_row gt_right">2170.5</td>
+<td headers="stub_1_14 median_umis" class="gt_row gt_right" style="background-color: #A7E000; color: #000000;">4,939.5</td>
+<td headers="stub_1_14 median_features" class="gt_row gt_right">2,170.5</td>
 </tr>
 <tr>
 <th id="stub_1_15" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_15 cluster" class="gt_row gt_center">15</td>
 <td headers="stub_1_15 num_cells" class="gt_row gt_right">508</td>
-<td headers="stub_1_15 median_umis" class="gt_row gt_right" style="background-color: #BFD400; color: #000000;">5815.0</td>
-<td headers="stub_1_15 median_features" class="gt_row gt_right">1808.0</td>
+<td headers="stub_1_15 median_umis" class="gt_row gt_right" style="background-color: #BFD400; color: #000000;">5,815.0</td>
+<td headers="stub_1_15 median_features" class="gt_row gt_right">1,808.0</td>
 </tr>
 <tr>
 <th id="stub_1_16" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_16 cluster" class="gt_row gt_center">16</td>
 <td headers="stub_1_16 num_cells" class="gt_row gt_right">404</td>
-<td headers="stub_1_16 median_umis" class="gt_row gt_right" style="background-color: #AADF00; color: #000000;">5027.5</td>
-<td headers="stub_1_16 median_features" class="gt_row gt_right">1714.0</td>
+<td headers="stub_1_16 median_umis" class="gt_row gt_right" style="background-color: #AADF00; color: #000000;">5,027.5</td>
+<td headers="stub_1_16 median_features" class="gt_row gt_right">1,714.0</td>
 </tr>
 <tr>
 <th id="stub_1_17" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_17 cluster" class="gt_row gt_center">17</td>
 <td headers="stub_1_17 num_cells" class="gt_row gt_right">393</td>
-<td headers="stub_1_17 median_umis" class="gt_row gt_right" style="background-color: #B0DC00; color: #000000;">5241.0</td>
-<td headers="stub_1_17 median_features" class="gt_row gt_right">2151.0</td>
+<td headers="stub_1_17 median_umis" class="gt_row gt_right" style="background-color: #B0DC00; color: #000000;">5,241.0</td>
+<td headers="stub_1_17 median_features" class="gt_row gt_right">2,151.0</td>
 </tr>
 <tr>
 <th id="stub_1_18" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_18 cluster" class="gt_row gt_center">18</td>
 <td headers="stub_1_18 num_cells" class="gt_row gt_right">380</td>
-<td headers="stub_1_18 median_umis" class="gt_row gt_right" style="background-color: #EEB500; color: #000000;">7976.5</td>
-<td headers="stub_1_18 median_features" class="gt_row gt_right">2464.5</td>
+<td headers="stub_1_18 median_umis" class="gt_row gt_right" style="background-color: #EEB500; color: #000000;">7,976.5</td>
+<td headers="stub_1_18 median_features" class="gt_row gt_right">2,464.5</td>
 </tr>
 <tr>
 <th id="stub_1_19" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_19 cluster" class="gt_row gt_center">19</td>
 <td headers="stub_1_19 num_cells" class="gt_row gt_right">299</td>
-<td headers="stub_1_19 median_umis" class="gt_row gt_right" style="background-color: #D4C800; color: #000000;">6724.0</td>
-<td headers="stub_1_19 median_features" class="gt_row gt_right">2777.0</td>
+<td headers="stub_1_19 median_umis" class="gt_row gt_right" style="background-color: #D4C800; color: #000000;">6,724.0</td>
+<td headers="stub_1_19 median_features" class="gt_row gt_right">2,777.0</td>
 </tr>
 <tr>
 <th id="stub_1_20" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_20 cluster" class="gt_row gt_center">20</td>
 <td headers="stub_1_20 num_cells" class="gt_row gt_right">280</td>
-<td headers="stub_1_20 median_umis" class="gt_row gt_right" style="background-color: #B3DB00; color: #000000;">5360.5</td>
-<td headers="stub_1_20 median_features" class="gt_row gt_right">1906.5</td>
+<td headers="stub_1_20 median_umis" class="gt_row gt_right" style="background-color: #B3DB00; color: #000000;">5,360.5</td>
+<td headers="stub_1_20 median_features" class="gt_row gt_right">1,906.5</td>
 </tr>
 <tr>
 <th id="stub_1_21" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_21 cluster" class="gt_row gt_center">21</td>
 <td headers="stub_1_21 num_cells" class="gt_row gt_right">148</td>
-<td headers="stub_1_21 median_umis" class="gt_row gt_right" style="background-color: #57F800; color: #000000;">2981.5</td>
-<td headers="stub_1_21 median_features" class="gt_row gt_right">1140.5</td>
+<td headers="stub_1_21 median_umis" class="gt_row gt_right" style="background-color: #57F800; color: #000000;">2,981.5</td>
+<td headers="stub_1_21 median_features" class="gt_row gt_right">1,140.5</td>
 </tr>
 <tr>
 <th id="stub_1_22" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_22 cluster" class="gt_row gt_center">22</td>
 <td headers="stub_1_22 num_cells" class="gt_row gt_right">117</td>
-<td headers="stub_1_22 median_umis" class="gt_row gt_right" style="background-color: #B2DB00; color: #000000;">5305.0</td>
-<td headers="stub_1_22 median_features" class="gt_row gt_right">1954.0</td>
+<td headers="stub_1_22 median_umis" class="gt_row gt_right" style="background-color: #B2DB00; color: #000000;">5,305.0</td>
+<td headers="stub_1_22 median_features" class="gt_row gt_right">1,954.0</td>
 </tr>
 <tr>
 <th id="stub_1_23" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_23 cluster" class="gt_row gt_center">23</td>
 <td headers="stub_1_23 num_cells" class="gt_row gt_right">95</td>
-<td headers="stub_1_23 median_umis" class="gt_row gt_right" style="background-color: #35FC00; color: #000000;">2586.0</td>
-<td headers="stub_1_23 median_features" class="gt_row gt_right">1370.0</td>
+<td headers="stub_1_23 median_umis" class="gt_row gt_right" style="background-color: #35FC00; color: #000000;">2,586.0</td>
+<td headers="stub_1_23 median_features" class="gt_row gt_right">1,370.0</td>
 </tr>
 <tr>
 <th id="stub_1_24" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_24 cluster" class="gt_row gt_center">24</td>
 <td headers="stub_1_24 num_cells" class="gt_row gt_right">92</td>
-<td headers="stub_1_24 median_umis" class="gt_row gt_right" style="background-color: #A8E000; color: #000000;">4966.5</td>
+<td headers="stub_1_24 median_umis" class="gt_row gt_right" style="background-color: #A8E000; color: #000000;">4,966.5</td>
 <td headers="stub_1_24 median_features" class="gt_row gt_right">280.0</td>
 </tr>
 <tr>
 <th id="stub_1_25" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_25 cluster" class="gt_row gt_center">25</td>
 <td headers="stub_1_25 num_cells" class="gt_row gt_right">64</td>
-<td headers="stub_1_25 median_umis" class="gt_row gt_right" style="background-color: #C9CF00; color: #000000;">6244.5</td>
-<td headers="stub_1_25 median_features" class="gt_row gt_right">2619.5</td>
+<td headers="stub_1_25 median_umis" class="gt_row gt_right" style="background-color: #C9CF00; color: #000000;">6,244.5</td>
+<td headers="stub_1_25 median_features" class="gt_row gt_right">2,619.5</td>
 </tr>
 <tr>
 <th id="stub_1_26" scope="row" class="gt_row gt_left gt_stub"></th>
 <td headers="stub_1_26 cluster" class="gt_row gt_center">26</td>
 <td headers="stub_1_26 num_cells" class="gt_row gt_right">57</td>
-<td headers="stub_1_26 median_umis" class="gt_row gt_right" style="background-color: #A6E100; color: #000000;">4898.0</td>
+<td headers="stub_1_26 median_umis" class="gt_row gt_right" style="background-color: #A6E100; color: #000000;">4,898.0</td>
 <td headers="stub_1_26 median_features" class="gt_row gt_right">251.0</td>
 </tr>
 <tr>
@@ -1820,19 +1996,23 @@ ENSMUSG00000109048 ENSMUSG00000025902
 <td headers="grand_summary_stub_1 median_features" class="gt_row gt_right gt_grand_summary_row gt_first_grand_summary_row">—</td>
 </tr>
 <tr>
-<th id="grand_summary_stub_2" scope="row" class="gt_row gt_left gt_stub gt_grand_summary_row gt_last_summary_row">Sum</th>
-<td headers="grand_summary_stub_2 cluster" class="gt_row gt_center gt_grand_summary_row gt_last_summary_row">—</td>
-<td headers="grand_summary_stub_2 num_cells" class="gt_row gt_right gt_grand_summary_row gt_last_summary_row">22,140</td>
-<td headers="grand_summary_stub_2 median_umis" class="gt_row gt_right gt_grand_summary_row gt_last_summary_row">—</td>
-<td headers="grand_summary_stub_2 median_features" class="gt_row gt_right gt_grand_summary_row gt_last_summary_row">—</td>
+<th id="grand_summary_stub_2" scope="row" class="gt_row gt_left gt_stub gt_grand_summary_row">Mean</th>
+<td headers="grand_summary_stub_2 cluster" class="gt_row gt_center gt_grand_summary_row">—</td>
+<td headers="grand_summary_stub_2 num_cells" class="gt_row gt_right gt_grand_summary_row">—</td>
+<td headers="grand_summary_stub_2 median_umis" class="gt_row gt_right gt_grand_summary_row">6,462.5</td>
+<td headers="grand_summary_stub_2 median_features" class="gt_row gt_right gt_grand_summary_row">1,989.2</td>
+</tr>
+<tr>
+<th id="grand_summary_stub_3" scope="row" class="gt_row gt_left gt_stub gt_grand_summary_row gt_last_summary_row">Sum</th>
+<td headers="grand_summary_stub_3 cluster" class="gt_row gt_center gt_grand_summary_row gt_last_summary_row">—</td>
+<td headers="grand_summary_stub_3 num_cells" class="gt_row gt_right gt_grand_summary_row gt_last_summary_row">22,140</td>
+<td headers="grand_summary_stub_3 median_umis" class="gt_row gt_right gt_grand_summary_row gt_last_summary_row">—</td>
+<td headers="grand_summary_stub_3 median_features" class="gt_row gt_right gt_grand_summary_row gt_last_summary_row">—</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-</div>
-<div class="cell">
-
 </div>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">purrr</span><span class="fu">::</span><span class="fu"><a href="https://purrr.tidyverse.org/reference/reduce.html">reduce</a></span><span class="op">(</span></span>
@@ -2007,9 +2187,6 @@ Control
 </div>
 </div>
 </section><section id="polished" class="level4"><h4 class="anchored" data-anchor-id="polished">Polished</h4>
-<div class="cell">
-
-</div>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p_embedding_cluster</span> <span class="op">&lt;-</span> <span class="fu">plot_embedding</span><span class="op">(</span></span>
 <span>    data <span class="op">=</span> <span class="va">embedding</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">x_column</span>, <span class="va">y_column</span><span class="op">)</span><span class="op">]</span>,</span>
@@ -2128,10 +2305,8 @@ Control
 <span>        <span class="op">)</span></span>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0. Please use
-`linewidth` instead.
-ℹ The deprecated feature was likely used in the ggplot2 package.
-  Please report the issue at &lt;https://github.com/tidyverse/ggplot2/issues&gt;.</code></pre>
+<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.</code></pre>
 </div>
 <div class="sourceCode" id="cb37"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">p_embedding_uninfected</span> <span class="op">&lt;-</span> <span class="fu">plot_embedding</span><span class="op">(</span></span>
 <span>    data <span class="op">=</span> <span class="va">embedding</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">x_column</span>, <span class="va">y_column</span><span class="op">)</span><span class="op">]</span>,</span>
@@ -2161,7 +2336,7 @@ Control
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.
-Please use the `linewidth` argument instead.</code></pre>
+ℹ Please use the `linewidth` argument instead.</code></pre>
 </div>
 </div>
 <div class="cell" data-layout-align="center" data-fig.dpi="300">
@@ -2182,9 +2357,6 @@ Please use the `linewidth` argument instead.</code></pre>
 </div>
 </div>
 </section></section><section id="composition" class="level3"><h3 class="anchored" data-anchor-id="composition">Composition</h3>
-<div class="cell" data-layout-align="center">
-
-</div>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode" id="cb40"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">calc_group_composition</span><span class="op">(</span></span>
 <span>    data <span class="op">=</span> <span class="va">embedding</span>,</span>
@@ -2337,12 +2509,6 @@ ENSMUSG00000021391_Cenpp </code></pre>
 </div>
 </section><section id="bar-plot" class="level3 page-columns page-full"><h3 class="anchored" data-anchor-id="bar-plot">Bar plot</h3>
 <div class="cell">
-
-</div>
-<div class="cell">
-
-</div>
-<div class="cell">
 <div class="sourceCode" id="cb45"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">barplot_helper</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">cells</span>, <span class="va">features</span>, <span class="va">matrix_readcount</span><span class="op">)</span> <span class="op">{</span></span>
 <span>    <span class="fu">purrr</span><span class="fu">::</span><span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html">map</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">cells</span><span class="op">)</span>, \<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
 <span>        <span class="fu">calc_cpm</span><span class="op">(</span><span class="va">matrix_readcount</span><span class="op">)</span><span class="op">[</span></span>
@@ -2355,9 +2521,6 @@ ENSMUSG00000021391_Cenpp </code></pre>
 <span>    <span class="op">}</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>        <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/bind_rows.html">bind_rows</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-
 </div>
 <div class="cell page-columns page-full" data-layout-align="center">
 <div class="sourceCode" id="cb46"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">cells_barplot</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span></span>
@@ -2575,12 +2738,6 @@ ENSMUSG00000021391_Cenpp </code></pre>
 </div>
 </div>
 </div>
-<div class="cell">
-
-</div>
-<div class="cell" data-layout-align="center">
-
-</div>
 <p><br></p>
 </section><section id="r-session-info" class="level2"><h2 class="anchored" data-anchor-id="r-session-info">R session info</h2>
 <div class="cell">
@@ -2588,128 +2745,135 @@ ENSMUSG00000021391_Cenpp </code></pre>
 <div class="cell-output cell-output-stdout">
 <pre><code>─ Session info ───────────────────────────────────────────────────────────────
  setting  value
- version  R version 4.2.1 (2022-06-23)
- os       macOS Monterey 12.6
- system   aarch64, darwin21.6.0
+ version  R version 4.2.2 (2022-10-31)
+ os       macOS Ventura 13.2.1
+ system   aarch64, darwin22.1.0
  ui       unknown
  language (EN)
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       America/Chicago
- date     2022-09-24
- pandoc   2.19.2 @ /opt/homebrew/bin/ (via rmarkdown)
+ date     2023-03-08
+ pandoc   2.19.2 @ /Users/jialei/.pyenv/shims/ (via rmarkdown)
 
 ─ Packages ───────────────────────────────────────────────────────────────────
- package     * version       date (UTC) lib source
- bit           4.0.4         2020-08-04 [1] CRAN (R 4.2.0)
- bit64         4.0.5         2020-08-30 [1] CRAN (R 4.2.0)
- cachem        1.0.6         2021-08-19 [1] CRAN (R 4.2.0)
- callr         3.7.2         2022-08-22 [1] CRAN (R 4.2.1)
- cli           3.4.1         2022-09-23 [1] CRAN (R 4.2.1)
- colorspace    2.0-3         2022-02-21 [1] CRAN (R 4.2.0)
- commonmark    1.8.0         2022-03-09 [1] CRAN (R 4.2.0)
- crayon        1.5.1         2022-03-26 [1] CRAN (R 4.2.0)
- devtools      2.4.4.9000    2022-09-23 [1] Github (r-lib/devtools@9e2793a)
- digest        0.6.29        2021-12-01 [1] CRAN (R 4.2.0)
- dplyr       * 1.0.99.9000   2022-09-23 [1] Github (tidyverse/dplyr@19c2be3)
- ellipsis      0.3.2         2021-04-29 [1] CRAN (R 4.2.0)
- evaluate      0.16          2022-08-09 [1] CRAN (R 4.2.1)
- extrafont   * 0.18          2022-04-12 [1] CRAN (R 4.2.0)
- extrafontdb   1.0           2012-06-11 [1] CRAN (R 4.2.0)
- fansi         1.0.3         2022-03-24 [1] CRAN (R 4.2.0)
- farver        2.1.1         2022-07-06 [1] CRAN (R 4.2.1)
- fastmap       1.1.0         2021-01-25 [1] CRAN (R 4.2.0)
- forcats     * 0.5.2.9000    2022-08-20 [1] Github (tidyverse/forcats@bd319e0)
- formattable * 0.2.1         2021-01-07 [1] CRAN (R 4.2.1)
- fs            1.5.2.9000    2022-08-24 [1] Github (r-lib/fs@238032f)
- generics      0.1.3         2022-07-05 [1] CRAN (R 4.2.1)
- ggplot2     * 3.3.6.9000    2022-09-12 [1] Github (tidyverse/ggplot2@a58b48c)
- ggrepel       0.9.1         2021-01-15 [1] CRAN (R 4.2.0)
- glue          1.6.2.9000    2022-04-22 [1] Github (tidyverse/glue@d47d6c7)
- gt            0.7.0.9000    2022-09-23 [1] Github (rstudio/gt@4030fb7)
- gtable        0.3.1.9000    2022-09-01 [1] Github (r-lib/gtable@c1a7a81)
- highr         0.9           2021-04-16 [1] CRAN (R 4.2.0)
- hms           1.1.2         2022-08-19 [1] CRAN (R 4.2.1)
- htmltools     0.5.3         2022-07-18 [1] CRAN (R 4.2.1)
- htmlwidgets   1.5.4         2022-08-23 [1] Github (ramnathv/htmlwidgets@400cf1a)
- httpuv        1.6.6         2022-09-08 [1] CRAN (R 4.2.1)
- jsonlite      1.8.0         2022-02-22 [1] CRAN (R 4.2.0)
- knitr         1.40          2022-08-24 [1] CRAN (R 4.2.1)
- labeling      0.4.2         2020-10-20 [1] CRAN (R 4.2.0)
- later         1.3.0         2021-08-18 [1] CRAN (R 4.2.0)
- lattice       0.20-45       2021-09-22 [2] CRAN (R 4.2.1)
- lifecycle     1.0.2.9000    2022-09-23 [1] Github (r-lib/lifecycle@0a6860a)
- lubridate   * 1.8.0.9000    2022-05-24 [1] Github (tidyverse/lubridate@0bb49b2)
- magrittr      2.0.3         2022-03-30 [1] CRAN (R 4.2.0)
- Matrix      * 1.5-1         2022-09-13 [1] CRAN (R 4.2.1)
- memoise       2.0.1         2021-11-26 [1] CRAN (R 4.2.0)
- mime          0.12          2021-09-28 [1] CRAN (R 4.2.0)
- miniUI        0.1.1.1       2018-05-18 [1] CRAN (R 4.2.0)
- munsell       0.5.0         2018-06-12 [1] CRAN (R 4.2.0)
- paletteer     1.4.1.9000    2022-08-16 [1] Github (EmilHvitfeldt/paletteer@aae3e75)
- patchwork   * 1.1.2.9000    2022-08-20 [1] Github (thomasp85/patchwork@c14c960)
- pillar        1.8.1         2022-08-19 [1] CRAN (R 4.2.1)
- pkgbuild      1.3.1         2021-12-20 [1] CRAN (R 4.2.0)
- pkgconfig     2.0.3         2019-09-22 [1] CRAN (R 4.2.0)
- pkgload       1.3.0         2022-06-27 [1] CRAN (R 4.2.1)
- prettyunits   1.1.1.9000    2022-04-22 [1] Github (r-lib/prettyunits@8706d89)
- prismatic     1.1.1         2022-08-15 [1] CRAN (R 4.2.1)
- processx      3.7.0         2022-07-07 [1] CRAN (R 4.2.1)
- profvis       0.3.7         2020-11-02 [1] CRAN (R 4.2.0)
- promises      1.2.0.1       2021-02-11 [1] CRAN (R 4.2.0)
- ps            1.7.1         2022-06-18 [1] CRAN (R 4.2.0)
- purrr       * 0.9000.0.9000 2022-09-24 [1] Github (tidyverse/purrr@4ab13f5)
- R.cache       0.16.0        2022-07-21 [1] CRAN (R 4.2.1)
- R.methodsS3   1.8.2         2022-06-13 [1] CRAN (R 4.2.0)
- R.oo          1.25.0        2022-06-12 [1] CRAN (R 4.2.0)
- R.utils       2.12.0        2022-06-28 [1] CRAN (R 4.2.1)
- R6            2.5.1.9000    2022-08-04 [1] Github (r-lib/R6@87d5e45)
- ragg          1.2.2.9000    2022-09-12 [1] Github (r-lib/ragg@904e145)
- Rcpp          1.0.9         2022-07-08 [1] CRAN (R 4.2.1)
- readr       * 2.1.2.9000    2022-09-20 [1] Github (tidyverse/readr@5cac6ed)
- rematch2      2.1.2         2020-05-01 [1] CRAN (R 4.2.0)
- remotes       2.4.2         2022-09-12 [1] Github (r-lib/remotes@bc0949d)
- rlang         1.0.6         2022-09-24 [1] Github (r-lib/rlang@66454bd)
- rmarkdown     2.16.1        2022-09-24 [1] Github (rstudio/rmarkdown@9577707)
- Rttf2pt1      1.3.10        2022-02-07 [1] CRAN (R 4.2.0)
- sass          0.4.2         2022-07-16 [1] CRAN (R 4.2.1)
- scales        1.2.1.9000    2022-08-20 [1] Github (r-lib/scales@b3df2fb)
- sessioninfo   1.2.2         2021-12-06 [1] CRAN (R 4.2.0)
- shiny         1.7.2         2022-07-19 [1] CRAN (R 4.2.1)
- stringi       1.7.8         2022-07-11 [1] CRAN (R 4.2.1)
- stringr     * 1.4.1.9000    2022-08-21 [1] Github (tidyverse/stringr@792bc92)
- styler      * 1.7.0.9002    2022-09-21 [1] Github (r-lib/styler@1f4437b)
- systemfonts   1.0.4         2022-02-11 [1] CRAN (R 4.2.0)
- textshaping   0.3.6         2021-10-13 [1] CRAN (R 4.2.0)
- tibble      * 3.1.8.9002    2022-09-24 [1] Github (tidyverse/tibble@e9db4f4)
- tidyr       * 1.2.1.9000    2022-09-09 [1] Github (tidyverse/tidyr@653def2)
- tidyselect    1.1.2.9000    2022-09-21 [1] Github (r-lib/tidyselect@edd0a3b)
- tidyverse   * 1.3.2.9000    2022-09-12 [1] Github (tidyverse/tidyverse@3be8283)
- tzdb          0.3.0         2022-03-28 [1] CRAN (R 4.2.0)
- urlchecker    1.0.1         2021-11-30 [1] CRAN (R 4.2.0)
- usethis       2.1.6.9000    2022-09-23 [1] Github (r-lib/usethis@8ecb7ab)
- utf8          1.2.2         2021-07-24 [1] CRAN (R 4.2.0)
- vctrs         0.4.1.9000    2022-09-19 [1] Github (r-lib/vctrs@0a219ba)
- viridisLite   0.4.1         2022-08-22 [1] CRAN (R 4.2.1)
- vroom         1.5.7.9000    2022-09-09 [1] Github (r-lib/vroom@0c2423e)
- withr         2.5.0         2022-03-03 [1] CRAN (R 4.2.0)
- xfun          0.33          2022-09-12 [1] CRAN (R 4.2.1)
- xtable        1.8-4         2019-04-21 [1] CRAN (R 4.2.0)
- yaml          2.3.5         2022-02-21 [1] CRAN (R 4.2.0)
+ package     * version    date (UTC) lib source
+ bit           4.0.5      2022-11-15 [1] CRAN (R 4.2.2)
+ bit64         4.0.5      2020-08-30 [1] CRAN (R 4.2.2)
+ cachem        1.0.7      2023-02-24 [1] CRAN (R 4.2.2)
+ callr         3.7.3      2022-11-02 [1] CRAN (R 4.2.2)
+ cli           3.6.0      2023-01-09 [1] CRAN (R 4.2.2)
+ colorspace    2.1-0      2023-01-23 [1] CRAN (R 4.2.2)
+ commonmark    1.8.1      2022-10-14 [1] CRAN (R 4.2.1)
+ crayon        1.5.2      2022-09-29 [1] CRAN (R 4.2.1)
+ devtools      2.4.5.9000 2023-03-08 [1] Github (r-lib/devtools@cfa1ba9)
+ digest        0.6.31     2022-12-11 [1] CRAN (R 4.2.2)
+ dplyr       * 1.1.0.9000 2023-03-08 [1] Github (tidyverse/dplyr@e12fd49)
+ ellipsis      0.3.2      2021-04-29 [1] CRAN (R 4.2.2)
+ evaluate      0.20       2023-01-17 [1] CRAN (R 4.2.2)
+ extrafont   * 0.19       2023-01-18 [1] CRAN (R 4.2.2)
+ extrafontdb   1.0        2012-06-11 [1] CRAN (R 4.2.0)
+ fansi         1.0.4      2023-01-22 [1] CRAN (R 4.2.2)
+ farver        2.1.1      2022-07-06 [1] CRAN (R 4.2.2)
+ fastmap       1.1.1      2023-02-24 [1] CRAN (R 4.2.2)
+ forcats     * 1.0.0.9000 2023-01-31 [1] Github (tidyverse/forcats@4a8525a)
+ formattable * 0.2.1      2021-01-07 [1] CRAN (R 4.2.1)
+ fs            1.6.1      2023-02-06 [1] CRAN (R 4.2.2)
+ generics      0.1.3      2022-07-05 [1] CRAN (R 4.2.1)
+ ggplot2     * 3.4.1.9000 2023-03-08 [1] Github (tidyverse/ggplot2@04a5ef2)
+ ggrepel       0.9.3      2023-02-03 [1] CRAN (R 4.2.2)
+ glue          1.6.2.9000 2023-01-26 [1] Github (tidyverse/glue@794eb37)
+ gt            0.8.0.9000 2023-03-06 [1] Github (rstudio/gt@6272bc5)
+ gtable        0.3.1.9000 2022-09-26 [1] Github (r-lib/gtable@2e33c5b)
+ hms           1.1.2      2022-08-19 [1] CRAN (R 4.2.1)
+ htmltools     0.5.4.9000 2023-02-23 [1] Github (rstudio/htmltools@48c46ed)
+ htmlwidgets   1.6.1.9000 2023-01-08 [1] Github (ramnathv/htmlwidgets@843eee9)
+ httpuv        1.6.9      2023-02-14 [1] CRAN (R 4.2.2)
+ jsonlite      1.8.4      2022-12-06 [1] CRAN (R 4.2.2)
+ knitr         1.42       2023-01-25 [1] CRAN (R 4.2.2)
+ labeling      0.4.2      2020-10-20 [1] CRAN (R 4.2.0)
+ later         1.3.0      2021-08-18 [1] CRAN (R 4.2.2)
+ lattice       0.20-45    2021-09-22 [2] CRAN (R 4.2.2)
+ lifecycle     1.0.3.9000 2023-03-08 [1] Github (r-lib/lifecycle@9ac73f5)
+ lubridate   * 1.9.2      2023-02-10 [1] CRAN (R 4.2.2)
+ magrittr      2.0.3      2022-03-30 [1] CRAN (R 4.2.2)
+ Matrix      * 1.5-3      2022-11-11 [1] CRAN (R 4.2.2)
+ memoise       2.0.1      2021-11-26 [1] CRAN (R 4.2.0)
+ mime          0.12       2021-09-28 [1] CRAN (R 4.2.2)
+ miniUI        0.1.1.1    2018-05-18 [1] CRAN (R 4.2.0)
+ munsell       0.5.0      2018-06-12 [1] CRAN (R 4.2.0)
+ patchwork   * 1.1.2.9000 2022-08-20 [1] Github (thomasp85/patchwork@c14c960)
+ pillar        1.8.1      2022-08-19 [1] CRAN (R 4.2.1)
+ pkgbuild      1.4.0.9000 2023-02-18 [1] Github (r-lib/pkgbuild@9ec92a0)
+ pkgconfig     2.0.3      2019-09-22 [1] CRAN (R 4.2.0)
+ pkgload       1.3.2      2022-11-16 [1] CRAN (R 4.2.2)
+ prettyunits   1.1.1.9000 2022-04-22 [1] Github (r-lib/prettyunits@8706d89)
+ processx      3.8.0      2022-10-26 [1] CRAN (R 4.2.1)
+ profvis       0.3.7      2020-11-02 [1] CRAN (R 4.2.2)
+ promises      1.2.0.1    2021-02-11 [1] CRAN (R 4.2.2)
+ ps            1.7.2      2022-10-26 [1] CRAN (R 4.2.1)
+ purrr       * 1.0.1.9000 2023-02-08 [1] Github (tidyverse/purrr@fd5a732)
+ R.cache       0.16.0     2022-07-21 [1] CRAN (R 4.2.1)
+ R.methodsS3   1.8.2      2022-06-13 [1] CRAN (R 4.2.0)
+ R.oo          1.25.0     2022-06-12 [1] CRAN (R 4.2.0)
+ R.utils       2.12.2     2022-11-11 [1] CRAN (R 4.2.2)
+ R6            2.5.1.9000 2022-10-29 [1] Github (r-lib/R6@e6b5eaf)
+ ragg          1.2.5.9000 2023-03-08 [1] Github (r-lib/ragg@69ad967)
+ Rcpp          1.0.10     2023-01-22 [1] CRAN (R 4.2.2)
+ readr       * 2.1.4.9000 2023-03-02 [1] Github (tidyverse/readr@eeb8f6b)
+ remotes       2.4.2.9000 2023-02-18 [1] Github (r-lib/remotes@1e12140)
+ rlang         1.1.0      2023-03-08 [1] Github (r-lib/rlang@60159c7)
+ rmarkdown     2.20.1     2023-02-10 [1] Github (rstudio/rmarkdown@a75dc37)
+ Rttf2pt1      1.3.12     2023-01-22 [1] CRAN (R 4.2.2)
+ sass          0.4.5      2023-01-24 [1] CRAN (R 4.2.2)
+ scales        1.2.1.9000 2022-08-20 [1] Github (r-lib/scales@b3df2fb)
+ sessioninfo   1.2.2      2021-12-06 [1] CRAN (R 4.2.0)
+ shiny         1.7.4      2022-12-15 [1] CRAN (R 4.2.2)
+ stringi       1.7.12     2023-01-11 [1] CRAN (R 4.2.2)
+ stringr     * 1.5.0      2022-12-02 [1] CRAN (R 4.2.2)
+ styler      * 1.9.1      2023-03-05 [1] Github (r-lib/styler@57bbf4e)
+ systemfonts   1.0.4      2022-02-11 [1] CRAN (R 4.2.2)
+ textshaping   0.3.6      2021-10-13 [1] CRAN (R 4.2.2)
+ tibble      * 3.2.0.9000 2023-03-08 [1] Github (tidyverse/tibble@a310014)
+ tidyr       * 1.3.0.9000 2023-01-25 [1] Github (tidyverse/tidyr@0764e65)
+ tidyselect    1.2.0.9000 2023-03-08 [1] Github (r-lib/tidyselect@177a190)
+ tidyverse   * 2.0.0.9000 2023-03-08 [1] Github (tidyverse/tidyverse@37018d1)
+ timechange    0.2.0      2023-01-11 [1] CRAN (R 4.2.2)
+ tzdb          0.3.0      2022-03-28 [1] CRAN (R 4.2.2)
+ urlchecker    1.0.1      2021-11-30 [1] CRAN (R 4.2.0)
+ usethis       2.1.6.9000 2023-03-08 [1] Github (r-lib/usethis@dac38d0)
+ utf8          1.2.3      2023-01-31 [1] CRAN (R 4.2.2)
+ vctrs         0.5.2.9000 2023-03-08 [1] Github (r-lib/vctrs@469411a)
+ viridisLite   0.4.1      2022-08-22 [1] CRAN (R 4.2.1)
+ vroom         1.6.1.9000 2023-02-10 [1] Github (r-lib/vroom@a7769d1)
+ withr         2.5.0      2022-03-03 [1] CRAN (R 4.2.0)
+ xfun          0.37       2023-01-31 [1] CRAN (R 4.2.2)
+ xtable        1.8-4      2019-04-21 [1] CRAN (R 4.2.0)
+ yaml          2.3.7      2023-01-23 [1] CRAN (R 4.2.2)
 
  [1] /opt/homebrew/lib/R/4.2/site-library
- [2] /opt/homebrew/Cellar/r/4.2.1_4/lib/R/library
+ [2] /opt/homebrew/Cellar/r/4.2.2_1/lib/R/library
 
 ──────────────────────────────────────────────────────────────────────────────</code></pre>
 </div>
 </div>
-<p><br><br></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Styling  1  files:
+ rational_epicardial_reprogramming.qmd ✔ 
+────────────────────────────────────────
+Status  Count   Legend 
+✔   1   File unchanged.
+ℹ   0   File changed.
+✖   0   Styling threw an error.
+────────────────────────────────────────</code></pre>
+</div>
+</div>
 
 
-</section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{duan,
-  author = {Jialei Duan and Boxun Li and Minoti Bhakta and Shiqi Xie and
-    Pei Zhou and Nikhil V. Munshi and Gary C. Hon},
-  editor = {},
+</section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{duan2023,
+  author = {Duan, Jialei and Li, Boxun and Bhakta, Minoti and Xie, Shiqi
+    and Zhou, Pei and V.Munshi, Nikhil and C.Hon, Gary},
   publisher = {Cell Press},
   title = {Rational {Reprogramming} of {Cellular} {States} by
     {Combinatorial} {Perturbation}},
@@ -2717,7 +2881,7 @@ ENSMUSG00000021391_Cenpp </code></pre>
   volume = {27},
   number = {12},
   pages = {3486 - 3499000000},
-  date = {},
+  date = {2023-03-08},
   url = {https://doi.org/10.1016/j.celrep.2019.05.079},
   doi = {10.1016/j.celrep.2019.05.079},
   langid = {en},
@@ -2726,11 +2890,11 @@ ENSMUSG00000021391_Cenpp </code></pre>
     evaluate, and optimize TF combinations that reprogram a cell type of
     interest.}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-duan" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
-Jialei Duan, Boxun Li, Minoti Bhakta, Shiqi Xie, Pei Zhou, Nikhil V.
-Munshi, and Gary C. Hon. n.d. <span>“Rational Reprogramming of Cellular
-States by Combinatorial Perturbation.”</span> <em>Cell Reports</em> 27
-(12): 3486–3499000000. <a href="https://doi.org/10.1016/j.celrep.2019.05.079">https://doi.org/10.1016/j.celrep.2019.05.079</a>.
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-duan2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+Duan, Jialei, Boxun Li, Minoti Bhakta, Shiqi Xie, Pei Zhou, Nikhil
+V.Munshi, and Gary C.Hon. 2023. <span>“Rational Reprogramming of
+Cellular States by Combinatorial Perturbation.”</span> <em>Cell
+Reports</em> 27 (12): 3486–3499000000. <a href="https://doi.org/10.1016/j.celrep.2019.05.079">https://doi.org/10.1016/j.celrep.2019.05.079</a>.
 </div></div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -2873,9 +3037,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -2940,6 +3118,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -2983,7 +3247,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -3005,14 +3269,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </nav>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
-    <div class="nav-footer-left">Copyright © 2022, Jialei Duan</div>   
-      <div class="nav-footer-center">
-        <ul class="footer-items list-unstyled">
+    <div class="nav-footer-left">Copyright © 2023, Jialei Duan</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
 <li class="nav-item">
-    <a class="nav-link" href="https://github.com/jlduan/Reprogram-Seq/blob/master/LICENSE"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> License</a>
+    <a class="nav-link" href="https://github.com/jlduan/Reprogram-Seq/blob/master/LICENSE"><i class="fa-solid fa-file-lines" aria-label="file-lines"></i> License</a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./about.html"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> About</a>
+    <a class="nav-link" href="./about.html"><i class="fa-solid fa-circle-info" aria-label="circle-info"></i> About</a>
   </li>  
 </ul>
 </div>
