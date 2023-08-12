@@ -81,6 +81,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "panel-placement": "start",
   "type": "textbox",
   "limit": 20,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -90,7 +95,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DFTWE6RXHL"></script><script type="text/javascript">
 
@@ -102,7 +108,7 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
 <meta property="og:title" content="Reprogram-Seq - Global Reprogramming of Transcription by Reprogram-Seq">
 <meta property="og:description" content="Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturbation and computational analysis to predict, evaluate, and optimize TF combinations that reprogram a cell type of interest.">
 <meta property="og:image" content="https://jlduan.github.io/Reprogram-Seq/workflow.jpg">
-<meta property="og:site-name" content="Reprogram-Seq">
+<meta property="og:site_name" content="Reprogram-Seq">
 <meta name="twitter:title" content="Rational Reprogramming of Cellular States by Combinatorial Perturbation">
 <meta name="twitter:description" content="Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturbation and computational analysis to predict, evaluate, and optimize TF combinations that reprogram a cell type of interest.">
 <meta name="twitter:image" content="https://jlduan.github.io/Reprogram-Seq/workflow.jpg">
@@ -118,10 +124,10 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
 <meta name="citation_author" content="Minoti Bhakta">
 <meta name="citation_author" content="Shiqi Xie">
 <meta name="citation_author" content="Pei Zhou">
-<meta name="citation_author" content="Nikhil V.Munshi">
-<meta name="citation_author" content="Gary C.Hon">
-<meta name="citation_publication_date" content="2023-03-08">
-<meta name="citation_cover_date" content="2023-03-08">
+<meta name="citation_author" content="Nikhil V. Munshi">
+<meta name="citation_author" content="Gary C. Hon">
+<meta name="citation_publication_date" content="2023-08-12">
+<meta name="citation_cover_date" content="2023-08-12">
 <meta name="citation_year" content="2023">
 <meta name="citation_online_date" content="2019-06-18">
 <meta name="citation_fulltext_html_url" content="https://doi.org/10.1016/j.celrep.2019.05.079">
@@ -142,10 +148,10 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./global_reprogramming_of_transcription.html">Transcriptional Dynamics</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./global_reprogramming_of_transcription.html">Transcriptional Dynamics</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -159,7 +165,6 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
         <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/jlduan" title="Reprogram-Seq" class="quarto-navigation-tool px-1" aria-label="Reprogram-Seq"><i class="bi bi-globe"></i></a>
     <a href="https://github.com/jlduan/Reprogram-Seq" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
-    <a href="https://twitter.com/jlduan" title="Twitter" class="quarto-navigation-tool px-1" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
@@ -244,12 +249,12 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author"><a href="https://github.com/jlduan">Jialei Duan</a> <a href="https://orcid.org/0000-0003-4086-7461" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    <p class="author"><a href="https://github.com/jlduan">Jialei Duan</a> <a href="mailto:duanjl+reprogram-seq@gmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0003-4086-7461" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
     <div class="quarto-title-meta-contents">
         <p class="affiliation">
             <a href="https://www.utsouthwestern.edu/education/medical-school/departments/green-center">
-            Cecil H. and Ida Green Center for Reproductive Biology Sciences
+            UT Southwestern Medical Center
             </a>
           </p>
       </div>
@@ -261,33 +266,26 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Wed Mar 8, 2023 18:02:44-06:00</p>
+      <p class="date">Sat Aug 12, 2023 00:21:09-05:00</p>
     </div>
   </div>
   
     
-    <div>
-    <div class="quarto-title-meta-heading">Doi</div>
-    <div class="quarto-title-meta-contents">
-      <p class="doi">
-        <a href="https://doi.org/10.5281/zenodo.7109590">10.5281/zenodo.7109590</a>
-      </p>
-    </div>
-  </div>
   </div>
   
 <div>
   <div class="abstract">
-    <div class="abstract-title">Abstract</div>
+    <div class="block-title">Abstract</div>
     <p>Reprogram-Seq leverages organ-specific cell atlas data with single-cell perturbation and computational analysis to predict, evaluate, and optimize TF combinations that reprogram a cell type of interest.</p>
   </div>
 </div>
+
 
 </header><p><br></p>
 <div class="cell">
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.time</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "2023-03-08 17:59:16 CST"</code></pre>
+<pre><code>[1] "2023-08-12 00:19:41 CDT"</code></pre>
 </div>
 </div>
 <div class="cell">
@@ -301,7 +299,7 @@ gtag('config', 'G-DFTWE6RXHL', { 'anonymize_ip': true});
 <p>Load required packages.</p>
 <div class="cell">
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://Matrix.R-forge.R-project.org/">Matrix</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://Matrix.R-forge.R-project.org">Matrix</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://patchwork.data-imaginist.com">patchwork</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/wch/extrafont">extrafont</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -389,7 +387,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
 <span>    <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">as.matrix</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>    <span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<table class="table table-sm table-striped">
+<table class="table table-sm table-striped small">
 <colgroup>
 <col style="width: 20%">
 <col style="width: 15%">
@@ -695,24 +693,26 @@ ENSMUSG00000109048 ENSMUSG00000025902
 <span>        title <span class="op">=</span> <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/md.html">md</a></span><span class="op">(</span><span class="st">"**Monocle**; Cellular state"</span><span class="op">)</span></span>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-
-<div id="cmlnpdbgeu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+<div id="jeqxasytrr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jeqxasytrr table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#cmlnpdbgeu thead, #cmlnpdbgeu tbody, #cmlnpdbgeu tfoot, #cmlnpdbgeu tr, #cmlnpdbgeu td, #cmlnpdbgeu th {
+#jeqxasytrr thead, #jeqxasytrr tbody, #jeqxasytrr tfoot, #jeqxasytrr tr, #jeqxasytrr td, #jeqxasytrr th {
   border-style: none;
 }
 
-#cmlnpdbgeu p {
+#jeqxasytrr p {
   margin: 0;
   padding: 0;
 }
 
-#cmlnpdbgeu .gt_table {
+#jeqxasytrr .gt_table {
   display: table;
   border-collapse: collapse;
+  line-height: normal;
   margin-left: auto;
   margin-right: auto;
   color: #333333;
@@ -735,12 +735,12 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-left-color: #D3D3D3;
 }
 
-#cmlnpdbgeu .gt_caption {
+#jeqxasytrr .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#cmlnpdbgeu .gt_title {
+#jeqxasytrr .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -752,7 +752,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-bottom-width: 0;
 }
 
-#cmlnpdbgeu .gt_subtitle {
+#jeqxasytrr .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -764,7 +764,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-top-width: 0;
 }
 
-#cmlnpdbgeu .gt_heading {
+#jeqxasytrr .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -776,13 +776,13 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-right-color: #D3D3D3;
 }
 
-#cmlnpdbgeu .gt_bottom_border {
+#jeqxasytrr .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#cmlnpdbgeu .gt_col_headings {
+#jeqxasytrr .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -797,7 +797,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-right-color: #D3D3D3;
 }
 
-#cmlnpdbgeu .gt_col_heading {
+#jeqxasytrr .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -817,7 +817,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   overflow-x: hidden;
 }
 
-#cmlnpdbgeu .gt_column_spanner_outer {
+#jeqxasytrr .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -829,15 +829,15 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 4px;
 }
 
-#cmlnpdbgeu .gt_column_spanner_outer:first-child {
+#jeqxasytrr .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#cmlnpdbgeu .gt_column_spanner_outer:last-child {
+#jeqxasytrr .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#cmlnpdbgeu .gt_column_spanner {
+#jeqxasytrr .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -849,11 +849,11 @@ ENSMUSG00000109048 ENSMUSG00000025902
   width: 100%;
 }
 
-#cmlnpdbgeu .gt_spanner_row {
+#jeqxasytrr .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#cmlnpdbgeu .gt_group_heading {
+#jeqxasytrr .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -879,7 +879,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   text-align: left;
 }
 
-#cmlnpdbgeu .gt_empty_group_heading {
+#jeqxasytrr .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -894,15 +894,15 @@ ENSMUSG00000109048 ENSMUSG00000025902
   vertical-align: middle;
 }
 
-#cmlnpdbgeu .gt_from_md > :first-child {
+#jeqxasytrr .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#cmlnpdbgeu .gt_from_md > :last-child {
+#jeqxasytrr .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#cmlnpdbgeu .gt_row {
+#jeqxasytrr .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -921,7 +921,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   overflow-x: hidden;
 }
 
-#cmlnpdbgeu .gt_stub {
+#jeqxasytrr .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -934,7 +934,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-#cmlnpdbgeu .gt_stub_row_group {
+#jeqxasytrr .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -948,15 +948,15 @@ ENSMUSG00000109048 ENSMUSG00000025902
   vertical-align: top;
 }
 
-#cmlnpdbgeu .gt_row_group_first td {
+#jeqxasytrr .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#cmlnpdbgeu .gt_row_group_first th {
+#jeqxasytrr .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#cmlnpdbgeu .gt_summary_row {
+#jeqxasytrr .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -966,16 +966,16 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-#cmlnpdbgeu .gt_first_summary_row {
+#jeqxasytrr .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#cmlnpdbgeu .gt_first_summary_row.thick {
+#jeqxasytrr .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#cmlnpdbgeu .gt_last_summary_row {
+#jeqxasytrr .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -985,7 +985,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-bottom-color: #D3D3D3;
 }
 
-#cmlnpdbgeu .gt_grand_summary_row {
+#jeqxasytrr .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -995,7 +995,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-#cmlnpdbgeu .gt_first_grand_summary_row {
+#jeqxasytrr .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1005,7 +1005,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-top-color: #D3D3D3;
 }
 
-#cmlnpdbgeu .gt_last_grand_summary_row_top {
+#jeqxasytrr .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1015,11 +1015,11 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-bottom-color: #D3D3D3;
 }
 
-#cmlnpdbgeu .gt_striped {
+#jeqxasytrr .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#cmlnpdbgeu .gt_table_body {
+#jeqxasytrr .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1028,7 +1028,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-bottom-color: #D3D3D3;
 }
 
-#cmlnpdbgeu .gt_footnotes {
+#jeqxasytrr .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1042,7 +1042,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-right-color: #D3D3D3;
 }
 
-#cmlnpdbgeu .gt_footnote {
+#jeqxasytrr .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1051,7 +1051,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-#cmlnpdbgeu .gt_sourcenotes {
+#jeqxasytrr .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1065,7 +1065,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-right-color: #D3D3D3;
 }
 
-#cmlnpdbgeu .gt_sourcenote {
+#jeqxasytrr .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1073,65 +1073,63 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-#cmlnpdbgeu .gt_left {
+#jeqxasytrr .gt_left {
   text-align: left;
 }
 
-#cmlnpdbgeu .gt_center {
+#jeqxasytrr .gt_center {
   text-align: center;
 }
 
-#cmlnpdbgeu .gt_right {
+#jeqxasytrr .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#cmlnpdbgeu .gt_font_normal {
+#jeqxasytrr .gt_font_normal {
   font-weight: normal;
 }
 
-#cmlnpdbgeu .gt_font_bold {
+#jeqxasytrr .gt_font_bold {
   font-weight: bold;
 }
 
-#cmlnpdbgeu .gt_font_italic {
+#jeqxasytrr .gt_font_italic {
   font-style: italic;
 }
 
-#cmlnpdbgeu .gt_super {
+#jeqxasytrr .gt_super {
   font-size: 65%;
 }
 
-#cmlnpdbgeu .gt_footnote_marks {
-  font-style: italic;
-  font-weight: normal;
+#jeqxasytrr .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#cmlnpdbgeu .gt_asterisk {
+#jeqxasytrr .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#cmlnpdbgeu .gt_indent_1 {
+#jeqxasytrr .gt_indent_1 {
   text-indent: 5px;
 }
 
-#cmlnpdbgeu .gt_indent_2 {
+#jeqxasytrr .gt_indent_2 {
   text-indent: 10px;
 }
 
-#cmlnpdbgeu .gt_indent_3 {
+#jeqxasytrr .gt_indent_3 {
   text-indent: 15px;
 }
 
-#cmlnpdbgeu .gt_indent_4 {
+#jeqxasytrr .gt_indent_4 {
   text-indent: 20px;
 }
 
-#cmlnpdbgeu .gt_indent_5 {
+#jeqxasytrr .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1260,9 +1258,9 @@ ENSMUSG00000109048 ENSMUSG00000025902
 <span>    <span class="fu">patchwork</span><span class="fu">::</span><span class="fu"><a href="https://patchwork.data-imaginist.com/reference/plot_annotation.html">plot_annotation</a></span><span class="op">(</span></span>
 <span>        theme <span class="op">=</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op">(</span>plot.margin <span class="op">=</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html">margin</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display column-page">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-31-1.png" style="width:81.5%;height:81.5%" class="figure-img"></p>
+<div class="cell-output-display page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full"><p class="page-columns page-full"><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-31-1.png" style="width:100.0%;height:100.0%" class="figure-img column-page-left"></p>
 </figure>
 </div>
 </div>
@@ -1340,24 +1338,26 @@ ENSMUSG00000109048 ENSMUSG00000025902
 <span>        table.width <span class="op">=</span> <span class="fu">gt</span><span class="fu">::</span><span class="fu"><a href="https://gt.rstudio.com/reference/pct.html">pct</a></span><span class="op">(</span><span class="fl">50</span><span class="op">)</span></span>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-
-<div id="ourhjnxpqc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+<div id="ytuorviaor" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ytuorviaor table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#ourhjnxpqc thead, #ourhjnxpqc tbody, #ourhjnxpqc tfoot, #ourhjnxpqc tr, #ourhjnxpqc td, #ourhjnxpqc th {
+#ytuorviaor thead, #ytuorviaor tbody, #ytuorviaor tfoot, #ytuorviaor tr, #ytuorviaor td, #ytuorviaor th {
   border-style: none;
 }
 
-#ourhjnxpqc p {
+#ytuorviaor p {
   margin: 0;
   padding: 0;
 }
 
-#ourhjnxpqc .gt_table {
+#ytuorviaor .gt_table {
   display: table;
   border-collapse: collapse;
+  line-height: normal;
   margin-left: auto;
   margin-right: auto;
   color: #333333;
@@ -1380,12 +1380,12 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-left-color: #D3D3D3;
 }
 
-#ourhjnxpqc .gt_caption {
+#ytuorviaor .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ourhjnxpqc .gt_title {
+#ytuorviaor .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1397,7 +1397,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-bottom-width: 0;
 }
 
-#ourhjnxpqc .gt_subtitle {
+#ytuorviaor .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1409,7 +1409,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-top-width: 0;
 }
 
-#ourhjnxpqc .gt_heading {
+#ytuorviaor .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1421,13 +1421,13 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-right-color: #D3D3D3;
 }
 
-#ourhjnxpqc .gt_bottom_border {
+#ytuorviaor .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ourhjnxpqc .gt_col_headings {
+#ytuorviaor .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1442,7 +1442,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-right-color: #D3D3D3;
 }
 
-#ourhjnxpqc .gt_col_heading {
+#ytuorviaor .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1462,7 +1462,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   overflow-x: hidden;
 }
 
-#ourhjnxpqc .gt_column_spanner_outer {
+#ytuorviaor .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1474,15 +1474,15 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 4px;
 }
 
-#ourhjnxpqc .gt_column_spanner_outer:first-child {
+#ytuorviaor .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ourhjnxpqc .gt_column_spanner_outer:last-child {
+#ytuorviaor .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ourhjnxpqc .gt_column_spanner {
+#ytuorviaor .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1494,11 +1494,11 @@ ENSMUSG00000109048 ENSMUSG00000025902
   width: 100%;
 }
 
-#ourhjnxpqc .gt_spanner_row {
+#ytuorviaor .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ourhjnxpqc .gt_group_heading {
+#ytuorviaor .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1524,7 +1524,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   text-align: left;
 }
 
-#ourhjnxpqc .gt_empty_group_heading {
+#ytuorviaor .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1539,15 +1539,15 @@ ENSMUSG00000109048 ENSMUSG00000025902
   vertical-align: middle;
 }
 
-#ourhjnxpqc .gt_from_md > :first-child {
+#ytuorviaor .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ourhjnxpqc .gt_from_md > :last-child {
+#ytuorviaor .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ourhjnxpqc .gt_row {
+#ytuorviaor .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1566,7 +1566,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   overflow-x: hidden;
 }
 
-#ourhjnxpqc .gt_stub {
+#ytuorviaor .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1579,7 +1579,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-#ourhjnxpqc .gt_stub_row_group {
+#ytuorviaor .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1593,15 +1593,15 @@ ENSMUSG00000109048 ENSMUSG00000025902
   vertical-align: top;
 }
 
-#ourhjnxpqc .gt_row_group_first td {
+#ytuorviaor .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ourhjnxpqc .gt_row_group_first th {
+#ytuorviaor .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ourhjnxpqc .gt_summary_row {
+#ytuorviaor .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1611,16 +1611,16 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-#ourhjnxpqc .gt_first_summary_row {
+#ytuorviaor .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ourhjnxpqc .gt_first_summary_row.thick {
+#ytuorviaor .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ourhjnxpqc .gt_last_summary_row {
+#ytuorviaor .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1630,7 +1630,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-bottom-color: #D3D3D3;
 }
 
-#ourhjnxpqc .gt_grand_summary_row {
+#ytuorviaor .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1640,7 +1640,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-#ourhjnxpqc .gt_first_grand_summary_row {
+#ytuorviaor .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1650,7 +1650,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-top-color: #D3D3D3;
 }
 
-#ourhjnxpqc .gt_last_grand_summary_row_top {
+#ytuorviaor .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1660,11 +1660,11 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-bottom-color: #D3D3D3;
 }
 
-#ourhjnxpqc .gt_striped {
+#ytuorviaor .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ourhjnxpqc .gt_table_body {
+#ytuorviaor .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1673,7 +1673,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-bottom-color: #D3D3D3;
 }
 
-#ourhjnxpqc .gt_footnotes {
+#ytuorviaor .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1687,7 +1687,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-right-color: #D3D3D3;
 }
 
-#ourhjnxpqc .gt_footnote {
+#ytuorviaor .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1696,7 +1696,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-#ourhjnxpqc .gt_sourcenotes {
+#ytuorviaor .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1710,7 +1710,7 @@ ENSMUSG00000109048 ENSMUSG00000025902
   border-right-color: #D3D3D3;
 }
 
-#ourhjnxpqc .gt_sourcenote {
+#ytuorviaor .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1718,65 +1718,63 @@ ENSMUSG00000109048 ENSMUSG00000025902
   padding-right: 5px;
 }
 
-#ourhjnxpqc .gt_left {
+#ytuorviaor .gt_left {
   text-align: left;
 }
 
-#ourhjnxpqc .gt_center {
+#ytuorviaor .gt_center {
   text-align: center;
 }
 
-#ourhjnxpqc .gt_right {
+#ytuorviaor .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ourhjnxpqc .gt_font_normal {
+#ytuorviaor .gt_font_normal {
   font-weight: normal;
 }
 
-#ourhjnxpqc .gt_font_bold {
+#ytuorviaor .gt_font_bold {
   font-weight: bold;
 }
 
-#ourhjnxpqc .gt_font_italic {
+#ytuorviaor .gt_font_italic {
   font-style: italic;
 }
 
-#ourhjnxpqc .gt_super {
+#ytuorviaor .gt_super {
   font-size: 65%;
 }
 
-#ourhjnxpqc .gt_footnote_marks {
-  font-style: italic;
-  font-weight: normal;
+#ytuorviaor .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ourhjnxpqc .gt_asterisk {
+#ytuorviaor .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ourhjnxpqc .gt_indent_1 {
+#ytuorviaor .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ourhjnxpqc .gt_indent_2 {
+#ytuorviaor .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ourhjnxpqc .gt_indent_3 {
+#ytuorviaor .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ourhjnxpqc .gt_indent_4 {
+#ytuorviaor .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ourhjnxpqc .gt_indent_5 {
+#ytuorviaor .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -2206,9 +2204,9 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <span>        segment.color <span class="op">=</span> <span class="st">"grey35"</span>,</span>
 <span>        color <span class="op">=</span> <span class="st">"black"</span></span>
 <span>    <span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display column-page">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-40-1.png" style="width:81.5%;height:81.5%" class="figure-img"></p>
+<div class="cell-output-display page-columns page-full">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full"><p class="page-columns page-full"><img src="global_reprogramming_of_transcription_files/figure-html/unnamed-chunk-40-1.png" style="width:100.0%;height:100.0%" class="figure-img column-body-outset"></p>
 </figure>
 </div>
 </div>
@@ -2828,8 +2826,7 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="global_reprogramming_of_transcription_files/figure-html/heatmap-1.png" style="width:95.0%;height:95.0%" class="figure-img"></p>
-<p></p><figcaption class="figure-caption">Heatmap of the six gene-expression signatures. Columns indicate cells ordered by pseudotime (with primary epicardial cells at the far right); rows indicate genes. For visualization purposes, groups of 20 cells are binned.</figcaption><p></p>
-</figure>
+<figcaption class="figure-caption">Heatmap of the six gene-expression signatures. Columns indicate cells ordered by pseudotime (with primary epicardial cells at the far right); rows indicate genes. For visualization purposes, groups of 20 cells are binned.</figcaption></figure>
 </div>
 </div>
 </div>
@@ -2840,160 +2837,153 @@ ENSMUSG00000042985_Upk3b </code></pre>
 <div class="cell-output cell-output-stdout">
 <pre><code>─ Session info ───────────────────────────────────────────────────────────────
  setting  value
- version  R version 4.2.2 (2022-10-31)
- os       macOS Ventura 13.2.1
- system   aarch64, darwin22.1.0
+ version  R version 4.3.1 (2023-06-16)
+ os       macOS Ventura 13.5
+ system   aarch64, darwin22.4.0
  ui       unknown
  language (EN)
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       America/Chicago
- date     2023-03-08
+ date     2023-08-12
  pandoc   2.19.2 @ /Users/jialei/.pyenv/shims/ (via rmarkdown)
 
 ─ Packages ───────────────────────────────────────────────────────────────────
- package        * version    date (UTC) lib source
- Biobase          2.56.0     2022-04-26 [1] Bioconductor
- BiocGenerics     0.42.0     2022-04-26 [1] Bioconductor
- bit              4.0.5      2022-11-15 [1] CRAN (R 4.2.2)
- bit64            4.0.5      2020-08-30 [1] CRAN (R 4.2.2)
- cachem           1.0.7      2023-02-24 [1] CRAN (R 4.2.2)
- Cairo            1.6-0      2022-07-05 [1] CRAN (R 4.2.1)
- callr            3.7.3      2022-11-02 [1] CRAN (R 4.2.2)
- circlize         0.4.15     2022-05-10 [1] CRAN (R 4.2.0)
- cli              3.6.0      2023-01-09 [1] CRAN (R 4.2.2)
- clue             0.3-64     2023-01-31 [1] CRAN (R 4.2.2)
- cluster          2.1.4      2022-08-22 [2] CRAN (R 4.2.2)
- codetools        0.2-19     2023-02-01 [2] CRAN (R 4.2.2)
- colorspace       2.1-0      2023-01-23 [1] CRAN (R 4.2.2)
- combinat         0.0-8      2012-10-29 [1] CRAN (R 4.2.0)
- commonmark       1.8.1      2022-10-14 [1] CRAN (R 4.2.1)
- ComplexHeatmap   2.12.1     2022-08-09 [1] Bioconductor
- crayon           1.5.2      2022-09-29 [1] CRAN (R 4.2.1)
- DDRTree          0.1.5      2017-04-30 [1] CRAN (R 4.2.0)
- devtools         2.4.5.9000 2023-03-08 [1] Github (r-lib/devtools@cfa1ba9)
- digest           0.6.31     2022-12-11 [1] CRAN (R 4.2.2)
- docopt           0.7.1      2020-06-24 [1] CRAN (R 4.2.0)
- doParallel       1.0.17     2022-02-07 [1] CRAN (R 4.2.0)
- dplyr          * 1.1.0.9000 2023-03-08 [1] Github (tidyverse/dplyr@e12fd49)
- ellipsis         0.3.2      2021-04-29 [1] CRAN (R 4.2.2)
- evaluate         0.20       2023-01-17 [1] CRAN (R 4.2.2)
- extrafont      * 0.19       2023-01-18 [1] CRAN (R 4.2.2)
- extrafontdb      1.0        2012-06-11 [1] CRAN (R 4.2.0)
- fansi            1.0.4      2023-01-22 [1] CRAN (R 4.2.2)
- farver           2.1.1      2022-07-06 [1] CRAN (R 4.2.2)
- fastICA          1.2-3      2021-09-25 [1] CRAN (R 4.2.1)
- fastmap          1.1.1      2023-02-24 [1] CRAN (R 4.2.2)
- forcats        * 1.0.0.9000 2023-01-31 [1] Github (tidyverse/forcats@4a8525a)
- foreach          1.5.2      2022-02-02 [1] CRAN (R 4.2.0)
- fs               1.6.1      2023-02-06 [1] CRAN (R 4.2.2)
- generics         0.1.3      2022-07-05 [1] CRAN (R 4.2.1)
- GetoptLong       1.0.5      2020-12-15 [1] CRAN (R 4.2.0)
- ggplot2        * 3.4.1.9000 2023-03-08 [1] Github (tidyverse/ggplot2@04a5ef2)
- ggrepel          0.9.3      2023-02-03 [1] CRAN (R 4.2.2)
- ggthemes         4.2.4      2021-01-20 [1] CRAN (R 4.2.0)
- GlobalOptions    0.1.2      2020-06-10 [1] CRAN (R 4.2.0)
- glue             1.6.2.9000 2023-01-26 [1] Github (tidyverse/glue@794eb37)
- gridExtra        2.3        2017-09-09 [1] CRAN (R 4.2.0)
- gt               0.8.0.9000 2023-03-06 [1] Github (rstudio/gt@6272bc5)
- gtable           0.3.1.9000 2022-09-26 [1] Github (r-lib/gtable@2e33c5b)
- hms              1.1.2      2022-08-19 [1] CRAN (R 4.2.1)
- HSMMSingleCell   1.16.0     2022-04-28 [1] Bioconductor
- htmltools        0.5.4.9000 2023-02-23 [1] Github (rstudio/htmltools@48c46ed)
- htmlwidgets      1.6.1.9000 2023-01-08 [1] Github (ramnathv/htmlwidgets@843eee9)
- httpuv           1.6.9      2023-02-14 [1] CRAN (R 4.2.2)
- igraph           1.4.1      2023-02-24 [1] CRAN (R 4.2.2)
- IRanges          2.30.1     2022-08-18 [1] Bioconductor
- irlba            2.3.5.1    2022-10-03 [1] CRAN (R 4.2.1)
- iterators        1.0.14     2022-02-05 [1] CRAN (R 4.2.0)
- jsonlite         1.8.4      2022-12-06 [1] CRAN (R 4.2.2)
- knitr            1.42       2023-01-25 [1] CRAN (R 4.2.2)
- labeling         0.4.2      2020-10-20 [1] CRAN (R 4.2.0)
- later            1.3.0      2021-08-18 [1] CRAN (R 4.2.2)
- lattice          0.20-45    2021-09-22 [2] CRAN (R 4.2.2)
- leidenbase       0.1.14     2022-12-14 [1] CRAN (R 4.2.2)
- lifecycle        1.0.3.9000 2023-03-08 [1] Github (r-lib/lifecycle@9ac73f5)
- limma            3.52.4     2022-09-27 [1] Bioconductor
- lubridate      * 1.9.2      2023-02-10 [1] CRAN (R 4.2.2)
- magick           2.7.3      2021-08-18 [1] CRAN (R 4.2.0)
- magrittr         2.0.3      2022-03-30 [1] CRAN (R 4.2.2)
- Matrix         * 1.5-3      2022-11-11 [1] CRAN (R 4.2.2)
- matrixStats      0.63.0     2022-11-18 [1] CRAN (R 4.2.2)
- memoise          2.0.1      2021-11-26 [1] CRAN (R 4.2.0)
- mime             0.12       2021-09-28 [1] CRAN (R 4.2.2)
- miniUI           0.1.1.1    2018-05-18 [1] CRAN (R 4.2.0)
- monocle          2.24.1     2022-06-09 [1] Bioconductor
- munsell          0.5.0      2018-06-12 [1] CRAN (R 4.2.0)
- paletteer        1.5.0.9000 2022-10-19 [1] Github (EmilHvitfeldt/paletteer@3d78902)
- patchwork      * 1.1.2.9000 2022-08-20 [1] Github (thomasp85/patchwork@c14c960)
- pheatmap         1.0.12     2019-01-04 [1] CRAN (R 4.2.0)
- pillar           1.8.1      2022-08-19 [1] CRAN (R 4.2.1)
- pkgbuild         1.4.0.9000 2023-02-18 [1] Github (r-lib/pkgbuild@9ec92a0)
- pkgconfig        2.0.3      2019-09-22 [1] CRAN (R 4.2.0)
- pkgload          1.3.2      2022-11-16 [1] CRAN (R 4.2.2)
- plyr             1.8.8      2022-11-11 [1] CRAN (R 4.2.2)
- png              0.1-8      2022-11-29 [1] CRAN (R 4.2.2)
- prettyunits      1.1.1.9000 2022-04-22 [1] Github (r-lib/prettyunits@8706d89)
- prismatic        1.1.1      2022-08-15 [1] CRAN (R 4.2.1)
- processx         3.8.0      2022-10-26 [1] CRAN (R 4.2.1)
- profvis          0.3.7      2020-11-02 [1] CRAN (R 4.2.2)
- promises         1.2.0.1    2021-02-11 [1] CRAN (R 4.2.2)
- ps               1.7.2      2022-10-26 [1] CRAN (R 4.2.1)
- purrr          * 1.0.1.9000 2023-02-08 [1] Github (tidyverse/purrr@fd5a732)
- qlcMatrix        0.9.7      2018-04-20 [1] CRAN (R 4.2.0)
- R.cache          0.16.0     2022-07-21 [1] CRAN (R 4.2.1)
- R.methodsS3      1.8.2      2022-06-13 [1] CRAN (R 4.2.0)
- R.oo             1.25.0     2022-06-12 [1] CRAN (R 4.2.0)
- R.utils          2.12.2     2022-11-11 [1] CRAN (R 4.2.2)
- R6               2.5.1.9000 2022-10-29 [1] Github (r-lib/R6@e6b5eaf)
- ragg             1.2.5.9000 2023-03-08 [1] Github (r-lib/ragg@69ad967)
- RANN             2.6.1      2019-01-08 [1] CRAN (R 4.2.0)
- RColorBrewer     1.1-3      2022-04-03 [1] CRAN (R 4.2.0)
- Rcpp             1.0.10     2023-01-22 [1] CRAN (R 4.2.2)
- readr          * 2.1.4.9000 2023-03-02 [1] Github (tidyverse/readr@eeb8f6b)
- rematch2         2.1.2      2020-05-01 [1] CRAN (R 4.2.0)
- remotes          2.4.2.9000 2023-02-18 [1] Github (r-lib/remotes@1e12140)
- reshape2         1.4.4      2020-04-09 [1] CRAN (R 4.2.0)
- rjson            0.2.21     2022-01-09 [1] CRAN (R 4.2.0)
- rlang            1.1.0      2023-03-08 [1] Github (r-lib/rlang@60159c7)
- rmarkdown        2.20.1     2023-02-10 [1] Github (rstudio/rmarkdown@a75dc37)
- Rtsne            0.17       2022-12-13 [1] Github (jkrijthe/Rtsne@ca6f630)
- Rttf2pt1         1.3.12     2023-01-22 [1] CRAN (R 4.2.2)
- S4Vectors        0.34.0     2022-04-26 [1] Bioconductor
- sass             0.4.5      2023-01-24 [1] CRAN (R 4.2.2)
- scales           1.2.1.9000 2022-08-20 [1] Github (r-lib/scales@b3df2fb)
- sessioninfo      1.2.2      2021-12-06 [1] CRAN (R 4.2.0)
- shape            1.4.6      2021-05-19 [1] CRAN (R 4.2.0)
- shiny            1.7.4      2022-12-15 [1] CRAN (R 4.2.2)
- slam             0.1-50     2022-01-08 [1] CRAN (R 4.2.1)
- sparsesvd        0.2-2      2023-01-14 [1] CRAN (R 4.2.2)
- stringi          1.7.12     2023-01-11 [1] CRAN (R 4.2.2)
- stringr        * 1.5.0      2022-12-02 [1] CRAN (R 4.2.2)
- styler         * 1.9.1      2023-03-05 [1] Github (r-lib/styler@57bbf4e)
- systemfonts      1.0.4      2022-02-11 [1] CRAN (R 4.2.2)
- textshaping      0.3.6      2021-10-13 [1] CRAN (R 4.2.2)
- tibble         * 3.2.0.9000 2023-03-08 [1] Github (tidyverse/tibble@a310014)
- tidyr          * 1.3.0.9000 2023-01-25 [1] Github (tidyverse/tidyr@0764e65)
- tidyselect       1.2.0.9000 2023-03-08 [1] Github (r-lib/tidyselect@177a190)
- tidyverse      * 2.0.0.9000 2023-03-08 [1] Github (tidyverse/tidyverse@37018d1)
- timechange       0.2.0      2023-01-11 [1] CRAN (R 4.2.2)
- tzdb             0.3.0      2022-03-28 [1] CRAN (R 4.2.2)
- urlchecker       1.0.1      2021-11-30 [1] CRAN (R 4.2.0)
- usethis          2.1.6.9000 2023-03-08 [1] Github (r-lib/usethis@dac38d0)
- utf8             1.2.3      2023-01-31 [1] CRAN (R 4.2.2)
- vctrs            0.5.2.9000 2023-03-08 [1] Github (r-lib/vctrs@469411a)
- VGAM             1.1-7      2022-07-06 [1] CRAN (R 4.2.1)
- viridis          0.6.2      2021-10-13 [1] CRAN (R 4.2.0)
- viridisLite      0.4.1      2022-08-22 [1] CRAN (R 4.2.1)
- vroom            1.6.1.9000 2023-02-10 [1] Github (r-lib/vroom@a7769d1)
- wesanderson      0.3.6.9000 2022-04-22 [1] Github (karthik/wesanderson@2796b59)
- withr            2.5.0      2022-03-03 [1] CRAN (R 4.2.0)
- xfun             0.37       2023-01-31 [1] CRAN (R 4.2.2)
- xtable           1.8-4      2019-04-21 [1] CRAN (R 4.2.0)
- yaml             2.3.7      2023-01-23 [1] CRAN (R 4.2.2)
+ package        * version     date (UTC) lib source
+ Biobase          2.60.0      2023-04-25 [1] Bioconductor
+ BiocGenerics     0.46.0      2023-04-25 [1] Bioconductor
+ bit              4.0.5       2022-11-15 [1] CRAN (R 4.3.0)
+ bit64            4.0.5       2020-08-30 [1] CRAN (R 4.3.0)
+ cachem           1.0.8       2023-05-01 [1] CRAN (R 4.3.0)
+ callr            3.7.3       2022-11-02 [1] CRAN (R 4.3.0)
+ circlize         0.4.15      2022-05-10 [1] CRAN (R 4.3.0)
+ cli              3.6.1       2023-03-23 [1] CRAN (R 4.3.0)
+ clue             0.3-64      2023-01-31 [1] CRAN (R 4.3.0)
+ cluster          2.1.4       2022-08-22 [2] CRAN (R 4.3.1)
+ codetools        0.2-19      2023-02-01 [2] CRAN (R 4.3.1)
+ colorspace       2.1-0       2023-01-23 [1] CRAN (R 4.3.0)
+ combinat         0.0-8       2012-10-29 [1] CRAN (R 4.3.0)
+ commonmark       1.9.0       2023-03-17 [1] CRAN (R 4.3.0)
+ ComplexHeatmap   2.16.0      2023-04-25 [1] Bioconductor
+ crayon           1.5.2       2022-09-29 [1] CRAN (R 4.3.0)
+ DDRTree          0.1.5       2017-04-30 [1] CRAN (R 4.3.0)
+ devtools         2.4.5.9000  2023-08-11 [1] Github (r-lib/devtools@163c3f2)
+ digest           0.6.33      2023-07-07 [1] CRAN (R 4.3.1)
+ docopt           0.7.1       2020-06-24 [1] CRAN (R 4.3.0)
+ doParallel       1.0.17      2022-02-07 [1] CRAN (R 4.3.0)
+ dplyr          * 1.1.2.9000  2023-07-19 [1] Github (tidyverse/dplyr@c963d4d)
+ ellipsis         0.3.2       2021-04-29 [1] CRAN (R 4.3.0)
+ evaluate         0.21        2023-05-05 [1] CRAN (R 4.3.0)
+ extrafont      * 0.19        2023-01-18 [1] CRAN (R 4.3.0)
+ extrafontdb      1.0         2012-06-11 [1] CRAN (R 4.3.0)
+ fansi            1.0.4       2023-01-22 [1] CRAN (R 4.3.0)
+ farver           2.1.1       2022-07-06 [1] CRAN (R 4.3.0)
+ fastICA          1.2-3       2021-09-25 [1] CRAN (R 4.3.0)
+ fastmap          1.1.1       2023-02-24 [1] CRAN (R 4.3.0)
+ forcats        * 1.0.0.9000  2023-04-23 [1] Github (tidyverse/forcats@4a8525a)
+ foreach          1.5.2       2022-02-02 [1] CRAN (R 4.3.0)
+ fs               1.6.3       2023-07-20 [1] CRAN (R 4.3.1)
+ generics         0.1.3       2022-07-05 [1] CRAN (R 4.3.0)
+ GetoptLong       1.0.5       2020-12-15 [1] CRAN (R 4.3.0)
+ ggplot2        * 3.4.2.9000  2023-08-11 [1] Github (tidyverse/ggplot2@2cd0e96)
+ ggrepel          0.9.3       2023-02-03 [1] CRAN (R 4.3.0)
+ ggthemes         4.2.4       2021-01-20 [1] CRAN (R 4.3.0)
+ GlobalOptions    0.1.2       2020-06-10 [1] CRAN (R 4.3.0)
+ glue             1.6.2.9000  2023-04-23 [1] Github (tidyverse/glue@cbac82a)
+ gridExtra        2.3         2017-09-09 [1] CRAN (R 4.3.0)
+ gt               0.9.0.9000  2023-08-11 [1] Github (rstudio/gt@a3cc005)
+ gtable           0.3.3.9000  2023-04-23 [1] Github (r-lib/gtable@c56fd4f)
+ hms              1.1.3       2023-03-21 [1] CRAN (R 4.3.0)
+ HSMMSingleCell   1.20.0      2023-04-27 [1] Bioconductor
+ htmltools        0.5.6       2023-08-10 [1] CRAN (R 4.3.1)
+ htmlwidgets      1.6.2       2023-03-17 [1] CRAN (R 4.3.0)
+ igraph           1.5.1       2023-08-10 [1] CRAN (R 4.3.1)
+ IRanges          2.34.1      2023-06-22 [1] Bioconductor
+ irlba            2.3.5.1     2022-10-03 [1] CRAN (R 4.3.0)
+ iterators        1.0.14      2022-02-05 [1] CRAN (R 4.3.0)
+ jsonlite         1.8.7       2023-06-29 [1] CRAN (R 4.3.1)
+ knitr            1.43        2023-05-25 [1] CRAN (R 4.3.0)
+ labeling         0.4.2       2020-10-20 [1] CRAN (R 4.3.0)
+ lattice          0.21-8      2023-04-05 [2] CRAN (R 4.3.1)
+ leidenbase       0.1.25      2023-07-19 [1] CRAN (R 4.3.1)
+ lifecycle        1.0.3       2022-10-07 [1] CRAN (R 4.3.0)
+ limma            3.56.2      2023-06-04 [1] Bioconductor
+ lubridate      * 1.9.2.9000  2023-07-22 [1] Github (tidyverse/lubridate@cae67ea)
+ magick           2.7.5       2023-08-07 [1] CRAN (R 4.3.1)
+ magrittr         2.0.3       2022-03-30 [1] CRAN (R 4.3.0)
+ markdown         1.7         2023-05-16 [1] CRAN (R 4.3.0)
+ Matrix         * 1.6-0       2023-07-08 [2] CRAN (R 4.3.1)
+ matrixStats      1.0.0       2023-06-02 [1] CRAN (R 4.3.0)
+ memoise          2.0.1       2021-11-26 [1] CRAN (R 4.3.0)
+ monocle          2.28.0      2023-04-25 [1] Bioconductor
+ munsell          0.5.0       2018-06-12 [1] CRAN (R 4.3.0)
+ paletteer        1.5.0       2022-10-19 [1] CRAN (R 4.3.0)
+ patchwork      * 1.1.2.9000  2023-08-11 [1] Github (thomasp85/patchwork@bd57553)
+ pheatmap         1.0.12      2019-01-04 [1] CRAN (R 4.3.0)
+ pillar           1.9.0       2023-03-22 [1] CRAN (R 4.3.0)
+ pkgbuild         1.4.2       2023-06-26 [1] CRAN (R 4.3.1)
+ pkgconfig        2.0.3       2019-09-22 [1] CRAN (R 4.3.0)
+ pkgload          1.3.2.9000  2023-07-05 [1] Github (r-lib/pkgload@3cf9896)
+ plyr             1.8.8       2022-11-11 [1] CRAN (R 4.3.0)
+ png              0.1-8       2022-11-29 [1] CRAN (R 4.3.0)
+ prettyunits      1.1.1.9000  2023-04-23 [1] Github (r-lib/prettyunits@8706d89)
+ prismatic        1.1.1       2022-08-15 [1] CRAN (R 4.3.0)
+ processx         3.8.2       2023-06-30 [1] CRAN (R 4.3.1)
+ ps               1.7.5       2023-04-18 [1] CRAN (R 4.3.0)
+ purrr          * 1.0.2.9000  2023-08-11 [1] Github (tidyverse/purrr@ac4f5a9)
+ qlcMatrix        0.9.7       2018-04-20 [1] CRAN (R 4.3.0)
+ R.cache          0.16.0      2022-07-21 [1] CRAN (R 4.3.0)
+ R.methodsS3      1.8.2       2022-06-13 [1] CRAN (R 4.3.0)
+ R.oo             1.25.0      2022-06-12 [1] CRAN (R 4.3.0)
+ R.utils          2.12.2      2022-11-11 [1] CRAN (R 4.3.0)
+ R6               2.5.1.9000  2023-04-23 [1] Github (r-lib/R6@e97cca7)
+ ragg             1.2.5       2023-01-12 [1] CRAN (R 4.3.0)
+ RANN             2.6.1       2019-01-08 [1] CRAN (R 4.3.0)
+ RColorBrewer     1.1-3       2022-04-03 [1] CRAN (R 4.3.0)
+ Rcpp             1.0.11      2023-07-06 [1] CRAN (R 4.3.1)
+ readr          * 2.1.4.9000  2023-08-03 [1] Github (tidyverse/readr@80e4dc1)
+ rematch2         2.1.2       2020-05-01 [1] CRAN (R 4.3.0)
+ remotes          2.4.2.9000  2023-06-09 [1] Github (r-lib/remotes@8875171)
+ reshape2         1.4.4       2020-04-09 [1] CRAN (R 4.3.0)
+ rjson            0.2.21      2022-01-09 [1] CRAN (R 4.3.0)
+ rlang            1.1.1.9000  2023-06-09 [1] Github (r-lib/rlang@c55f602)
+ rmarkdown        2.23.4      2023-07-27 [1] Github (rstudio/rmarkdown@054d735)
+ rstudioapi       0.15.0.9000 2023-07-19 [1] Github (rstudio/rstudioapi@feceaef)
+ Rtsne            0.17        2023-04-23 [1] Github (jkrijthe/Rtsne@ca6f630)
+ Rttf2pt1         1.3.12      2023-01-22 [1] CRAN (R 4.3.0)
+ S4Vectors        0.38.1      2023-05-02 [1] Bioconductor
+ sass             0.4.7       2023-07-15 [1] CRAN (R 4.3.1)
+ scales           1.2.1       2022-08-20 [1] CRAN (R 4.3.0)
+ sessioninfo      1.2.2       2021-12-06 [1] CRAN (R 4.3.0)
+ shape            1.4.6       2021-05-19 [1] CRAN (R 4.3.0)
+ slam             0.1-50      2022-01-08 [1] CRAN (R 4.3.0)
+ sparsesvd        0.2-2       2023-01-14 [1] CRAN (R 4.3.0)
+ stringi          1.7.12      2023-01-11 [1] CRAN (R 4.3.0)
+ stringr        * 1.5.0.9000  2023-08-11 [1] Github (tidyverse/stringr@08ff36f)
+ styler         * 1.10.1      2023-07-17 [1] Github (r-lib/styler@aca7223)
+ systemfonts      1.0.4       2022-02-11 [1] CRAN (R 4.3.0)
+ textshaping      0.3.6       2021-10-13 [1] CRAN (R 4.3.0)
+ tibble         * 3.2.1.9005  2023-05-28 [1] Github (tidyverse/tibble@4de5c15)
+ tidyr          * 1.3.0.9000  2023-04-23 [1] Github (tidyverse/tidyr@0764e65)
+ tidyselect       1.2.0       2022-10-10 [1] CRAN (R 4.3.0)
+ tidyverse      * 2.0.0.9000  2023-04-23 [1] Github (tidyverse/tidyverse@8ec2e1f)
+ timechange       0.2.0       2023-01-11 [1] CRAN (R 4.3.0)
+ tzdb             0.4.0       2023-05-12 [1] CRAN (R 4.3.0)
+ usethis          2.2.2.9000  2023-07-11 [1] Github (r-lib/usethis@467ff57)
+ utf8             1.2.3       2023-01-31 [1] CRAN (R 4.3.0)
+ vctrs            0.6.3       2023-06-14 [1] CRAN (R 4.3.0)
+ VGAM             1.1-8       2023-03-09 [1] CRAN (R 4.3.0)
+ viridis          0.6.4       2023-07-22 [1] CRAN (R 4.3.1)
+ viridisLite      0.4.2       2023-05-02 [1] CRAN (R 4.3.0)
+ vroom            1.6.3.9000  2023-04-30 [1] Github (tidyverse/vroom@89b6aac)
+ wesanderson      0.3.6.9000  2023-07-25 [1] Github (karthik/wesanderson@95d49de)
+ withr            2.5.0       2022-03-03 [1] CRAN (R 4.3.0)
+ xfun             0.40        2023-08-09 [1] CRAN (R 4.3.1)
+ xml2             1.3.5       2023-07-06 [1] CRAN (R 4.3.1)
+ yaml             2.3.7       2023-01-23 [1] CRAN (R 4.3.0)
 
- [1] /opt/homebrew/lib/R/4.2/site-library
- [2] /opt/homebrew/Cellar/r/4.2.2_1/lib/R/library
+ [1] /opt/homebrew/lib/R/4.3/site-library
+ [2] /opt/homebrew/Cellar/r/4.3.1/lib/R/library
 
 ──────────────────────────────────────────────────────────────────────────────</code></pre>
 </div>
@@ -3014,7 +3004,7 @@ Status  Count   Legend
 
 </section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{duan2023,
   author = {Duan, Jialei and Li, Boxun and Bhakta, Minoti and Xie, Shiqi
-    and Zhou, Pei and V.Munshi, Nikhil and C.Hon, Gary},
+    and Zhou, Pei and V. Munshi, Nikhil and C. Hon, Gary},
   publisher = {Cell Press},
   title = {Rational {Reprogramming} of {Cellular} {States} by
     {Combinatorial} {Perturbation}},
@@ -3022,7 +3012,7 @@ Status  Count   Legend
   volume = {27},
   number = {12},
   pages = {3486 - 3499000000},
-  date = {2023-03-08},
+  date = {2023-08-12},
   url = {https://doi.org/10.1016/j.celrep.2019.05.079},
   doi = {10.1016/j.celrep.2019.05.079},
   langid = {en},
@@ -3032,10 +3022,10 @@ Status  Count   Legend
     interest.}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-duan2023" class="csl-entry quarto-appendix-citeas" role="listitem">
-Duan, Jialei, Boxun Li, Minoti Bhakta, Shiqi Xie, Pei Zhou, Nikhil
-V.Munshi, and Gary C.Hon. 2023. <span>“Rational Reprogramming of
-Cellular States by Combinatorial Perturbation.”</span> <em>Cell
-Reports</em> 27 (12): 3486–3499000000. <a href="https://doi.org/10.1016/j.celrep.2019.05.079">https://doi.org/10.1016/j.celrep.2019.05.079</a>.
+Duan, Jialei, Boxun Li, Minoti Bhakta, Shiqi Xie, Pei Zhou, Nikhil V.
+Munshi, and Gary C. Hon. 2023. <span>“Rational Reprogramming of Cellular
+States by Combinatorial Perturbation.”</span> <em>Cell Reports</em> 27
+(12): 3486–3499000000. <a href="https://doi.org/10.1016/j.celrep.2019.05.079">https://doi.org/10.1016/j.celrep.2019.05.079</a>.
 </div></div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -3077,6 +3067,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -3145,13 +3162,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -3230,10 +3249,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -3243,8 +3261,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -3257,6 +3284,81 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        return container.innerHTML
+      } else {
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -3300,6 +3402,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -3325,6 +3428,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        console.log("RESIZE");
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -3383,12 +3513,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp(/^(?:http:|https:)\/\/leafletjs\.com/);
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/leafletjs\.com");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -3407,27 +3537,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </nav>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
-    <div class="nav-footer-left">Copyright © 2023, Jialei Duan</div>   
+    <div class="nav-footer-left">
+<p>Copyright © 2023, Jialei Duan</p>
+</div>   
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
 <li class="nav-item">
-    <a class="nav-link" href="https://github.com/jlduan/Reprogram-Seq/blob/master/LICENSE"><i class="fa-solid fa-file-lines" aria-label="file-lines"></i> License</a>
+    <a class="nav-link" href="https://github.com/jlduan/Reprogram-Seq/blob/master/LICENSE">
+<p><i class="fa-solid fa-file-lines" aria-label="file-lines"></i> License</p>
+</a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./about.html"><i class="fa-solid fa-circle-info" aria-label="circle-info"></i> About</a>
+    <a class="nav-link" href="./about.html">
+<p><i class="fa-solid fa-circle-info" aria-label="circle-info"></i> About</p>
+</a>
   </li>  
 </ul>
 </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
 <li class="nav-item compact">
-    <a class="nav-link active" href="https://twitter.com/jlduan" aria-current="page">
-      <i class="bi bi-twitter" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/jlduan/Reprogram-Seq">
+    <a class="nav-link active" href="https://github.com/jlduan/Reprogram-Seq" aria-current="page">
       <i class="bi bi-github" role="img">
 </i> 
     </a>
